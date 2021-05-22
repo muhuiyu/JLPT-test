@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: ViewController {
     
@@ -24,7 +25,9 @@ class HomeViewController: ViewController {
         var value: String
     }
     
-    override init() {
+    let database: DatabaseDataSource
+    init(database: DatabaseDataSource) {
+        self.database = database
         super.init()
         tabBarItem = UITabBarItem(title: "Home",
                                   image: UIImage(systemName: "house"),
@@ -46,7 +49,6 @@ class HomeViewController: ViewController {
 }
 // MARK: - Actions
 extension HomeViewController {
-
     private func didTapStart() {
         // generate by configuration
         var level: QuizLevel = .n1
@@ -62,11 +64,16 @@ extension HomeViewController {
             default: continue
             }
         }
-        let quizSet = generateQuizSet(atLevel: level, withType: type, containQuestions: numberOfQuestions)
-        let viewController = QuizSessionViewController(entry: quizSet)
-        viewController.isModalInPresentation = true
-        viewController.delegate = self
-        self.present(viewController.embedInNavgationController(), animated: true, completion: nil)
+        database.fetchQuizSet(atLevel: level, withType: type, containQuestions: numberOfQuestions) { (quizSet, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            let viewController = QuizSessionViewController(database: self.database, entry: quizSet)
+            viewController.isModalInPresentation = true
+            viewController.delegate = self
+            self.present(viewController.embedInNavgationController(), animated: true, completion: nil)
+        }
     }
 }
 // MARK: - View Config

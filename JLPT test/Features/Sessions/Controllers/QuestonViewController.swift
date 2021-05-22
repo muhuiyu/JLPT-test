@@ -8,7 +8,7 @@
 import UIKit
 
 protocol QuestonViewControllerDelegate: class {
-    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, andUserAnsweredCorrectly isUserCorrect: Bool)
+    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quizID: String)
     func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType)
 }
 
@@ -57,7 +57,7 @@ class QuestonViewController: ViewController {
 // MARK: - Actions
 extension QuestonViewController {
     private func didRequestGoNextQuestion() {
-        delegate?.questonViewControllerDidRequestGoNextQuestion(self, andUserAnsweredCorrectly: isUserAnsweredCorrectly)
+        delegate?.questonViewControllerDidRequestGoNextQuestion(self, didUserAnswerCorrectly: isUserAnsweredCorrectly, atQuiz: entry.id)
     }
     private func didRequestRevealOptionEntryDetails(at optionIndex: Int) {
         delegate?.questonViewControllerDidRequestRevealOptionEntryDetails(self, with: entry.options[optionIndex], as: entry.type)

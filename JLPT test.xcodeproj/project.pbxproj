@@ -89,6 +89,7 @@
 		E4363D032652CB7B0003A26B /* RelatedGrammarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D022652CB7B0003A26B /* RelatedGrammarItem.swift */; };
 		E4363D47265327CD0003A26B /* DatabaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D46265327CD0003A26B /* DatabaseDataSource.swift */; };
 		E4363D4F2653ABDD0003A26B /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D4E2653ABDD0003A26B /* BookmarkViewController.swift */; };
+		E464A89B2658A7C8006529CC /* UserStatsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A89A2658A7C8006529CC /* UserStatsEntry.swift */; };
 		E46B8A7D265530A900DC26BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4329CBB2650A7D5005FD459 /* Assets.xcassets */; };
 		E46B8A7E265530A900DC26BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4329CBD2650A7D5005FD459 /* LaunchScreen.storyboard */; };
 		E46B8A7F265530A900DC26BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4363D242653263F0003A26B /* GoogleService-Info.plist */; };
@@ -211,6 +212,7 @@
 		E4363D242653263F0003A26B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4363D46265327CD0003A26B /* DatabaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseDataSource.swift; sourceTree = "<group>"; };
 		E4363D4E2653ABDD0003A26B /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		E464A89A2658A7C8006529CC /* UserStatsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsEntry.swift; sourceTree = "<group>"; };
 		E46B8AB42655404200DC26BF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E473A9012654187A00100DEB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -406,6 +408,7 @@
 				E4329D0B2650A881005FD459 /* ProgressEntry.swift */,
 				E4329D0C2650A881005FD459 /* QuizEntry.swift */,
 				E4363CB3265146070003A26B /* Grammar+Vocab+KanjiEntry.swift */,
+				E464A89A2658A7C8006529CC /* UserStatsEntry.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -902,6 +905,7 @@
 				E4329D3F2650A881005FD459 /* String+convertFromHTMLToAttributedString.swift in Sources */,
 				E46B8AB52655404200DC26BF /* DataModel.xcdatamodeld in Sources */,
 				E4329D662650A881005FD459 /* ChipView.swift in Sources */,
+				E464A89B2658A7C8006529CC /* UserStatsEntry.swift in Sources */,
 				E4329D522650A881005FD459 /* AllowEditingCell.swift in Sources */,
 				E4329D472650A881005FD459 /* TitleImageButtonViewController.swift in Sources */,
 				E4329D7A2650A892005FD459 /* QuizCell.swift in Sources */,

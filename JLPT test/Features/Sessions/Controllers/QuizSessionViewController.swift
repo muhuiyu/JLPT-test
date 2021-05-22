@@ -28,8 +28,10 @@ class QuizSessionViewController: ViewController {
     
     weak var delegate:  QuizSessionViewControllerDelegate?
     
+    let database: DatabaseDataSource
     var entry: [QuizEntry]
-    init(entry: [QuizEntry]) {
+    init(database: DatabaseDataSource, entry: [QuizEntry]) {
+        self.database = database
         self.entry = entry
         self.currentIndex = 0
         super.init()
@@ -178,9 +180,17 @@ extension QuizSessionViewController {
 }
 // MARK: - Delegate from Pages
 extension QuizSessionViewController: QuestonViewControllerDelegate {
-    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, andUserAnsweredCorrectly isUserCorrect: Bool) {
-        if isUserCorrect { numberOfCorrectAnswers += 1 }
+    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quizID: String) {
+        if isUserCorrect {
+            numberOfCorrectAnswers += 1
+        }
         self.goNextQuestion()
+        self.database.updateUserStats(quizID: quizID, didUserAnswerCorrectly: userAnswer) { error in
+            if let error = error {
+                print(error)
+                return
+            }
+        }
     }
     func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType) {
         self.revealOptionEntryDetailViewController(with: option, as: type)

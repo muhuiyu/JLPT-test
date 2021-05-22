@@ -18,50 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        let dataSource = DatabaseDataSource()
-//        dataSource.toFirestoreData(from: n1GrammarQuizDatabase) { (grammarData, error) in
-//            if let error = error {
-//                print(error)
-//            }
-//            print(grammarData)
-//        }
-        
-        dataSource.updateQuizData(with: n1GrammarQuizDatabase) { error in
-            if let error = error {
-                print(error)
-            }
+        if let user = Auth.auth().currentUser {
+            print(user.email)
+            setViewControllers(window: window)
         }
-//        for (id, grammar) in grammarDatabase {
-//            dataSource.updateGrammarItems(at: id, with: grammar) { error in
-//                if let error = error {
-//                    print(error)
-//                }
-//            }
-//        }
-//        for (id, vocab) in vocabDatabase {
-//            dataSource.updateVocabItems(at: id, with: vocab) { error in
-//                if let error = error {
-//                    print(error)
-//                }
-//            }
-//        }
-        
-        let homeViewController = HomeViewController()
-//        let historyViewController = HistoryViewController()
-        let bookmarkViewController = BookmarkViewController()
-        
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [
-            homeViewController.embedInNavgationController(),
-            bookmarkViewController.embedInNavgationController(),
-//            historyViewController.embedInNavgationController()
-        ]
-        
-        window.rootViewController = tabBarController
+        else {
+            let welcomeViewController = WelcomeViewController()
+            welcomeViewController.delegate = self
+            window.rootViewController = welcomeViewController
+        }
         window.makeKeyAndVisible()        
         return true
     }
@@ -86,5 +56,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+      -> Bool {
+      return GIDSignIn.sharedInstance().handle(url)
+    }
 }
+extension AppDelegate {
+    private func setViewControllers(window: UIWindow) {
+        let database = DatabaseDataSource()
+        let homeViewController = HomeViewController(database: database)
+        let historyViewController = HistoryViewController()
+        let bookmarkViewController = BookmarkViewController()
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [
+            homeViewController.embedInNavgationController(),
+            bookmarkViewController.embedInNavgationController(),
+            historyViewController.embedInNavgationController()
+        ]
+        window.rootViewController = tabBarController
+    }
 
+}
+extension AppDelegate: WelcomeViewControllerDelegate {
+    func welcomeViewControllerDidLoginSuccessfully(_ controller: WelcomeViewController) {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        setViewControllers(window: window)
+    }
+}

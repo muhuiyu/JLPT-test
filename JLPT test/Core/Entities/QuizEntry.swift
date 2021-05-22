@@ -6,13 +6,45 @@
 //
 
 import UIKit
+import Firebase
 
 struct QuizEntry {
+    let id: String
     let type: QuizType
     let level: QuizLevel
     let question: String
     let options: [OptionEntry]
     let answerIndex: Int
+    
+    init?(document: DocumentSnapshot) {
+        self.id = document.documentID
+        guard
+            let data = document.data(),
+            let typeRawData = data["type"] as? String,
+            let levelRawData = data["level"] as? String,
+            let question = data["question"] as? String,
+            let optionsRawdata = data["options"] as? [[String: Any]],
+            let answerIndex = data["answerIndex"] as? Int
+        else {
+            return nil
+        }
+        self.type = QuizType(rawValue: typeRawData) ?? .grammar
+        self.level = QuizLevel(rawValue: levelRawData) ?? .n1
+        self.question = question
+        self.answerIndex = answerIndex
+        
+        var options = [OptionEntry]()
+        for optionRawData in optionsRawdata {
+            guard let value = optionRawData["value"] as? String else { return nil }
+            if let optionReference = optionRawData["options"] as? DocumentReference {
+                options.append(OptionEntry(value: value, linkedEntryId: optionReference.documentID))
+            }
+            else {
+                options.append(OptionEntry(value: value, linkedEntryId: ""))
+            }
+        }
+        self.options = options
+    }
 }
 
 struct OptionEntry {

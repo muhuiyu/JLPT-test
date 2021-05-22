@@ -12,6 +12,7 @@ target 'JLPT test' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Firebase/Database'
 
   target 'JLPT testTests' do
     inherit! :search_paths
