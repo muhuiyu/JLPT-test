@@ -24,7 +24,7 @@ class LabelToggleCell: UITableViewCell {
         configureViews()
         configureConstraints()
         
-        AccessoryType.disclosureIndicator
+//        AccessoryType.disclosureIndicator
 //        UICellAccessory.DisclosureIndicatorOptions
     }
     

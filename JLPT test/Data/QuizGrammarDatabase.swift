@@ -739,6 +739,102 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
 
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "山田さんご夫妻は息子さんにハワイ旅行に連れて行ってもらったそうだ。それに（　　）、うちの息子は連絡すらめったにしてこない。",
+              options: [
+                OptionEntry(value: "かこつけて", linkedEntryId: "<#T##String#>", isAnswer: false),
+                OptionEntry(value: "もまして", linkedEntryId: "jlptn1-grammar-nimomashite", isAnswer: false),
+                OptionEntry(value: "したがって", linkedEntryId: "<#T##String#>", isAnswer: false),
+                OptionEntry(value: "ひきかえ", linkedEntryId: "jlptn1-grammar-nihikikae", isAnswer: true)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "あの小さかった娘がついに嫁に行くと思うと（　　）涙ぐんでしまった。",
+              options: [
+                OptionEntry(value: "感極まって", linkedEntryId: "jlptn1-grammar-kiwamaru", isAnswer: true),
+                OptionEntry(value: "感極まらず", linkedEntryId: "jlptn1-grammar-kiwamaru", isAnswer: false),
+                OptionEntry(value: "感極めて", linkedEntryId: "jlptn1-grammar-kiwamaru", isAnswer: false),
+                OptionEntry(value: "感極まりなくて", linkedEntryId: "jlptn1-grammar-kiwamaru", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "電話番号もメールアドレスも知らなくて（　　）できなかったんだよ。",
+              options: [
+                OptionEntry(value: "連絡するとはいえ", linkedEntryId: "jlptn1-grammar-towaie", isAnswer: false),
+                OptionEntry(value: "連絡しようにも", linkedEntryId: "jlptn1-grammar-younimo-nai", isAnswer: true),
+                OptionEntry(value: "連絡せざるを得なくて", linkedEntryId: "jlptn2-grammar-zaruoenai", isAnswer: false),
+                OptionEntry(value: "連絡しようとしまいと", linkedEntryId: "jlptn1-grammar-youga-maiga", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "日本の文化を語るとき、今やマンガは欠く（　　）要素の一つです。",
+              options: [
+                OptionEntry(value: "に足る", linkedEntryId: "jlptn1-grammar-nitaru", isAnswer: false),
+                OptionEntry(value: "べく", linkedEntryId: "jlptn1-grammar-beku", isAnswer: false),
+                OptionEntry(value: "べからざる", linkedEntryId: "jlptn1-grammar-bekarazu", isAnswer: true),
+                OptionEntry(value: "まじかる", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "子供との大事な約束を忘れるようでは（　　）。",
+              options: [
+                OptionEntry(value: "本当に困っています", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "次回は絶対に守るはずです", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "父親失格だ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ちゃんとメモしておくべきだ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "新入社員（　　）、これぐらいの問題は自分の判断で処理してもらわなきゃ困るよ。",
+              options: [
+                OptionEntry(value: "じゃあるまいし", linkedEntryId: "jlptn1-grammar-dewaarumaishi", isAnswer: true),
+                OptionEntry(value: "ゆえに", linkedEntryId: "jlptn1-grammar-yueni", isAnswer: false),
+                OptionEntry(value: "ならでは", linkedEntryId: "jlptn1-grammar-naradewa", isAnswer: false),
+                OptionEntry(value: "ともなると", linkedEntryId: "jlptn1-grammar-tomonaruto-tomonareba", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "彼は自分の出世のため（　　）、上司にゴマをすることなんて何とも思っちゃいないよ。",
+              options: [
+                OptionEntry(value: "ともなしに", linkedEntryId: "jlptn1-grammar-tomonaku", isAnswer: false),
+                OptionEntry(value: "であれ", linkedEntryId: "jlptn1-grammar-deare", isAnswer: false),
+                OptionEntry(value: "いかんでは", linkedEntryId: "jlptn1-grammar-ikan", isAnswer: false),
+                OptionEntry(value: "とあれば", linkedEntryId: "jlptn1-grammar-toareba", isAnswer: true)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "学歴（　　）年収（　　）、申し分ない条件よ。お見合いしてみない。",
+              options: [
+                OptionEntry(value: "すら／すら", linkedEntryId: "jlptn1-grammar-sura", isAnswer: false),
+                OptionEntry(value: "といい／といい", linkedEntryId: "jlptn1-grammar-toii-toii", isAnswer: true),
+                OptionEntry(value: "だに／だに", linkedEntryId: "jlptn1-grammar-dani", isAnswer: false),
+                OptionEntry(value: "やら／やら", linkedEntryId: "jlptn2-grammar-yara-yara", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "困った時はお互い様。（　　）の精神ですよ。",
+              options: [
+                OptionEntry(value: "もったもたれた", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "もってもたれて", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "もちつもたれつ", linkedEntryId: "jlptn1-grammar-tsu-tsu", isAnswer: true),
+                OptionEntry(value: "もてばもとう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "担当者が不在の（　　）、事情が分からずご迷惑をおかけして申し訳ございません。",
+              options: [
+                OptionEntry(value: "ことだに", linkedEntryId: "jlptn2-grammar-kotoda", isAnswer: false),
+                OptionEntry(value: "ことか", linkedEntryId: "jlptn2-grammar-kotodarou", isAnswer: false),
+                OptionEntry(value: "ことなく", linkedEntryId: "jlptn2-grammar-kotonaku", isAnswer: false),
+                OptionEntry(value: "こととて", linkedEntryId: "jlptn1-grammar-kototote", isAnswer: true)
+              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#T##String#>",
+//              options: [
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#T##String#>",
+//              options: [
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
+//              ]),
 //    QuizEntry(id: "", type: .grammar, level: .n1,
 //              question: "<#T##String#>",
 //              options: [

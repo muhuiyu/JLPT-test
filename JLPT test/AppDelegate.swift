@@ -22,15 +22,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        let database = DatabaseDataSource()
-        database.updateQuizData(with: newQuizUpdate) { error in
-            if let error = error {
-                print(error)
-            }
-        }
+//        let database = DatabaseDataSource()
+//        let updatedIds: [String] = []
+//        for id in updatedIds {
+//            guard let grammar = grammarDatabase[id] else { continue }
+//            database.updateGrammarItems(at: id, with: grammar) { error in
+//                if let error = error {
+//                    print(error)
+//                }
+//            }
+//        }
+//        database.updateQuizData(with: newQuizUpdate) { error in
+//            if let error = error {
+//                print(error)
+//            }
+//        }
 
-        if let user = Auth.auth().currentUser {
-            print(user.email)
+        if let _ = Auth.auth().currentUser {
             setViewControllers(window: window)
         }
         else {
