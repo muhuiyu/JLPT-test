@@ -8,15 +8,24 @@
 import UIKit
 import CoreData
 
+protocol OptionEntryDetailViewControllerDelegate: class {
+    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToAddBookmarkAt id: String, as type: QuizType)
+    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToRemoveBookmark id: String, as type: QuizType)
+}
+
 class OptionEntryDetailViewController: ViewController {
     
     private let scrollView = UIScrollView()
     private let containerView = UIView()
     private let stackView = UIStackView()
-    
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    private var bookmarkItem: BookmarkItem?
 
+    var isBookmarked: Bool = false {
+        didSet {
+            configureBookmarkButton()
+        }
+    }
+    weak var delegate: OptionEntryDetailViewControllerDelegate?
+    
     var entry: Any
     var entryID = String()
     let type: QuizType
@@ -28,10 +37,6 @@ class OptionEntryDetailViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
-        
-        fetchBookmarkItem()
-        configureBookmarkButton()
-        
         configureGestures()
         configureConstraints()
     }
@@ -44,59 +49,21 @@ class OptionEntryDetailViewController: ViewController {
 extension OptionEntryDetailViewController {
     @objc
     private func didTapBookmark() {
-        if let item = self.bookmarkItem {
-            context.delete(item)
-            do {
-                try context.save()
-            } catch {
-                print(error)
-            }
-            self.bookmarkItem = nil
+        if self.isBookmarked {
+            delegate?.optionEntryDetailViewController(self, didRequestToRemoveBookmark: entryID, as: type)
+            self.isBookmarked = false
         }
         else {
-            let newItem = BookmarkItem(context: context)
-            newItem.id = self.entryID
-            do {
-                try context.save()
-            }
-            catch {
-                print(error)
-            }
-            self.bookmarkItem = newItem
+            delegate?.optionEntryDetailViewController(self, didRequestToAddBookmarkAt: entryID, as: type)
+            self.isBookmarked = true
         }
         configureBookmarkButton()
     }
 }
 // MARK: - View Config
 extension OptionEntryDetailViewController {
-    private func fetchBookmarkItem() {
-        var results = [BookmarkItem]()
-        do {
-            let fetchRequest: NSFetchRequest<BookmarkItem> = BookmarkItem.fetchRequest()
-            fetchRequest.predicate = NSPredicate(format: "id = %@", entryID)
-            fetchRequest.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
-            results = try context.fetch(fetchRequest)
-            
-            if results.count == 1 {
-                self.bookmarkItem = results[0]
-            }
-            else {
-                self.bookmarkItem = nil
-            }
-        }
-        catch {
-            print("error executing fetch request: \(error)")
-        }
-    }
     private func configureBookmarkButton() {
-        var imageName = String()
-        
-        if self.bookmarkItem == nil {
-            imageName = "bookmark"
-        }
-        else {
-            imageName = "bookmark.fill"
-        }
+        let imageName = self.isBookmarked ? "bookmark.fill" : "bookmark"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: imageName),
                                                             style: .done,
                                                             target: self,

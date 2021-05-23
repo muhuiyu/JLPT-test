@@ -64,16 +64,10 @@ extension HomeViewController {
             default: continue
             }
         }
-        database.fetchQuizSet(atLevel: level, withType: type, containQuestions: numberOfQuestions) { (quizSet, error) in
-            if let error = error {
-                print(error)
-                return
-            }
-            let viewController = QuizSessionViewController(database: self.database, entry: quizSet)
-            viewController.isModalInPresentation = true
-            viewController.delegate = self
-            self.present(viewController.embedInNavgationController(), animated: true, completion: nil)
-        }
+        let viewController = QuizSessionViewController(database: self.database, level: level, type: type, numberOfQuestions: numberOfQuestions)
+        viewController.isModalInPresentation = true
+        viewController.delegate = self
+        self.present(viewController.embedInNavgationController(), animated: true, completion: nil)
     }
 }
 // MARK: - View Config

@@ -9,6 +9,8 @@ import UIKit
 
 struct UserStatsEntry: Comparable {
     let quizID: String
+    let level: QuizLevel
+    let type: QuizType
     let numberOfAttempts: Int
     let numberOfSuccess: Int
     

@@ -79,7 +79,7 @@
 		E4329D882650A89A005FD459 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D842650A89A005FD459 /* OptionCell.swift */; };
 		E4363CAF2650DA310003A26B /* GrammarDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CAE2650DA310003A26B /* GrammarDatabase.swift */; };
 		E4363CB4265146070003A26B /* Grammar+Vocab+KanjiEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CB3265146070003A26B /* Grammar+Vocab+KanjiEntry.swift */; };
-		E4363CC2265148C30003A26B /* QuizDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CC1265148C30003A26B /* QuizDatabase.swift */; };
+		E4363CC2265148C30003A26B /* QuizKanjiDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CC1265148C30003A26B /* QuizKanjiDatabase.swift */; };
 		E4363CCD265204BA0003A26B /* ExplanationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CCC265204BA0003A26B /* ExplanationItemView.swift */; };
 		E4363CD5265207CD0003A26B /* ExplanationItemExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CD4265207CD0003A26B /* ExplanationItemExamplesView.swift */; };
 		E4363CDD265251EB0003A26B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363CDC265251EB0003A26B /* HistoryViewController.swift */; };
@@ -90,11 +90,16 @@
 		E4363D47265327CD0003A26B /* DatabaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D46265327CD0003A26B /* DatabaseDataSource.swift */; };
 		E4363D4F2653ABDD0003A26B /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D4E2653ABDD0003A26B /* BookmarkViewController.swift */; };
 		E464A89B2658A7C8006529CC /* UserStatsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A89A2658A7C8006529CC /* UserStatsEntry.swift */; };
+		E464A8DF2658E902006529CC /* Combine+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A8DD2658E902006529CC /* Combine+Utils.swift */; };
+		E464A8E02658E902006529CC /* Firestore+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A8DE2658E902006529CC /* Firestore+Combine.swift */; };
 		E46B8A7D265530A900DC26BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4329CBB2650A7D5005FD459 /* Assets.xcassets */; };
 		E46B8A7E265530A900DC26BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4329CBD2650A7D5005FD459 /* LaunchScreen.storyboard */; };
 		E46B8A7F265530A900DC26BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4363D242653263F0003A26B /* GoogleService-Info.plist */; };
 		E46B8AB52655404200DC26BF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E46B8AB32655404200DC26BF /* DataModel.xcdatamodeld */; };
 		E473A9022654187A00100DEB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473A9012654187A00100DEB /* WelcomeViewController.swift */; };
+		E4FF042826592315001A5D9F /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042726592315001A5D9F /* SpinnerView.swift */; };
+		E4FF042D26595D58001A5D9F /* BookmarkEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */; };
+		E4FF0432265A760A001A5D9F /* QuizGrammarDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,7 +206,7 @@
 		E4329D842650A89A005FD459 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
 		E4363CAE2650DA310003A26B /* GrammarDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarDatabase.swift; sourceTree = "<group>"; };
 		E4363CB3265146070003A26B /* Grammar+Vocab+KanjiEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grammar+Vocab+KanjiEntry.swift"; sourceTree = "<group>"; };
-		E4363CC1265148C30003A26B /* QuizDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDatabase.swift; sourceTree = "<group>"; };
+		E4363CC1265148C30003A26B /* QuizKanjiDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizKanjiDatabase.swift; sourceTree = "<group>"; };
 		E4363CCC265204BA0003A26B /* ExplanationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationItemView.swift; sourceTree = "<group>"; };
 		E4363CD4265207CD0003A26B /* ExplanationItemExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationItemExamplesView.swift; sourceTree = "<group>"; };
 		E4363CDC265251EB0003A26B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -213,8 +218,13 @@
 		E4363D46265327CD0003A26B /* DatabaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseDataSource.swift; sourceTree = "<group>"; };
 		E4363D4E2653ABDD0003A26B /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		E464A89A2658A7C8006529CC /* UserStatsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsEntry.swift; sourceTree = "<group>"; };
+		E464A8DD2658E902006529CC /* Combine+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Combine+Utils.swift"; sourceTree = "<group>"; };
+		E464A8DE2658E902006529CC /* Firestore+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firestore+Combine.swift"; sourceTree = "<group>"; };
 		E46B8AB42655404200DC26BF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E473A9012654187A00100DEB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E4FF042726592315001A5D9F /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkEntry.swift; sourceTree = "<group>"; };
+		E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGrammarDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,7 +367,8 @@
 				E4363CAE2650DA310003A26B /* GrammarDatabase.swift */,
 				E4363CE72652900B0003A26B /* KanjiDatabase.swift */,
 				E4363CEC265290150003A26B /* VocabDatabase.swift */,
-				E4363CC1265148C30003A26B /* QuizDatabase.swift */,
+				E4363CC1265148C30003A26B /* QuizKanjiDatabase.swift */,
+				E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -373,6 +384,8 @@
 				E4329CFB2650A880005FD459 /* UIViewController+Toast.swift */,
 				E4329CFC2650A880005FD459 /* UIViewController+Utils.swift */,
 				E4329CFD2650A880005FD459 /* String+convertFromHTMLToAttributedString.swift */,
+				E464A8DD2658E902006529CC /* Combine+Utils.swift */,
+				E464A8DE2658E902006529CC /* Firestore+Combine.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,6 +422,7 @@
 				E4329D0C2650A881005FD459 /* QuizEntry.swift */,
 				E4363CB3265146070003A26B /* Grammar+Vocab+KanjiEntry.swift */,
 				E464A89A2658A7C8006529CC /* UserStatsEntry.swift */,
+				E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -452,6 +466,7 @@
 				E4329D352650A881005FD459 /* CircleView.swift */,
 				E4329D362650A881005FD459 /* IconTitleGridView.swift */,
 				E4329D372650A881005FD459 /* CheckBox.swift */,
+				E4FF042726592315001A5D9F /* SpinnerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -897,6 +912,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FF042826592315001A5D9F /* SpinnerView.swift in Sources */,
 				E4363CE82652900B0003A26B /* KanjiDatabase.swift in Sources */,
 				E4329D452650A881005FD459 /* TitleMultipleChoicesButtonViewController.swift in Sources */,
 				E4329D4E2650A881005FD459 /* Status.swift in Sources */,
@@ -911,7 +927,8 @@
 				E4329D7A2650A892005FD459 /* QuizCell.swift in Sources */,
 				E4329D6B2650A881005FD459 /* CustomTextField.swift in Sources */,
 				E4329D5C2650A881005FD459 /* IconButton.swift in Sources */,
-				E4363CC2265148C30003A26B /* QuizDatabase.swift in Sources */,
+				E464A8DF2658E902006529CC /* Combine+Utils.swift in Sources */,
+				E4363CC2265148C30003A26B /* QuizKanjiDatabase.swift in Sources */,
 				E4329D5A2650A881005FD459 /* LabelSegmentControllCell.swift in Sources */,
 				E4329D502650A881005FD459 /* TextInputCell.swift in Sources */,
 				E4363D47265327CD0003A26B /* DatabaseDataSource.swift in Sources */,
@@ -929,9 +946,11 @@
 				E4329D3E2650A881005FD459 /* UIViewController+Utils.swift in Sources */,
 				E4329D4B2650A881005FD459 /* QuizEntry.swift in Sources */,
 				E4363CED265290150003A26B /* VocabDatabase.swift in Sources */,
+				E464A8E02658E902006529CC /* Firestore+Combine.swift in Sources */,
 				E4329D532650A881005FD459 /* LabelToggleCell.swift in Sources */,
 				E4363D032652CB7B0003A26B /* RelatedGrammarItem.swift in Sources */,
 				E4329D852650A89A005FD459 /* QuestonViewController.swift in Sources */,
+				E4FF042D26595D58001A5D9F /* BookmarkEntry.swift in Sources */,
 				E4329D5E2650A881005FD459 /* TextButton.swift in Sources */,
 				E4329D652650A881005FD459 /* BullettItemTitleSubtitleView.swift in Sources */,
 				E4329D432650A881005FD459 /* SearchWordModalViewController.swift in Sources */,
@@ -977,6 +996,7 @@
 				E4329D642650A881005FD459 /* CardImageTitleSubtitleButton.swift in Sources */,
 				E4329D702650A881005FD459 /* CheckBox.swift in Sources */,
 				E4329D4F2650A881005FD459 /* LabelDetailCell.swift in Sources */,
+				E4FF0432265A760A001A5D9F /* QuizGrammarDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

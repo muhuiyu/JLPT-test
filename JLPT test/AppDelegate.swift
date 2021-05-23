@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import CoreData
 import Firebase
 import GoogleSignIn
 
@@ -23,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
+        let database = DatabaseDataSource()
+        database.updateQuizData(with: newQuizUpdate) { error in
+            if let error = error {
+                print(error)
+            }
+        }
+
         if let user = Auth.auth().currentUser {
             print(user.email)
             setViewControllers(window: window)
@@ -35,27 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()        
         return true
     }
-    
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "DataModel")
-        container.loadPersistentStores { description, error in
-            if let error = error {
-                fatalError("Unable to load persistent stores: \(error)")
-            }
-        }
-        return container
-    }()
-    
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch let error as NSError {
-                print("Error: \(error), \(error.userInfo)")
-            }
-        }
-    }
     @available(iOS 9.0, *)
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
       -> Bool {
@@ -65,9 +50,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     private func setViewControllers(window: UIWindow) {
         let database = DatabaseDataSource()
+        database.setup { error in
+            if let error = error {
+                print(error)
+                return
+            }
+        }
         let homeViewController = HomeViewController(database: database)
         let historyViewController = HistoryViewController()
-        let bookmarkViewController = BookmarkViewController()
+        let bookmarkViewController = BookmarkViewController(database: database)
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [

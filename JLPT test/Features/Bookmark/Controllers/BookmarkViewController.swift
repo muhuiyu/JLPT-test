@@ -10,10 +10,10 @@ import UIKit
 class BookmarkViewController: ViewController {
     private let tableView = UITableView()
     private let refreshControl = UIRefreshControl()
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    private var items = [BookmarkItem]()
     
-    override init() {
+    let database: DatabaseDataSource
+    init(database: DatabaseDataSource) {
+        self.database = database
         super.init()
         tabBarItem = UITabBarItem(title: "Bookmark",
                                   image: UIImage(systemName: "bookmark"),
@@ -30,7 +30,9 @@ class BookmarkViewController: ViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getAllItems()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
 // MARK: - Actions
@@ -38,29 +40,22 @@ extension BookmarkViewController {
     @objc
     private func refreshTableView(_ sender: Any) {
         DispatchQueue.main.async {
-            self.getAllItems()
+            self.tableView.reloadData()
             self.refreshControl.endRefreshing()
         }
     }
 }
 // MARK: - View Config
 extension BookmarkViewController {
-    private func getAllItems() {
-        do {
-            self.items = try context.fetch(BookmarkItem.fetchRequest())
+    private func deleteItem(at index: Int) {
+        self.database.removeBookmarkItem(inListAt: index) { error in
+            if let error = error {
+                print(error)
+                return
+            }
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        } catch {
-            print(error)
-        }
-    }
-    private func deleteItem(item: BookmarkItem) {
-        context.delete(item)
-        do {
-            try context.save()
-        } catch {
-            print(error)
         }
     }
     private func configureViews() {
@@ -87,15 +82,40 @@ extension BookmarkViewController {
 // MARK: - Data Source
 extension BookmarkViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return self.database.bookmarkEntries.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        guard
-            let id = items[indexPath.row].id,
-            let grammarEntry = grammarDatabase[id]
-        else { return UITableViewCell() }
-        cell.textLabel?.text = grammarEntry.title
+        let item = self.database.bookmarkEntries[indexPath.row]
+        switch item.type {
+        case .grammar:
+            self.database.fetchGrammarEntry(at: item.id) { (grammarEntry, error) in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                guard let grammarEntry = grammarEntry else { return }
+                cell.textLabel?.text = grammarEntry.title
+            }
+        case .vocab:
+            self.database.fetchVocabEntry(at: item.id) { (vocabEntry, error) in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                guard let vocabEntry = vocabEntry else { return }
+                cell.textLabel?.text = vocabEntry.title
+            }
+        case .kanji:
+            self.database.fetchKanjiEntry(at: item.id) { (kanjiEntry, error) in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                guard let kanjiEntry = kanjiEntry else { return }
+                cell.textLabel?.text = kanjiEntry.title
+            }
+        }
         return cell
     }
 }
@@ -106,13 +126,64 @@ extension BookmarkViewController: UITableViewDelegate {
         defer {
             tableView.deselectRow(at: indexPath, animated: true)
         }
-        guard
-            let id = items[indexPath.row].id,
-            let grammarEntry = grammarDatabase[id]
-        else { return }
-        let viewController = OptionEntryDetailViewController(entry: grammarEntry, type: .grammar)
-        viewController.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(viewController, animated: true)
+        let item = self.database.bookmarkEntries[indexPath.row]
+        switch item.type {
+        case .grammar:
+            self.database.fetchGrammarEntry(at: item.id) { (grammarEntry, error) in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                guard let grammarEntry = grammarEntry else { return }
+                let viewController = OptionEntryDetailViewController(entry: grammarEntry, type: .grammar)
+                viewController.hidesBottomBarWhenPushed = true
+                viewController.isBookmarked = self.database.isItemInBookmarks(at: grammarEntry.id)
+                viewController.delegate = self
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        case .vocab:
+            self.database.fetchVocabEntry(at: item.id) { (vocabEntry, error) in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                guard let vocabEntry = vocabEntry else { return }
+                let viewController = OptionEntryDetailViewController(entry: vocabEntry, type: .grammar)
+                viewController.hidesBottomBarWhenPushed = true
+                viewController.isBookmarked = self.database.isItemInBookmarks(at: vocabEntry.id)
+                viewController.delegate = self
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        case .kanji:
+            self.database.fetchKanjiEntry(at: item.id) { (kanjiEntry, error) in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                guard let kanjiEntry = kanjiEntry else { return }
+                let viewController = OptionEntryDetailViewController(entry: kanjiEntry, type: .grammar)
+                viewController.hidesBottomBarWhenPushed = true
+                viewController.isBookmarked = self.database.isItemInBookmarks(at: kanjiEntry.id)
+                viewController.delegate = self
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+}
+extension BookmarkViewController: OptionEntryDetailViewControllerDelegate {
+    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToRemoveBookmark id: String, as type: QuizType) {
+        self.database.removeBookmarkItem(at: id) { error in
+            if let error = error {
+                print(error)
+            }
+        }
+    }
+    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToAddBookmarkAt id: String, as type: QuizType) {
+        self.database.addBookmarkItem(at: id, as: type) { error in
+            if let error = error {
+                print(error)
+            }
+        }
     }
 }
 

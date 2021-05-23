@@ -14,7 +14,6 @@ struct QuizEntry {
     let level: QuizLevel
     let question: String
     let options: [OptionEntry]
-    let answerIndex: Int
     
     init?(document: DocumentSnapshot) {
         self.id = document.documentID
@@ -23,33 +22,47 @@ struct QuizEntry {
             let typeRawData = data["type"] as? String,
             let levelRawData = data["level"] as? String,
             let question = data["question"] as? String,
-            let optionsRawdata = data["options"] as? [[String: Any]],
-            let answerIndex = data["answerIndex"] as? Int
+            let optionsRawdata = data["options"] as? [[String: Any]]
         else {
             return nil
         }
         self.type = QuizType(rawValue: typeRawData) ?? .grammar
         self.level = QuizLevel(rawValue: levelRawData) ?? .n1
         self.question = question
-        self.answerIndex = answerIndex
         
         var options = [OptionEntry]()
         for optionRawData in optionsRawdata {
-            guard let value = optionRawData["value"] as? String else { return nil }
-            if let optionReference = optionRawData["options"] as? DocumentReference {
-                options.append(OptionEntry(value: value, linkedEntryId: optionReference.documentID))
-            }
-            else {
-                options.append(OptionEntry(value: value, linkedEntryId: ""))
-            }
+            guard
+                let value = optionRawData["value"] as? String,
+                let isAnswer = optionRawData["isAnswer"] as? Bool,
+                let optionReferenceID = optionRawData["linkedEntry"] as? String
+            else { return nil }
+            options.append(OptionEntry(value: value, linkedEntryId: optionReferenceID, isAnswer: isAnswer))
         }
         self.options = options
+    }
+    init(id: String, type: QuizType, level: QuizLevel, question: String, options: [OptionEntry]) {
+        self.id = id
+        self.type = type
+        self.level = level
+        self.question = question
+        self.options = options
+    }
+    
+    func getAnswerIndex() -> Int {
+        for (i, option) in self.options.enumerated() {
+            if option.isAnswer {
+                return i
+            }
+        }
+        return -1
     }
 }
 
 struct OptionEntry {
     let value: String
     let linkedEntryId: String
+    let isAnswer: Bool
 }
 
 enum QuizLevel: String {

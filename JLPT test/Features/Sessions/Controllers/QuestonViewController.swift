@@ -8,7 +8,7 @@
 import UIKit
 
 protocol QuestonViewControllerDelegate: class {
-    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quizID: String)
+    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry)
     func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType)
 }
 
@@ -57,7 +57,7 @@ class QuestonViewController: ViewController {
 // MARK: - Actions
 extension QuestonViewController {
     private func didRequestGoNextQuestion() {
-        delegate?.questonViewControllerDidRequestGoNextQuestion(self, didUserAnswerCorrectly: isUserAnsweredCorrectly, atQuiz: entry.id)
+        delegate?.questonViewControllerDidRequestGoNextQuestion(self, didUserAnswerCorrectly: isUserAnsweredCorrectly, atQuiz: entry)
     }
     private func didRequestRevealOptionEntryDetails(at optionIndex: Int) {
         delegate?.questonViewControllerDidRequestRevealOptionEntryDetails(self, with: entry.options[optionIndex], as: entry.type)
@@ -131,7 +131,7 @@ extension QuestonViewController: UITableViewDataSource, UITableViewDelegate {
         }
         switch mode {
         case .question:
-            if indexPath.row == entry.answerIndex {
+            if entry.options[indexPath.row].isAnswer {
                 guard let cell = tableView.cellForRow(at: indexPath) as? OptionCell else { return }
                 cell.status = .correct
                 self.isUserAnsweredCorrectly = true
@@ -140,7 +140,7 @@ extension QuestonViewController: UITableViewDataSource, UITableViewDelegate {
                 guard let selectedCell = tableView.cellForRow(at: indexPath) as? OptionCell else { return }
                 selectedCell.status = .wrong
                 
-                guard let answerCell = tableView.cellForRow(at: IndexPath(row: entry.answerIndex, section: 0)) as? OptionCell else { return }
+                guard let answerCell = tableView.cellForRow(at: IndexPath(row: entry.getAnswerIndex(), section: 0)) as? OptionCell else { return }
                 answerCell.status = .correct
                 
                 self.isUserAnsweredCorrectly = false
