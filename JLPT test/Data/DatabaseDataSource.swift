@@ -21,6 +21,12 @@ class DatabaseDataSource: NSObject {
         static let userBookmarks = "userBookmarks"
         static let users = "users"
     }
+    enum UserInfoKey {
+        static let email = "email"
+        static let name = "name"
+        static let profilePhotoURL = "profilePhotoURL"
+        static let age = "age"
+    }
 }
 // MARK: - Setup
 extension DatabaseDataSource {
@@ -32,8 +38,12 @@ extension DatabaseDataSource {
         }
     }
 }
-// MARK: - User Stats
+// MARK: - User
 extension DatabaseDataSource {
+    func getUserProfileImage() -> URL? {
+        guard let user = Auth.auth().currentUser else { return nil }
+        return user.photoURL
+    }
     func updateUserStats(atID quizID: String, atLevel level: QuizLevel, withType type: QuizType, didUserAnswerCorrectly isUserCorrect: Bool, callback: @escaping (_ error: Error?) -> Void) {
         guard let user = Auth.auth().currentUser else { return callback(FirebaseError.userMissing) }
         let ref = Firestore.firestore().collection(CollectionName.userQuizStats)

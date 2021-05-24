@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import Kingfisher
 
 class HomeViewController: ViewController {
     
@@ -69,10 +70,24 @@ extension HomeViewController {
         viewController.delegate = self
         self.present(viewController.embedInNavgationController(), animated: true, completion: nil)
     }
+    @objc
+    private func didTapAvatar() {
+        print("tap avatar")
+    }
+
 }
 // MARK: - View Config
 extension HomeViewController {
     private func configureViews() {
+//        if let photoURL = self.database.getUserProfileImage() {
+//            let imageView = UIImageView()
+//            imageView.kf.setImage(with: photoURL)
+//            navigationItem.rightBarButtonItem = UIBarButtonItem(image: imageView.image, style: .done, target: self, action: #selector(didTapAvatar))
+//        }
+//        else {
+//            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.circle.fill"), style: .done, target: self, action: #selector(didTapAvatar))
+//        }
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "JLPT"
         

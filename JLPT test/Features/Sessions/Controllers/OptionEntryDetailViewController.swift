@@ -8,13 +8,9 @@
 import UIKit
 import CoreData
 
-protocol OptionEntryDetailViewControllerDelegate: class {
-    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToAddBookmarkAt id: String, as type: QuizType)
-    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToRemoveBookmark id: String, as type: QuizType)
-}
-
 class OptionEntryDetailViewController: ViewController {
     
+    private let spinnerView = SpinnerView()
     private let scrollView = UIScrollView()
     private let containerView = UIView()
     private let stackView = UIStackView()
@@ -24,25 +20,65 @@ class OptionEntryDetailViewController: ViewController {
             configureBookmarkButton()
         }
     }
-    weak var delegate: OptionEntryDetailViewControllerDelegate?
     
-    var entry: Any
+    let database: DatabaseDataSource
+    var entry: Any?
     var entryID = String()
     let type: QuizType
-    init(entry: Any, type: QuizType) {
-        self.entry = entry
+    let id: String
+    init(database: DatabaseDataSource, id: String, type: QuizType) {
+        self.database = database
+        self.id = id
         self.type = type
         super.init()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureViews()
-        configureGestures()
-        configureConstraints()
+        self.configureLoadingViews()
+        self.fetchEntry { error in
+            if let error = error {
+                print(error)
+                return
+            }
+            self.configureViews()
+            self.configureGestures()
+            self.configureConstraints()
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+}
+// MARK: - Fetch
+extension OptionEntryDetailViewController {
+    private func fetchEntry(callback: @escaping (_ error: Error?) -> Void) {
+        switch type {
+        case .grammar:
+            self.database.fetchGrammarEntry(at: id) { (maybeEntry, error) in
+                if let error = error { return callback(error) }
+                guard let returnEntry = maybeEntry else { return callback(FirebaseError.documentMissing) }
+                self.entry = returnEntry
+                self.isBookmarked = self.database.isItemInBookmarks(at: returnEntry.id)
+                return callback(nil)
+            }
+        case .kanji:
+            self.database.fetchKanjiEntry(at: id) { (maybeEntry, error) in
+                if let error = error { return callback(error) }
+                guard let returnEntry = maybeEntry else { return callback(FirebaseError.documentMissing) }
+                self.entry = returnEntry
+                self.isBookmarked = self.database.isItemInBookmarks(at: returnEntry.id)
+                return callback(nil)
+            }
+        case .vocab:
+            self.database.fetchVocabEntry(at: id) { (maybeEntry, error) in
+                if let error = error { return callback(error) }
+                guard let returnEntry = maybeEntry else { return callback(FirebaseError.documentMissing) }
+                self.entry = returnEntry
+                self.isBookmarked = self.database.isItemInBookmarks(at: returnEntry.id)
+                return callback(nil)
+            }
+        }
     }
 }
 // MARK: - Actions
@@ -50,11 +86,21 @@ extension OptionEntryDetailViewController {
     @objc
     private func didTapBookmark() {
         if self.isBookmarked {
-            delegate?.optionEntryDetailViewController(self, didRequestToRemoveBookmark: entryID, as: type)
+            self.database.removeBookmarkItem(at: id) { error in
+                if let error = error {
+                    print(error)
+                    return
+                }
+            }
             self.isBookmarked = false
         }
         else {
-            delegate?.optionEntryDetailViewController(self, didRequestToAddBookmarkAt: entryID, as: type)
+            self.database.addBookmarkItem(at: id, as: type) { error in
+                if let error = error {
+                    print(error)
+                    return
+                }
+            }
             self.isBookmarked = true
         }
         configureBookmarkButton()
@@ -62,6 +108,12 @@ extension OptionEntryDetailViewController {
 }
 // MARK: - View Config
 extension OptionEntryDetailViewController {
+    private func configureLoadingViews() {
+        view.addSubview(spinnerView)
+        spinnerView.snp.remakeConstraints { make in
+            make.center.equalToSuperview()
+        }
+    }
     private func configureBookmarkButton() {
         let imageName = self.isBookmarked ? "bookmark.fill" : "bookmark"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: imageName),
@@ -70,6 +122,7 @@ extension OptionEntryDetailViewController {
                                                             action: #selector(didTapBookmark))
     }
     private func configureViews() {
+        spinnerView.isHidden = true
         stackView.axis = .vertical
         stackView.spacing = Constants.spacing.large
         stackView.alignment = .leading
@@ -173,7 +226,7 @@ extension OptionEntryDetailViewController {
             make.bottom.equalToSuperview().inset(Constants.spacing.medium)
         }
         scrollView.snp.remakeConstraints { make in
-            make.edges.equalToSuperview()
+            make.edges.equalTo(view.safeAreaLayoutGuide)
             make.width.equalTo(view.bounds.width)
         }
     }
@@ -181,8 +234,8 @@ extension OptionEntryDetailViewController {
 // MARK: - Delegate
 extension OptionEntryDetailViewController: RelatedGrammarsViewDelegate {
     func relatedGrammarsView(_ view: RelatedGrammarsView, didTapInGrammar id: String) {
-        guard let grammar = grammarDatabase[id] else { return }
-        let viewController = OptionEntryDetailViewController(entry: grammar, type: .grammar)
+        let viewController = OptionEntryDetailViewController(database: self.database, id: id, type: .grammar)
+        viewController.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

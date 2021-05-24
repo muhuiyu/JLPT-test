@@ -23,7 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
 //        let database = DatabaseDataSource()
-//        let updatedIds: [String] = []
+//        let updatedIds: [String] = [
+//        
+//        ]
 //        for id in updatedIds {
 //            guard let grammar = grammarDatabase[id] else { continue }
 //            database.updateGrammarItems(at: id, with: grammar) { error in
@@ -83,5 +85,6 @@ extension AppDelegate: WelcomeViewControllerDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         setViewControllers(window: window)
+        window.makeKeyAndVisible()
     }
 }

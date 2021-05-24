@@ -40,7 +40,6 @@ extension WelcomeViewController {
 // MARK: - View Config
 extension WelcomeViewController {
     private func configureViews() {
-        view.backgroundColor = .yellow
         titleView.text = "JLPT Test"
         titleView.font = UIFont.h2
         titleView.textColor = UIColor.label

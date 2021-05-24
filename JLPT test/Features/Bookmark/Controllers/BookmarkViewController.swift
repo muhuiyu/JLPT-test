@@ -19,7 +19,6 @@ class BookmarkViewController: ViewController {
                                   image: UIImage(systemName: "bookmark"),
                                   selectedImage: UIImage(systemName: "bookmark.fill"))
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -44,9 +43,6 @@ extension BookmarkViewController {
             self.refreshControl.endRefreshing()
         }
     }
-}
-// MARK: - View Config
-extension BookmarkViewController {
     private func deleteItem(at index: Int) {
         self.database.removeBookmarkItem(inListAt: index) { error in
             if let error = error {
@@ -58,6 +54,9 @@ extension BookmarkViewController {
             }
         }
     }
+}
+// MARK: - View Config
+extension BookmarkViewController {
     private func configureViews() {
         navigationItem.title = "Bookmark"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -127,63 +126,13 @@ extension BookmarkViewController: UITableViewDelegate {
             tableView.deselectRow(at: indexPath, animated: true)
         }
         let item = self.database.bookmarkEntries[indexPath.row]
-        switch item.type {
-        case .grammar:
-            self.database.fetchGrammarEntry(at: item.id) { (grammarEntry, error) in
-                if let error = error {
-                    print(error)
-                    return
-                }
-                guard let grammarEntry = grammarEntry else { return }
-                let viewController = OptionEntryDetailViewController(entry: grammarEntry, type: .grammar)
-                viewController.hidesBottomBarWhenPushed = true
-                viewController.isBookmarked = self.database.isItemInBookmarks(at: grammarEntry.id)
-                viewController.delegate = self
-                self.navigationController?.pushViewController(viewController, animated: true)
-            }
-        case .vocab:
-            self.database.fetchVocabEntry(at: item.id) { (vocabEntry, error) in
-                if let error = error {
-                    print(error)
-                    return
-                }
-                guard let vocabEntry = vocabEntry else { return }
-                let viewController = OptionEntryDetailViewController(entry: vocabEntry, type: .grammar)
-                viewController.hidesBottomBarWhenPushed = true
-                viewController.isBookmarked = self.database.isItemInBookmarks(at: vocabEntry.id)
-                viewController.delegate = self
-                self.navigationController?.pushViewController(viewController, animated: true)
-            }
-        case .kanji:
-            self.database.fetchKanjiEntry(at: item.id) { (kanjiEntry, error) in
-                if let error = error {
-                    print(error)
-                    return
-                }
-                guard let kanjiEntry = kanjiEntry else { return }
-                let viewController = OptionEntryDetailViewController(entry: kanjiEntry, type: .grammar)
-                viewController.hidesBottomBarWhenPushed = true
-                viewController.isBookmarked = self.database.isItemInBookmarks(at: kanjiEntry.id)
-                viewController.delegate = self
-                self.navigationController?.pushViewController(viewController, animated: true)
-            }
+        let viewController = OptionEntryDetailViewController(database: self.database, id: item.id, type: item.type)
+        viewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.deleteItem(at: indexPath.row)
         }
     }
 }
-extension BookmarkViewController: OptionEntryDetailViewControllerDelegate {
-    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToRemoveBookmark id: String, as type: QuizType) {
-        self.database.removeBookmarkItem(at: id) { error in
-            if let error = error {
-                print(error)
-            }
-        }
-    }
-    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToAddBookmarkAt id: String, as type: QuizType) {
-        self.database.addBookmarkItem(at: id, as: type) { error in
-            if let error = error {
-                print(error)
-            }
-        }
-    }
-}
-

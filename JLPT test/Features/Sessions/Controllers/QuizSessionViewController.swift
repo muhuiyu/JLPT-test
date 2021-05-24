@@ -68,12 +68,6 @@ extension QuizSessionViewController {
         return Double(Double(self.currentIndex + 1)/Double(self.entry.count))
     }
     private func didTapDismiss() {
-//        let alert = UIAlertController(title: "Are you sure", message: "All progress in this session will be lost.", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-//        alert.addAction(UIAlertAction(title: "Leave", style: .destructive, handler: { (_) in
-//            self.delegate?.quizSessionViewControllerDidRequestDismiss(self)
-//        }))
-//        present(alert, animated: true, completion: nil)
         self.delegate?.quizSessionViewControllerDidRequestDismiss(self)
     }
 }
@@ -85,77 +79,17 @@ extension QuizSessionViewController {
         return viewController
     }
     private func revealOptionEntryDetailViewController(with option: OptionEntry, as type: QuizType) {
-        switch type {
-        case .grammar:
-            if option.linkedEntryId == "" {
-                let alert = UIAlertController(title: "Oops, sorry!", message: "We will add this grammar to the database very soon :)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
-                    self.navigationController?.popViewController(animated: true)
-                }))
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
-            self.database.fetchGrammarEntry(at: option.linkedEntryId) { (grammarEntry, error) in
-                if let error = error {
-                    print(error)
-                    return
-                }
-                guard let grammarEntry = grammarEntry else {
-                    print("grammar document missing")
-                    return
-                }
-                let viewController = OptionEntryDetailViewController(entry: grammarEntry, type: type)
-                viewController.isBookmarked = self.database.isItemInBookmarks(at: grammarEntry.id)
-                viewController.delegate = self
-                self.navigationController?.pushViewController(viewController, animated: true)
-            }
-        case .kanji:
-            if option.linkedEntryId == "" {
-                let alert = UIAlertController(title: "Oops, sorry!", message: "We will add this kanji to the database very soon :)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
-                    self.navigationController?.popViewController(animated: true)
-                }))
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
-            self.database.fetchKanjiEntry(at: option.linkedEntryId) { (kanjiEntry, error) in
-                if let error = error {
-                    print(error)
-                    return
-                }
-                guard let kanjiEntry = kanjiEntry else {
-                    print("kanji document missing")
-                    return
-                }
-                let viewController = OptionEntryDetailViewController(entry: kanjiEntry, type: type)
-                viewController.isBookmarked = self.database.isItemInBookmarks(at: kanjiEntry.id)
-                viewController.delegate = self
-                self.navigationController?.pushViewController(viewController, animated: true)
-            }
-        case .vocab:
-            if option.linkedEntryId == "" {
-                let alert = UIAlertController(title: "Oops, sorry!", message: "We will add this vocab to the database very soon :)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
-                    self.navigationController?.popViewController(animated: true)
-                }))
-                self.present(alert, animated: true, completion: nil)
-                return
-            }
-            self.database.fetchVocabEntry(at: option.linkedEntryId) { (vocabEntry, error) in
-                if let error = error {
-                    print(error)
-                    return
-                }
-                guard let vocabEntry = vocabEntry else {
-                    print("kanji document missing")
-                    return
-                }
-                let viewController = OptionEntryDetailViewController(entry: vocabEntry, type: type)
-                viewController.isBookmarked = self.database.isItemInBookmarks(at: vocabEntry.id)
-                viewController.delegate = self
-                self.navigationController?.pushViewController(viewController, animated: true)
-            }
+        if option.linkedEntryId == "" {
+            let alert = UIAlertController(title: "Oops, sorry!", message: "We will add this \(type.rawValue) to the database very soon :)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+                self.navigationController?.popViewController(animated: true)
+            }))
+            self.present(alert, animated: true, completion: nil)
+            return
         }
+        let viewController = OptionEntryDetailViewController(database: self.database, id: option.linkedEntryId, type: type)
+        viewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     private func goNextQuestion() {
         if self.currentIndex < self.entry.count - 1 {
@@ -235,7 +169,7 @@ extension QuizSessionViewController {
     }
 }
 // MARK: - Delegate from Pages
-extension QuizSessionViewController: QuestonViewControllerDelegate, OptionEntryDetailViewControllerDelegate {
+extension QuizSessionViewController: QuestonViewControllerDelegate {
     func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry) {
         if isUserCorrect {
             numberOfCorrectAnswers += 1
@@ -250,19 +184,5 @@ extension QuizSessionViewController: QuestonViewControllerDelegate, OptionEntryD
     }
     func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType) {
         self.revealOptionEntryDetailViewController(with: option, as: type)
-    }
-    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToRemoveBookmark id: String, as type: QuizType) {
-        self.database.removeBookmarkItem(at: id) { error in
-            if let error = error {
-                print(error)
-            }
-        }
-    }
-    func optionEntryDetailViewController(_ controller: OptionEntryDetailViewController, didRequestToAddBookmarkAt id: String, as type: QuizType) {
-        self.database.addBookmarkItem(at: id, as: type) { error in
-            if let error = error {
-                print(error)
-            }
-        }
     }
 }
