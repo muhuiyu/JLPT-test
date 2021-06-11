@@ -27,6 +27,10 @@ class DatabaseDataSource: NSObject {
         static let profilePhotoURL = "profilePhotoURL"
         static let age = "age"
     }
+    
+    struct Constants {
+        static let maximumNumberOfFetchRequest = 10
+    }
 }
 // MARK: - Setup
 extension DatabaseDataSource {
@@ -206,19 +210,38 @@ extension DatabaseDataSource {
         }
     }
     private func fetchQuizzes(atIDList ids: [String], callback: @escaping (_ data: [QuizEntry], _ error: Error?) -> Void) {
+        let dispatchGroup = DispatchGroup()
         var results = [QuizEntry]()
         let ref = Firestore.firestore().collection(CollectionName.quizzes)
-        ref.whereField(.documentID(), in: ids).getDocuments { (snapshot, error) in
-            if let error = error {
-                return callback([], error)
+        
+        var i = 0
+        while i < ids.count {
+            dispatchGroup.enter()
+            
+            var slicedList = [String]()
+            if i + DatabaseDataSource.Constants.maximumNumberOfFetchRequest < ids.count {
+                slicedList = Array(ids[i ..< i+DatabaseDataSource.Constants.maximumNumberOfFetchRequest])
             }
-            guard let snapshot = snapshot else { return callback([], FirebaseError.snapshotMissing) }
-            for change in snapshot.documentChanges {
-                if change.type == .added {
-                    guard let quizEntry = QuizEntry(document: change.document) else { continue }
-                    results.append(quizEntry)
+            else {
+                slicedList = Array(ids[i ..< ids.count])
+            }
+            ref.whereField(.documentID(), in: slicedList).getDocuments { (snapshot, error) in
+                if let error = error {
+                    return callback([], error)
                 }
+                guard let snapshot = snapshot else { return callback([], FirebaseError.snapshotMissing) }
+                for change in snapshot.documentChanges {
+                    if change.type == .added {
+                        guard let quizEntry = QuizEntry(document: change.document) else { continue }
+                        results.append(quizEntry)
+                    }
+                }
+                dispatchGroup.leave()
             }
+            i += DatabaseDataSource.Constants.maximumNumberOfFetchRequest
+        }
+        dispatchGroup.notify(queue: .main) {
+            print("all quizzes fetched")
             return callback(results, nil)
         }
     }
@@ -426,7 +449,8 @@ extension DatabaseDataSource {
         for quizData in content {
             dispatchGroup.enter()
             quizCollectionRef.document().setData(quizData) { error in
-                if let error = error {return callback(error) }
+                if let error = error { return callback(error) }
+                print(quizData["question"])
                 dispatchGroup.leave()
             }
         }

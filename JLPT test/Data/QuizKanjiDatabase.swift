@@ -9,7 +9,7 @@ import UIKit
 
 
 // MARK: - Vocab
-let n1VocabQuizDatabase: [QuizEntry] = [
+let n1VocabKanjiQuizDatabase: [QuizEntry] = [
     QuizEntry(id: "", type: .vocab,
               level: .n1,
               question: "山田さんは、病気の家族を自宅で（　　）しているそうだ。",
@@ -343,18 +343,6 @@ let n1VocabQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "不潔", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "不服", linkedEntryId: "", isAnswer: false)
               ]),
-//    QuizEntry(id: "", type: .vocab,
-//              level: .n1,
-//              question: "<#T##String#>",
-//              options: [
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "", isAnswer: false)
-//              ], answerIndex: <#Int#>),
-]
-// MARK: - Kanji
-let n1KanjiQuizDatabase: [QuizEntry] = [
     QuizEntry(id: "", type: .kanji,
               level: .n1,
               question: "会社のことを思えばこそ、厳しい環境の中でも【けんめい】に努力を続けてこられたのです。",
