@@ -23,19 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         let database = DatabaseDataSource()
-        let updatedIds: [String] = [
-            "jlptn1-grammar-kiraigaaru", "jlptn1-grammar-nashini", "jlptn2-grammar-nashiniwa-nai",
-            "jlptn1-grammar-woyoginakusareru", "jlptn3-grammar-nioite", "jlptn1-grammar-wooite",
-            "jlptn1-grammar-tara-tade", "jlptn1-grammar-kanawanai"
-        ]
-        for id in updatedIds {
-            guard let grammar = grammarDatabase[id] else { continue }
-            database.updateGrammarItems(at: id, with: grammar) { error in
-                if let error = error {
-                    print(error)
-                }
-            }
-        }
+//        let updatedIds: [String] = [
+//
+//        ]
+//        for id in updatedIds {
+//            guard let grammar = grammarDatabase[id] else { continue }
+//            database.updateGrammarItems(at: id, with: grammar) { error in
+//                if let error = error {
+//                    print(error)
+//                }
+//            }
+//        }
 //        database.updateQuizData(with: newQuizUpdate) { error in
 //            if let error = error {
 //                print(error)
