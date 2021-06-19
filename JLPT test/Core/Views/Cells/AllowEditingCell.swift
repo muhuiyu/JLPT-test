@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AllowEditingCellDelgate: class {
+protocol AllowEditingCellDelgate: AnyObject {
     func requestDeleteCell(_ cell: AllowEditingCell)
     func requestAddNewCell(_ cell: AllowEditingCell)
 }

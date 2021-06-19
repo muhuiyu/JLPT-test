@@ -413,7 +413,7 @@ extension DatabaseDataSource {
             ]
             results.append(result)
         }
-        print("all words fetched")
+        print("all quizzes converted")
         return results
     }
 }

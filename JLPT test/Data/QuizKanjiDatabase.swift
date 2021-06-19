@@ -514,4 +514,100 @@ let n1VocabKanjiQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "妥協", linkedEntryId: "", isAnswer: true),
                 OptionEntry(value: "采協", linkedEntryId: "", isAnswer: false)
               ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "無辜の者が（されるという不正義ほど理不尽なものはこの世に存在しない。",
+              options: [
+                OptionEntry(value: "裁決", linkedEntryId: "vocab-saiketsu", isAnswer: false),
+                OptionEntry(value: "所見", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "審判", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "処罰", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "Ｘ線撮影をして、（　　）出血の徴候がないことを確認した。",
+              options: [
+                OptionEntry(value: "内", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "上", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "中", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "下", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "この国内取引禁止措置は、近く（　　）されるかもしれない。",
+              options: [
+                OptionEntry(value: "解約", linkedEntryId: "vocab-kaiyaku", isAnswer: false),
+                OptionEntry(value: "解放", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "解釈", linkedEntryId: "vocab-kaisyaku", isAnswer: false),
+                OptionEntry(value: "解除", linkedEntryId: "vocab-kaijyo", isAnswer: true)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "店舗の大きさはブランドの価値を示すと社長は（　　）した。",
+              options: [
+                OptionEntry(value: "識別", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "指摘", linkedEntryId: "vocab-shiteki", isAnswer: true),
+                OptionEntry(value: "認定", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "束縛", linkedEntryId: "vocab-sokubaku", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "波打ち（　　）では、鳥たちが目を凝らしてエサをついばんでいる。",
+              options: [
+                OptionEntry(value: "際", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "辺", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "側", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "端", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "Suicaの（　　）は、実は国鉄時代から進められてきた。",
+              options: [
+                OptionEntry(value: "搾取", linkedEntryId: "vocab-sakusyu", isAnswer: false),
+                OptionEntry(value: "収奪", linkedEntryId: "vocab-syudatsu", isAnswer: false),
+                OptionEntry(value: "拓殖", linkedEntryId: "vocab-takusyoku", isAnswer: false),
+                OptionEntry(value: "開発", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "国内取引を解禁することには（　　）な反対論もある。",
+              options: [
+                OptionEntry(value: "堅調", linkedEntryId: "vocab-kencyou", isAnswer: false),
+                OptionEntry(value: "強硬", linkedEntryId: "vocab-kyoukou", isAnswer: true),
+                OptionEntry(value: "健全", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "固体", linkedEntryId: "vocab-kotai", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "これから、この経験を仕事に（　　）いきたいと思う。",
+              options: [
+                OptionEntry(value: "生かして", linkedEntryId: "vocab-ikasu", isAnswer: true),
+                OptionEntry(value: "慣れて", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "使って", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "努力して", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "最近仕事が忙しくて、社員は（　　）気味だ。",
+              options: [
+                OptionEntry(value: "過多", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "過剰", linkedEntryId: "vocab-kajyou", isAnswer: false),
+                OptionEntry(value: "過労", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "過密", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "周囲の人々の気持ちに（　　）して対策を考えるべきだ。",
+              options: [
+                OptionEntry(value: "気配", linkedEntryId: "vocab-kehai", isAnswer: false),
+                OptionEntry(value: "配慮", linkedEntryId: "vocab-hairyo", isAnswer: true),
+                OptionEntry(value: "配置", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "分配", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "知らない漢字でも、その部首を見て意味を（　　）できることがある。",
+              options: [
+                OptionEntry(value: "予知", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "予言", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "推進", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "類推", linkedEntryId: "vocab-ruisui", isAnswer: true)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "たいこの音が聞こえてきて、祭りの（　　）がいちだんと盛り上がってきた。",
+              options: [
+                OptionEntry(value: "ブーム", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ポーズ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ムード", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "リード", linkedEntryId: "", isAnswer: false)
+              ]),
 ]

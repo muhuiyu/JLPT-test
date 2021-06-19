@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-protocol WelcomeViewControllerDelegate: class {
+protocol WelcomeViewControllerDelegate: AnyObject {
     func welcomeViewControllerDidLoginSuccessfully(_ controller: WelcomeViewController)
 }
 

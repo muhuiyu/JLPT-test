@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CheckBoxDelegate: class {
+protocol CheckBoxDelegate: AnyObject {
     func checkBoxDidChangeState(_ checkBox: CheckBox, changeStateTo isChecked: Bool)
 }
 
