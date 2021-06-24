@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol QuestonViewControllerDelegate: class {
+protocol QuestonViewControllerDelegate: AnyObject {
     func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry)
     func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType)
 }
