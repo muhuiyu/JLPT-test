@@ -5,7 +5,42 @@
 //  Created by Mu Yu on 23/5/21.
 //
 
-// MARK: - Grammar
+// MARK: - New quiz update
+let newQuizUpdate: [QuizEntry] = [
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#T##String#>",
+//              options: [
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "ながら", linkedEntryId: "<#T##String#>", isAnswer: true),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#T##String#>",
+//              options: [
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "たりしない", linkedEntryId: "<#T##String#>", isAnswer: true),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#T##String#>",
+//              options: [
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "や否や", linkedEntryId: "jlptn1-grammar-yainaya", isAnswer: true)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#T##String#>",
+//              options: [
+//                OptionEntry(value: "それが", linkedEntryId: "<#T##String#>", isAnswer: true),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
+//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
+//              ]),
+]
+
 let n1GrammarQuizDatabase: [QuizEntry] = [
     QuizEntry(id: "", type: .grammar, level: .n1,
               question: "親友の君の頼み（　　）、断るわけにはいかないね。",
@@ -1479,40 +1514,4 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "せいせき", linkedEntryId: "", isAnswer: true),
                 OptionEntry(value: "せいぎ", linkedEntryId: "", isAnswer: false)
               ]),
-]
-
-// MARK: - New quiz update
-let newQuizUpdate: [QuizEntry] = [
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#T##String#>",
-//              options: [
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "ながら", linkedEntryId: "<#T##String#>", isAnswer: true),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#T##String#>",
-//              options: [
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "たりしない", linkedEntryId: "<#T##String#>", isAnswer: true),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#T##String#>",
-//              options: [
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "や否や", linkedEntryId: "jlptn1-grammar-yainaya", isAnswer: true)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#T##String#>",
-//              options: [
-//                OptionEntry(value: "それが", linkedEntryId: "<#T##String#>", isAnswer: true),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false),
-//                OptionEntry(value: "<#T##String#>", linkedEntryId: "<#T##String#>", isAnswer: false)
-//              ]),
 ]
