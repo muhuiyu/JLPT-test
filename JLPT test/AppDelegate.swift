@@ -23,11 +23,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
 //        let database = DatabaseDataSource()
-//        let updatedIds: [String] = [
+//        let updatedGrammarIds: [String] = [
+//
 //        ]
-//        for id in updatedIds {
+//        let updatedVocabIds: [String] = [
+//        ]
+//        for id in updatedGrammarIds {
 //            guard let grammar = grammarDatabase[id] else { continue }
 //            database.updateGrammarItems(at: id, with: grammar) { error in
+//                if let error = error {
+//                    print(error)
+//                }
+//            }
+//        }
+//        for id in updatedVocabIds {
+//            guard let vocab = vocabDatabase[id] else { continue }
+//            database.updateVocabItems(at: id, with: vocab) { error in
 //                if let error = error {
 //                    print(error)
 //                }
