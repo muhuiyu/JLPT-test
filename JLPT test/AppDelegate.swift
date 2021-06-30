@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let database = DatabaseDataSource()
 //        let updatedGrammarIds: [String] = [
-//
 //        ]
 //        let updatedVocabIds: [String] = [
 //        ]
@@ -38,13 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
 //        for id in updatedVocabIds {
 //            guard let vocab = vocabDatabase[id] else { continue }
-//            database.updateVocabItems(at: id, with: vocab) { error in
-//                if let error = error {
-//                    print(error)
-//                }
-//            }
-//        }
-//        for (id, vocab) in vocabDatabase {
 //            database.updateVocabItems(at: id, with: vocab) { error in
 //                if let error = error {
 //                    print(error)

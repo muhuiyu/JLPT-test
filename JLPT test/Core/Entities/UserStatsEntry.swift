@@ -14,38 +14,42 @@ struct UserStatsEntry: Comparable {
     let numberOfAttempts: Int
     let numberOfSuccess: Int
     
+    func printSuccessRate() -> Double {
+        return Double(numberOfSuccess) / Double(numberOfAttempts)
+    }
+    
     static func < (lhs: UserStatsEntry, rhs: UserStatsEntry) -> Bool {
-        var lhsCorrectionRate = Double()
+        var lhsSuccessRate = Double()
         if lhs.numberOfAttempts == 0 {
-            lhsCorrectionRate = 0
+            lhsSuccessRate = 0
         }
         else {
-            lhsCorrectionRate = Double(lhs.numberOfSuccess) / Double(lhs.numberOfAttempts)
+            lhsSuccessRate = Double(lhs.numberOfSuccess) / Double(lhs.numberOfAttempts)
         }
-        var rhsCorrectionRate = Double()
+        var rhsSuccessRate = Double()
         if rhs.numberOfAttempts == 0 {
-            rhsCorrectionRate = 0
+            rhsSuccessRate = 0
         }
         else {
-            rhsCorrectionRate = Double(rhs.numberOfSuccess) / Double(rhs.numberOfAttempts)
+            rhsSuccessRate = Double(rhs.numberOfSuccess) / Double(rhs.numberOfAttempts)
         }
-        return lhsCorrectionRate < rhsCorrectionRate
+        return lhsSuccessRate < rhsSuccessRate
     }
     static func == (lhs: UserStatsEntry, rhs: UserStatsEntry) -> Bool {
-        var lhsCorrectionRate = Double()
+        var lhsSuccessRate = Double()
         if lhs.numberOfAttempts == 0 {
-            lhsCorrectionRate = 0
+            lhsSuccessRate = 0
         }
         else {
-            lhsCorrectionRate = Double(lhs.numberOfSuccess) / Double(lhs.numberOfAttempts)
+            lhsSuccessRate = Double(lhs.numberOfSuccess) / Double(lhs.numberOfAttempts)
         }
-        var rhsCorrectionRate = Double()
+        var rhsSuccessRate = Double()
         if rhs.numberOfAttempts == 0 {
-            rhsCorrectionRate = 0
+            rhsSuccessRate = 0
         }
         else {
-            rhsCorrectionRate = Double(rhs.numberOfSuccess) / Double(rhs.numberOfAttempts)
+            rhsSuccessRate = Double(rhs.numberOfSuccess) / Double(rhs.numberOfAttempts)
         }
-        return lhsCorrectionRate == rhsCorrectionRate
+        return lhsSuccessRate == rhsSuccessRate
     }
 }

@@ -10,6 +10,7 @@
 		A0681CEA2637033D9CE1A959 /* Pods_JLPT_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1A8AEA15382692631B7DBC /* Pods_JLPT_testTests.framework */; };
 		A4216FA7BEFB5783CA560DB4 /* Pods_JLPT_test_JLPT_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EFBD10FE9D35704B0CEF24 /* Pods_JLPT_test_JLPT_testUITests.framework */; };
 		CCBCF6D917D6CBC44DEFF4C3 /* Pods_JLPT_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E9A113296FE632B7D620DB /* Pods_JLPT_test.framework */; };
+		E417EF6D268CA2F400DB909F /* Tmp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417EF6C268CA2F400DB909F /* Tmp.swift */; };
 		E4329CB32650A7D1005FD459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329CB22650A7D1005FD459 /* AppDelegate.swift */; };
 		E4329CB52650A7D1005FD459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329CB42650A7D1005FD459 /* SceneDelegate.swift */; };
 		E4329CCA2650A7D5005FD459 /* JLPT_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329CC92650A7D5005FD459 /* JLPT_testTests.swift */; };
@@ -129,6 +130,7 @@
 		C43AF1EF5F4A6005945BEE77 /* Pods-JLPT test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPT test.debug.xcconfig"; path = "Target Support Files/Pods-JLPT test/Pods-JLPT test.debug.xcconfig"; sourceTree = "<group>"; };
 		CF8D8B5CA7293E0E735287F2 /* Pods-JLPT testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPT testTests.release.xcconfig"; path = "Target Support Files/Pods-JLPT testTests/Pods-JLPT testTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0E9A113296FE632B7D620DB /* Pods_JLPT_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLPT_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E417EF6C268CA2F400DB909F /* Tmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tmp.swift; sourceTree = "<group>"; };
 		E4329CAF2650A7D1005FD459 /* JLPT test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JLPT test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4329CB22650A7D1005FD459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4329CB42650A7D1005FD459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 				E4363CEC265290150003A26B /* VocabDatabase.swift */,
 				E4363CC1265148C30003A26B /* QuizKanjiDatabase.swift */,
 				E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */,
+				E417EF6C268CA2F400DB909F /* Tmp.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -995,6 +998,7 @@
 				E4329D872650A89A005FD459 /* OptionEntryDetailViewController.swift in Sources */,
 				E4329D642650A881005FD459 /* CardImageTitleSubtitleButton.swift in Sources */,
 				E4329D702650A881005FD459 /* CheckBox.swift in Sources */,
+				E417EF6D268CA2F400DB909F /* Tmp.swift in Sources */,
 				E4329D4F2650A881005FD459 /* LabelDetailCell.swift in Sources */,
 				E4FF0432265A760A001A5D9F /* QuizGrammarDatabase.swift in Sources */,
 			);

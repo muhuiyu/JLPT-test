@@ -15,7 +15,7 @@ struct QuizEntry {
     let question: String
     let options: [OptionEntry]
     
-    init?(document: DocumentSnapshot) {
+    init?(document: DocumentSnapshot, isOptionsShuffled: Bool = false) {
         self.id = document.documentID
         guard
             let data = document.data(),
@@ -39,6 +39,7 @@ struct QuizEntry {
             else { return nil }
             options.append(OptionEntry(value: value, linkedEntryId: optionReferenceID, isAnswer: isAnswer))
         }
+        if isOptionsShuffled { options.shuffle() }
         self.options = options
     }
     init(id: String, type: QuizType, level: QuizLevel, question: String, options: [OptionEntry]) {
@@ -71,6 +72,7 @@ enum QuizLevel: String {
     case n3 = "n3"
     case n4 = "n4"
     case n5 = "n5"
+    case all = "all"
 }
 enum QuizType: String {
     case kanji = "kanji"

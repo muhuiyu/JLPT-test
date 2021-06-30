@@ -16,7 +16,7 @@ class HomeViewController: ViewController {
     private let startButton = TextButton(buttonType: .primary)
     
     private var configurationItems: [ConfigurationItemEntry] = [
-        ConfigurationItemEntry(label: "Level", value: "N1"),
+        ConfigurationItemEntry(label: "Level", value: "All"),
         ConfigurationItemEntry(label: "# of Questions", value: "10"),
         ConfigurationItemEntry(label: "Type", value: "Grammar")
     ]
@@ -59,9 +59,9 @@ extension HomeViewController {
             let cell = tableView.cellForRow(at: IndexPath(row: i, section: 0))
             let value = cell?.detailTextLabel?.text?.lowercased()
             switch i {
-            case 0: level = QuizLevel.init(rawValue: value ?? "") ?? .n1
+            case 0: level = QuizLevel.init(rawValue: value?.lowercased() ?? "") ?? .n1
             case 1: numberOfQuestions = Int(value ?? "10") ?? 10
-            case 2: type = QuizType.init(rawValue: value ?? "") ?? .grammar
+            case 2: type = QuizType.init(rawValue: value?.lowercased() ?? "") ?? .grammar
             default: continue
             }
         }
@@ -140,7 +140,7 @@ extension HomeViewController: UITableViewDelegate {
             alert = UIAlertController(title: "Choose level", message: "", preferredStyle: .actionSheet)
             
 //            let levels: [String] = ["N1", "N2", "N3", "N4", "N5"]
-            let levels: [String] = ["N1"]
+            let levels: [String] = ["N1", "All"]
             for level in levels {
                 alert.addAction(UIAlertAction(title: level, style: .default, handler: { action in
                     guard let title = action.title else { return }

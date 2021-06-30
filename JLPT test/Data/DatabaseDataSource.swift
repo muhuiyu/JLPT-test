@@ -98,15 +98,17 @@ extension DatabaseDataSource {
     }
     private func fetchUserStats(atLevel level: QuizLevel, withType type: QuizType, callback: @escaping (_ quizIDs: [String], _ error: Error?) -> Void) {
         guard let user = Auth.auth().currentUser else { return callback([], FirebaseError.userMissing) }
-        let ref = Firestore.firestore().collection(CollectionName.userQuizStats)
+        var ref = Firestore.firestore().collection(CollectionName.userQuizStats).whereField("userID", isEqualTo: user.uid).whereField("type", isEqualTo: type.rawValue)
+
+        if level != .all { ref = ref.whereField("level", isEqualTo: level.rawValue) }
         
-        ref.whereField("userID", isEqualTo: user.uid).whereField("level", isEqualTo: level.rawValue).whereField("type", isEqualTo: type.rawValue).getDocuments { (snapshot, error) in
+        ref.getDocuments { (snapshot, error) in
             if let error = error {
                 return callback([], error)
             }
             guard let snapshot = snapshot else { return callback([], FirebaseError.snapshotMissing) }
             if snapshot.documentChanges.count == 0 { return callback([], nil) }
-            
+
             var quizStatsRawData = [UserStatsEntry]()
             for change in snapshot.documentChanges {
                 if change.type == .added {
@@ -123,12 +125,16 @@ extension DatabaseDataSource {
                                                            numberOfSuccess: numberOfSuccess))
                 }
             }
-            quizStatsRawData.shuffle()
-            print(quizStatsRawData)
             
-            var quizIDs = [String]()
-            for quiz in quizStatsRawData { quizIDs.append(quiz.quizID) }
-            return callback(quizIDs, nil)
+            if Bool.random() == true { quizStatsRawData.sort() }    // 50% will return quizzes that user answered wrongly
+            else { quizStatsRawData.shuffle() }
+            
+            var ids = [String]()
+            for stat in quizStatsRawData {
+                print(stat.quizID, ": ", stat.printSuccessRate())
+                ids.append(stat.quizID)
+            }
+            return callback(ids, nil)
         }
     }
 }
@@ -165,9 +171,11 @@ extension DatabaseDataSource {
 // MARK: - Fetch Quiz
 extension DatabaseDataSource {
     private func fetchQuizIDs(atLevel level: QuizLevel, withType type: QuizType, callback: @escaping (_ data: [String], _ error: Error?) -> Void) {
+        var ref = Firestore.firestore().collection(CollectionName.quizzes).whereField("type", isEqualTo: type.rawValue)
+
+        if level != .all { ref = ref.whereField("level", isEqualTo: level.rawValue) }
         
-        let ref = Firestore.firestore().collection(CollectionName.quizzes)
-        ref.whereField("level", isEqualTo: level.rawValue).whereField("type", isEqualTo: type.rawValue).getDocuments { (snapshot, error) in
+        ref.getDocuments { (snapshot, error) in
             if let error = error {
                 return callback([], error)
             }
@@ -176,6 +184,13 @@ extension DatabaseDataSource {
             var quizIDs = [String]()
             for change in snapshot.documentChanges {
                 if change.type == .added {
+                    
+                    guard
+                        let data = change.document.data() as? [String: Any],
+                        let question = data["question"] as? String
+                    else { return callback([], FirebaseError.dataKeyMissing) }
+                    print(change.document.documentID + ": " + question)
+                    
                     quizIDs.append(change.document.documentID)
                 }
             }
@@ -184,15 +199,16 @@ extension DatabaseDataSource {
     }
     private func selectQuizIdToSet(answeredList answeredQuizIDs: [String], allList allQuizIDs: [String], returnQuestions number: Int) -> [String] {
         var results = [String]()
-        var answeredQuizIDsShuffled: [String] = answeredQuizIDs.shuffled()
+        var answeredQuizIDsData: [String] = answeredQuizIDs
+        
         if answeredQuizIDs.count > number/2 {               // user answer more than half
             for _ in 0..<number/2 {
-                results.append(answeredQuizIDsShuffled[0])
-                answeredQuizIDsShuffled.removeFirst()
+                results.append(answeredQuizIDsData[0])
+                answeredQuizIDsData.removeFirst()
             }
         }
         else {
-            for id in answeredQuizIDsShuffled { results.append(id) }
+            for id in answeredQuizIDsData { results.append(id) }
         }
         for id in allQuizIDs.shuffled() {
             if results.count == number { break }
@@ -203,8 +219,8 @@ extension DatabaseDataSource {
         else {
             let currentIndex = results.count - 1
             for _ in currentIndex..<number {
-                results.append(answeredQuizIDsShuffled[0])
-                answeredQuizIDsShuffled.removeFirst()
+                results.append(answeredQuizIDsData[0])
+                answeredQuizIDsData.removeFirst()
             }
             return results
         }
@@ -232,7 +248,7 @@ extension DatabaseDataSource {
                 guard let snapshot = snapshot else { return callback([], FirebaseError.snapshotMissing) }
                 for change in snapshot.documentChanges {
                     if change.type == .added {
-                        guard let quizEntry = QuizEntry(document: change.document) else { continue }
+                        guard let quizEntry = QuizEntry(document: change.document, isOptionsShuffled: true) else { continue }
                         results.append(quizEntry)
                     }
                 }
@@ -247,7 +263,8 @@ extension DatabaseDataSource {
     }
     func generateQuizSet(atLevel level: QuizLevel, withType type: QuizType, containQuestions number: Int, callback: @escaping (_ data: [QuizEntry], _ error: Error?) -> Void) {
         // get user stats
-        self.fetchUserStats(atLevel: level, withType: type) { (answeredQuizIDs, error) in
+        
+        self.fetchUserStats(atLevel: level, withType: type) { answeredQuizIDs, error in
             if let error = error { return callback([], error) }
             
             self.fetchQuizIDs(atLevel: level, withType: type) { (allQuizIDs, error) in
