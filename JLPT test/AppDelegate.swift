@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-//        let database = DatabaseDataSource()
+        let database = DatabaseDataSource()
 //        let updatedGrammarIds: [String] = [
 //        ]
 //        let updatedVocabIds: [String] = [

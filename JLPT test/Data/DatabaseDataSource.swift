@@ -465,9 +465,11 @@ extension DatabaseDataSource {
         let dispatchGroup = DispatchGroup()
         for quizData in content {
             dispatchGroup.enter()
-            quizCollectionRef.document().setData(quizData) { error in
+            
+            let newRef = quizCollectionRef.document()
+            newRef.setData(quizData) { error in
                 if let error = error { return callback(error) }
-                print(quizData["question"])
+                print(newRef.documentID, ": ",  quizData["question"] ?? "")
                 dispatchGroup.leave()
             }
         }
