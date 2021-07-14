@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CustomTextFieldDelegate: class {
+protocol CustomTextFieldDelegate: AnyObject {
     func customTextFieldDidFillText(_ view: CustomTextField)
     func customTextFieldDidClearText(_ view: CustomTextField)
 }

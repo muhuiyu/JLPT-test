@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol EditableTitleValueCellDelgate: class {
+protocol EditableTitleValueCellDelgate: AnyObject {
     func requestChangeLabel(_ cell: EditableTitleValueCell)
     func requestChangeValue(_ cell: EditableTitleValueCell, newValue: String)
 }

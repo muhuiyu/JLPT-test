@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DatePickerCellDelegate: class {
+protocol DatePickerCellDelegate: AnyObject {
     func selectedValueChanged(_ cell: DatePickerCell, changeValueTo value: Date)
 }
 

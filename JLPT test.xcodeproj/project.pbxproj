@@ -90,6 +90,8 @@
 		E4363D032652CB7B0003A26B /* RelatedGrammarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D022652CB7B0003A26B /* RelatedGrammarItem.swift */; };
 		E4363D47265327CD0003A26B /* DatabaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D46265327CD0003A26B /* DatabaseDataSource.swift */; };
 		E4363D4F2653ABDD0003A26B /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4363D4E2653ABDD0003A26B /* BookmarkViewController.swift */; };
+		E44DA1F5269D1ED500AE4B66 /* correct.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E44DA1F4269D1ECF00AE4B66 /* correct.m4a */; };
+		E44DA1F6269D1ED700AE4B66 /* wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E44DA1F3269D1ECF00AE4B66 /* wrong.m4a */; };
 		E464A89B2658A7C8006529CC /* UserStatsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A89A2658A7C8006529CC /* UserStatsEntry.swift */; };
 		E464A8DF2658E902006529CC /* Combine+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A8DD2658E902006529CC /* Combine+Utils.swift */; };
 		E464A8E02658E902006529CC /* Firestore+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464A8DE2658E902006529CC /* Firestore+Combine.swift */; };
@@ -219,6 +221,8 @@
 		E4363D242653263F0003A26B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4363D46265327CD0003A26B /* DatabaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseDataSource.swift; sourceTree = "<group>"; };
 		E4363D4E2653ABDD0003A26B /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		E44DA1F3269D1ECF00AE4B66 /* wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.m4a; sourceTree = "<group>"; };
+		E44DA1F4269D1ECF00AE4B66 /* correct.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = correct.m4a; sourceTree = "<group>"; };
 		E464A89A2658A7C8006529CC /* UserStatsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsEntry.swift; sourceTree = "<group>"; };
 		E464A8DD2658E902006529CC /* Combine+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Combine+Utils.swift"; sourceTree = "<group>"; };
 		E464A8DE2658E902006529CC /* Firestore+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firestore+Combine.swift"; sourceTree = "<group>"; };
@@ -340,6 +344,7 @@
 		E4329CEF2650A863005FD459 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E44DA1F2269D1EC100AE4B66 /* Audio */,
 				E4329CFE2650A880005FD459 /* Controllers */,
 				E4329D0A2650A880005FD459 /* Entities */,
 				E4329CF52650A880005FD459 /* Extensions */,
@@ -617,6 +622,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E44DA1F2269D1EC100AE4B66 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E44DA1F4269D1ECF00AE4B66 /* correct.m4a */,
+				E44DA1F3269D1ECF00AE4B66 /* wrong.m4a */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		E473A8FE2654186100100DEB /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,7 +766,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46B8A7D265530A900DC26BF /* Assets.xcassets in Resources */,
+				E44DA1F5269D1ED500AE4B66 /* correct.m4a in Resources */,
 				E46B8A7E265530A900DC26BF /* LaunchScreen.storyboard in Resources */,
+				E44DA1F6269D1ED700AE4B66 /* wrong.m4a in Resources */,
 				E46B8A7F265530A900DC26BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

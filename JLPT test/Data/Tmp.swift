@@ -10,7 +10,6 @@
 //2x9FnYFElSrBzGiJ4V7g: このようなすばらしい賞をいただき、光栄（　　）でございます。
 //3nvk1ExdO1BwQqi7FwTM: たとえアルバイト（　　）、給料をもらって仕事する以上は責任が生じるものだ。
 //5qOFnhmUXhvqB7HfawAy: どんなに値段が（　　）、安全性に疑問のある食品は購入を控えるべきだ。
-//5vWw4dZP5QNShwD8a6PN: インターネットの進化はとどまるところを（　　）。
 //60lE4yhoAQAYIun2IyFU: 私たちが多少（　　）地域の皆様のお役に立てば、幸いに思います
 //6EYifkC4OvnLTOkSFy6T: 彼は我が校（　　）秀才で、成績はいつもトップだ。
 //6lLPFFYW1mMTEMDYrSZf: その村の少数民族に（　　）話を探しているならこの本がおすすめですよ。
@@ -42,7 +41,6 @@
 //Jvb0sMsf95Pb6hMVRYkr: どんなに美人（　　）、失恋の経験の一つや二つあるものです。
 //LF9AdGflwFxrYl6zgiuQ: そのランナーは（　　）休み（　　）休みを繰り返しながらも、ついに完走した。
 //LTTy6IcHssiVGPcUBZr4: 理由（　　）、暴力は許されることではありません。
-//Letkh8h7QiliJg1ozv04: 今年は姉の出産、弟の就職、そして私の結婚と、我が家にとってめでたいこと（　　）の一年だった。
 //MH0XdnPcWbaHim42hYAg: 彼は自分の夢を実現（　　）、家族を犠牲にした。
 //Mcxehj2TXANNDQY6g3VO: あの女優はスキャンダル（　　）、着実にトップスターへの道を歩んでいる。
 //NcBLR1FY24YFWB5r6zUi: 危機管理には前から問題があったのだ。今回のミスは（　　）起きたと言えよう。
@@ -106,7 +104,6 @@
 //u21lFbQlh86flvlyjPMa: オリンピックの金メダリストともあろう人が（　　）なんて！
 //uYtF9ALCkZSu6iUyQkTN: 寝ても覚めてもあの人のことばかり考えている。これが恋（　　）。
 //wpmxhzoAHSoOuMDYZSK7: 誰も立候補する者がいないなら、誰か数人推薦してみんなで投票（　　）だ。
-//x0gExBV6oW09rsABN9i3: 豪華客船で世界一周の旅に出るなんて、うらやましい（　　　）。
 //xhFQUeBQeRe0rdizbVQm: 尊敬する教授にお会いして、著書にサインまでいただけるとは、感激の（　　）だ。
 //y5T4v1vel79TqvY4bFTR: 御社を信用（　　）このような企画をご提案できるわけです。
 //yTdVCD4DJqW6IGmc3CqQ: 先生や仲間の励ましが（　　）こそ大変な勉強も頑張れるというものだ。

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol RelatedGrammarsViewDelegate: class {
+protocol RelatedGrammarsViewDelegate: AnyObject {
     func relatedGrammarsView(_ view: RelatedGrammarsView, didTapInGrammar id: String)
 }
 

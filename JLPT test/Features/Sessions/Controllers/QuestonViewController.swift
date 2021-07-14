@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol QuestonViewControllerDelegate: AnyObject {
     func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry)
@@ -17,6 +18,8 @@ class QuestonViewController: ViewController {
     private let questionLabel = UILabel()
     private let tableView = UITableView()
     private let nextButton = TextButton(frame: .zero, buttonType: .primary)
+    
+    private var answerSoundEffect: AVAudioPlayer?
     
     var mode: SessionMode {
         didSet {
@@ -135,15 +138,34 @@ extension QuestonViewController: UITableViewDataSource, UITableViewDelegate {
                 guard let cell = tableView.cellForRow(at: indexPath) as? OptionCell else { return }
                 cell.status = .correct
                 self.isUserAnsweredCorrectly = true
+                
+                let path = Bundle.main.path(forResource: "correct.m4a", ofType: nil)!
+                let url = URL(fileURLWithPath: path)
+                do {
+                    answerSoundEffect = try AVAudioPlayer(contentsOf: url)
+                    answerSoundEffect?.play()
+                } catch {
+                    print(error)
+                }
             }
             else {
-                guard let selectedCell = tableView.cellForRow(at: indexPath) as? OptionCell else { return }
+                guard
+                    let selectedCell = tableView.cellForRow(at: indexPath) as? OptionCell,
+                    let answerCell = tableView.cellForRow(at: IndexPath(row: entry.getAnswerIndex(), section: 0)) as? OptionCell
+                else { return }
+                
                 selectedCell.status = .wrong
-                
-                guard let answerCell = tableView.cellForRow(at: IndexPath(row: entry.getAnswerIndex(), section: 0)) as? OptionCell else { return }
                 answerCell.status = .correct
-                
                 self.isUserAnsweredCorrectly = false
+                
+                let path = Bundle.main.path(forResource: "wrong.m4a", ofType: nil)!
+                let url = URL(fileURLWithPath: path)
+                do {
+                    answerSoundEffect = try AVAudioPlayer(contentsOf: url)
+                    answerSoundEffect?.play()
+                } catch {
+                    print(error)
+                }
             }
             self.mode = .review
         default: return
