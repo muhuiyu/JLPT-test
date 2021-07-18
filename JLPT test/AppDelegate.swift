@@ -24,10 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let database = DatabaseDataSource()
 //        let updatedGrammarIds: [String] = [
-//          
 //        ]
 //        let updatedVocabIds: [String] = [
-//        
 //        ]
 //        for id in updatedGrammarIds {
 //            guard let grammar = grammarDatabase[id] else { continue }

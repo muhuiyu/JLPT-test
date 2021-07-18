@@ -7,9 +7,177 @@
 
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
 ]
 
 let n1GrammarQuizDatabase: [QuizEntry] = [
+    QuizEntry(id: "nU3ELh1DBfErohl3oV0N", type: .grammar, level: .n1,
+              question: "台風の影響で電車が止まったら、仕方がない。歩いて帰る（　　）。",
+              options: [
+                OptionEntry(value: "までのことだ", linkedEntryId: "jlptn1-grammar-madeda", isAnswer: true),
+                OptionEntry(value: "までもない", linkedEntryId: "jlptn1-grammar-mademonai", isAnswer: false),
+                OptionEntry(value: "ことはない", linkedEntryId: "jlptn3-grammar-kotowanai", isAnswer: false),
+                OptionEntry(value: "ばかりだ", linkedEntryId: "jlptn4-grammar-bakari", isAnswer: false)
+              ]),
+    QuizEntry(id: "broK86lPuEaIijNffNyP", type: .grammar, level: .n1,
+              question: "九月に入ってようやく涼しくなったかと（　　）、まだ三十度を超す日が続いている。",
+              options: [
+                OptionEntry(value: "思うものの", linkedEntryId: "jlptn2-grammar-monono", isAnswer: false),
+                OptionEntry(value: "思いながら", linkedEntryId: "jlptn2-grammar-nagara", isAnswer: false),
+                OptionEntry(value: "思いきや", linkedEntryId: "jlptn1-grammar-katoomoikiya", isAnswer: true),
+                OptionEntry(value: "思いつつ", linkedEntryId: "jlptn2-grammar-tsutsu-1", isAnswer: false)
+              ]),
+    QuizEntry(id: "OSnTQ1K2ksXvjUymAaoq", type: .grammar, level: .n1,
+              question: "忙しかった（　　）電話の一本ぐらい書けられたはずだ。",
+              options: [
+                OptionEntry(value: "とはいえ", linkedEntryId: "jlptn1-grammar-towaie", isAnswer: true),
+                OptionEntry(value: "ところを", linkedEntryId: "jlptn1-grammar-tokorowo", isAnswer: false),
+                OptionEntry(value: "ながらも", linkedEntryId: "jlptn2-grammar-nagara", isAnswer: false),
+                OptionEntry(value: "こととて", linkedEntryId: "jlptn1-grammar-kototote", isAnswer: false)
+              ]),
+    QuizEntry(id: "xqhbIbgvKw6UbBIH8hp5", type: .grammar, level: .n1,
+              question: "ベッドの下に本を置いたままにして置いたら、ほこり（　　）になっていた。",
+              options: [
+                OptionEntry(value: "まみれ", linkedEntryId: "jlptn1-grammar-mamire", isAnswer: true),
+                OptionEntry(value: "ずくめ", linkedEntryId: "jlptn1-grammar-zukume", isAnswer: false),
+                OptionEntry(value: "がてら", linkedEntryId: "jlptn1-grammar-gateara", isAnswer: false),
+                OptionEntry(value: "がち", linkedEntryId: "jlptn3-grammar-gachi", isAnswer: false)
+              ]),
+    QuizEntry(id: "a68918JTWsyZDOLrv0Uf", type: .grammar, level: .n1,
+              question: "この歌手は歌唱力（　　）、話も面白いので、テレビ番組の人気者である。",
+              options: [
+                OptionEntry(value: "いかんによらず", linkedEntryId: "jlptn1-grammar-ikannikakawarazu", isAnswer: false),
+                OptionEntry(value: "もさることながら", linkedEntryId: "jlptn1-grammar-mosarukotonagara", isAnswer: true),
+                OptionEntry(value: "をものともせずに", linkedEntryId: "jlptn1-grammar-womonotomosezu", isAnswer: false),
+                OptionEntry(value: "はいざしらず", linkedEntryId: "jlptn1-grammar-naraizashirazu", isAnswer: false)
+              ]),
+    QuizEntry(id: "RTgfJB3qWByTQ5Q0kIho", type: .grammar, level: .n1,
+              question: "この地方では四季それぞれの景色は楽しめますが、なんと（　　）紅葉の頃が最高です。",
+              options: [
+                OptionEntry(value: "いえば", linkedEntryId: "jlptn3-grammar-toieba", isAnswer: false),
+                OptionEntry(value: "しても", linkedEntryId: "jlptn3-grammar-toshitemo", isAnswer: false),
+                OptionEntry(value: "いっても", linkedEntryId: "jlptn3-grammar-toittemo", isAnswer: true),
+                OptionEntry(value: "なれば", linkedEntryId: "jlptn2-grammar-tonaruto", isAnswer: false)
+              ]),
+    QuizEntry(id: "FMddtCPGLnOC2P71UMPR", type: .vocab, level: .n1,
+              question: "この地方では【四季】それぞれの景色は楽しめますが、なんといっても紅葉の頃が最高です。",
+              options: [
+                OptionEntry(value: "しょうき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しせき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しき", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しぎ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "opS3mq8WAEP08GvhksSp", type: .vocab, level: .n1,
+              question: "この地方では四季それぞれの【景色】は楽しめますが、なんといっても紅葉の頃が最高です。",
+              options: [
+                OptionEntry(value: "けいしき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けいしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けしき", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しょうしき", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "bkpWrXBcrQMdD7Xioi0r", type: .vocab, level: .n1,
+              question: "この地方では四季それぞれの景色は楽しめますが、なんといっても【紅葉】の頃が最高です。",
+              options: [
+                OptionEntry(value: "こうば", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうは", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうよう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "きゅうば", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "7lUC3xNUI9k342bhm36V", type: .grammar, level: .n1,
+              question: "（　　）あの方のお父様は高名な学者ということですよ。",
+              options: [
+                OptionEntry(value: "なんとか", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "なんでも", linkedEntryId: "jlptn0-grammar-nandemo", isAnswer: true),
+                OptionEntry(value: "どうやら", linkedEntryId: "jlptn0-grammar-douyara", isAnswer: false),
+                OptionEntry(value: "どうでも", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "I7sKwcdIbCs83bbzVQov", type: .grammar, level: .n1,
+              question: "就職の報告（　　）、久しぶりに祖父母の顔を見に行った。",
+              options: [
+                OptionEntry(value: "ながら", linkedEntryId: "jlptn2-grammar-nagara", isAnswer: false),
+                OptionEntry(value: "のかたわら", linkedEntryId: "jlptn1-grammar-katawara", isAnswer: false),
+                OptionEntry(value: "かたがた", linkedEntryId: "jlptn1-grammar-katagata", isAnswer: true),
+                OptionEntry(value: "の一方で", linkedEntryId: "jlptn2-grammar-ippode", isAnswer: false)
+              ]),
+    QuizEntry(id: "OWoCTqRr1LqRcom2ILum", type: .vocab, level: .n1,
+              question: "【就職】の報告かたがた、久しぶりに祖父母の顔を見に行った。",
+              options: [
+                OptionEntry(value: "じゅうしょく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きょうしょく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうしょく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "きゅうしょく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "xyMozzkZYHhdtVJUmPfZ", type: .grammar, level: .n1,
+              question: "この映画は本当に面白くて、一瞬（　　）画面から目が離せなかった。",
+              options: [
+                OptionEntry(value: "ならでは", linkedEntryId: "jlptn1-grammar-naradewa", isAnswer: false),
+                OptionEntry(value: "たりとも", linkedEntryId: "jlptn1-grammar-taritomo-nai", isAnswer: true),
+                OptionEntry(value: "なくしては", linkedEntryId: "jlptn1-grammar-nakushitewa", isAnswer: false),
+                OptionEntry(value: "ともなく", linkedEntryId: "jlptn1-grammar-tomonaku", isAnswer: false)
+              ]),
+    QuizEntry(id: "EgcFd7k5EaDmRhrRB31M", type: .vocab, level: .n1,
+              question: "この映画は本当に面白くて、一瞬たりとも【画面】から目が離せなかった。",
+              options: [
+                OptionEntry(value: "かめん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "がめん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "かいめん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かいめい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "tOnBKxBu4HD7c0nTEowK", type: .vocab, level: .n1,
+              question: "この映画は本当に面白くて、【一瞬】たりとも画面から目が離せなかった。",
+              options: [
+                OptionEntry(value: "いちじゅん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いっしゅん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "いっじゅん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いっしょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "lmrnQFe03xa2EPmp1kKc", type: .grammar, level: .n1,
+              question: "仮に絵の才能がある（　　）、画家として成功する保証がない。",
+              options: [
+                OptionEntry(value: "といえば", linkedEntryId: "jlptn3-grammar-toieba", isAnswer: false),
+                OptionEntry(value: "と思いきや", linkedEntryId: "jlptn1-grammar-katoomoikiya", isAnswer: false),
+                OptionEntry(value: "というのは", linkedEntryId: "jlptn3-grammar-toiunowa", isAnswer: false),
+                OptionEntry(value: "としたところで", linkedEntryId: "jlptn1-grammar-nishitatte", isAnswer: true)
+              ]),
+    QuizEntry(id: "olvWcaGh6R2Jf4Rc5xAl", type: .vocab, level: .n1,
+              question: "【仮に】絵の才能があるとしたところで、画家として成功する保証がない。",
+              options: [
+                OptionEntry(value: "かに", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かなに", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かくに", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かりに", linkedEntryId: "vocab-karini", isAnswer: true)
+              ]),
+    QuizEntry(id: "olvWcaGh6R2Jf4Rc5xAl", type: .vocab, level: .n1,
+              question: "仮に絵の才能があるとしたところで、【画家】として成功する保証がない。",
+              options: [
+                OptionEntry(value: "えいか", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かか", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かいか", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "がか", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "JIXGTL9KU9sLZY0dZyYy", type: .vocab, level: .n1,
+              question: "仮に絵の才能があるとしたところで、画家として成功する【保証】がない。",
+              options: [
+                OptionEntry(value: "ほうしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ほうじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ほしょう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ほじょう", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "PoWOUr1vUOS2mUQxVoIG", type: .grammar, level: .n1,
               question: "自分の命を犠牲にしてまで多くの人を救ったあの男が英雄（　　）。",
               options: [
@@ -1402,7 +1570,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "より", linkedEntryId: "", isAnswer: true),
                 OptionEntry(value: "をもって", linkedEntryId: "jlptn1-grammar-womotte", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
+    QuizEntry(id: "Hc0DLal83L2q0f6yMy8c", type: .grammar, level: .n1,
               question: "現代の若者は誰しも（　　）社会的な不安を抱いている。",
               options: [
                 OptionEntry(value: "多くては少なくては", linkedEntryId: "jlptn1-grammar-tewa-tewa", isAnswer: false),
@@ -1410,7 +1578,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "多いが少ないが", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "多いと言わず少ないと言わず", linkedEntryId: "jlptn1-grammar-toiwazu", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
+    QuizEntry(id: "7XWI7QooAenkGnqj0jxW", type: .grammar, level: .n1,
               question: "パーティーでは、最高級のご馳走が並び、まさに贅沢の（　　）だった。",
               options: [
                 OptionEntry(value: "至り", linkedEntryId: "jlptn1-grammar-itari", isAnswer: false),
@@ -1418,15 +1586,15 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "最高", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "限り", linkedEntryId: "jlptn2-grammar-kagiri-2", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
+    QuizEntry(id: "MH0XdnPcWbaHim42hYAg", type: .grammar, level: .n1,
               question: "彼は自分の夢を実現（　　）、家族を犠牲にした。",
               options: [
                 OptionEntry(value: "させることとて", linkedEntryId: "jlptn1-grammar-kototote", isAnswer: false),
                 OptionEntry(value: "させんがために", linkedEntryId: "jlptn1-grammar-ngatameni", isAnswer: true),
                 OptionEntry(value: "させればこそ", linkedEntryId: "jlptn1-grammar-bakoso", isAnswer: false),
-                OptionEntry(value: "させたが最後", linkedEntryId: "", isAnswer: false)
+                OptionEntry(value: "させたが最後", linkedEntryId: "jlptn1-grammar-tarasaigo", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
+    QuizEntry(id: "Bba1uStpwyod4tlbczwk", type: .grammar, level: .n1,
               question: "なにぶん田舎の（　　）、大した料理もございませんが、どうぞ召し上がってください。",
               options: [
                 OptionEntry(value: "ことには", linkedEntryId: "jlptn2-grammar-kotoni", isAnswer: false),
@@ -1490,7 +1658,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "合格したからというもの", linkedEntryId: "jlptn1-grammar-tekaratoiumono", isAnswer: true),
                 OptionEntry(value: "合格してからでないと", linkedEntryId: "jlptn3-grammar-karadenaito", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
+    QuizEntry(id: "sud9BnaH4Y4kuSlOtj1L", type: .grammar, level: .n1,
               question: "被災した人々には、ただ物質面（　　）、精神面の援助も必要だ。",
               options: [
                 OptionEntry(value: "を通して", linkedEntryId: "jlptn3-grammar-tooshite", isAnswer: false),
@@ -1498,7 +1666,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "のみならず", linkedEntryId: "jlptn2-grammar-nominarazu", isAnswer: true),
                 OptionEntry(value: "ともなしに", linkedEntryId: "jlptn1-grammar-tomonaku", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
+    QuizEntry(id: "Y64PhJvLWmEU9PUUAEjq", type: .grammar, level: .n1,
               question: "散歩（　　）コンビニに寄ってくるけど、何か買ってくる物はある？",
               options: [
                 OptionEntry(value: "ながら", linkedEntryId: "jlptn2-grammar-nagara", isAnswer: false),

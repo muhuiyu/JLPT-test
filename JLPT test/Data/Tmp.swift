@@ -14,10 +14,8 @@
 //6EYifkC4OvnLTOkSFy6T: 彼は我が校（　　）秀才で、成績はいつもトップだ。
 //6lLPFFYW1mMTEMDYrSZf: その村の少数民族に（　　）話を探しているならこの本がおすすめですよ。
 //7OKEfE9B5pQDkWaZTNCR: クレーム処理時のトラブルは、会社の評判（　　）問題だ。
-//7XWI7QooAenkGnqj0jxW: パーティーでは、最高級のご馳走が並び、まさに贅沢の（　　）だった。
 //8PFpI6royTomJlPkG0C1: 姉はメールの着信音が（　　）、携帯をつかんで部屋から出て行った。
 //Ackl2pJw9wPD1nfmC5k6: 父と最後まで和解できなかったことを一生（　　）。
-//Bba1uStpwyod4tlbczwk: なにぶん田舎の（　　）、大した料理もございませんが、どうぞ召し上がってください。
 //Bcp2jPuLRLKaI1ElfFk9: 部屋が寒いなら、暖房を（　　）、厚着を（　　）しないと、風邪を引くよ。
 //Beiw5qrFKGJO58r11GOz: 彼はとても冷静なのだが、人からは消極的に見られる（　　）。
 //Bx0pWu8su3wtEs7wVLIK: 先日の酒の席での失敗以来、アルコールは一滴（　　）口にしていない。
@@ -30,7 +28,6 @@
 //EyWBmF7jLhNXvNwmIwOz: お祭りでは重さ４００キロ（　　）おみこしを大人１００名が交代でかつぎます。
 //F2OUcfqlB1X9fQLiPPup: この会社に入社すると、いやおうなしに英語の研修を（　　）。
 //FDj0bAcnnWTGHfbeNIC7: 上司を殴ってひどいけがを負わせた以上、彼は辞職（　　）だろう。
-//Hc0DLal83L2q0f6yMy8c: 現代の若者は誰しも（　　）社会的な不安を抱いている。
 //I17w9aUInfSuKma0dLm0: 忘年会シーズンに（　　）、暴飲暴食をしていると体を壊しちゃうよ。
 //I2L5so8ErU9hoDlqTpiP: 最近の映画には、映画館に足を運んで鑑賞する（　　）ものがないと父は嘆く。
 //ICiw5s9dMF9W8w9XzNHE: 出張帰りでお疲れ（　　）すみません。この書類に目を通していただけませんか。
@@ -41,7 +38,6 @@
 //Jvb0sMsf95Pb6hMVRYkr: どんなに美人（　　）、失恋の経験の一つや二つあるものです。
 //LF9AdGflwFxrYl6zgiuQ: そのランナーは（　　）休み（　　）休みを繰り返しながらも、ついに完走した。
 //LTTy6IcHssiVGPcUBZr4: 理由（　　）、暴力は許されることではありません。
-//MH0XdnPcWbaHim42hYAg: 彼は自分の夢を実現（　　）、家族を犠牲にした。
 //Mcxehj2TXANNDQY6g3VO: あの女優はスキャンダル（　　）、着実にトップスターへの道を歩んでいる。
 //NcBLR1FY24YFWB5r6zUi: 危機管理には前から問題があったのだ。今回のミスは（　　）起きたと言えよう。
 //NpEIVXivVk87dX6amcLb: 宴もたけなわではございますが、これ（　　）お開きとさせていただきます。
@@ -60,7 +56,6 @@
 //WTG7BzUcWnrtZAZeX8iu: けんちゃん、これ、美味しいから食べて（　　）。
 //XdAI29aycDVsdsedo0kQ: 桜並木のそばには、「枝を折る（　　）」と書かれたたて看板が並んでいる。
 //XobadIzooQ8bERDhNbij: 上司と確認しながら慎重に進めてほしい仕事を、彼女は自分の判断で勝手にやってしまう（　　）。
-//Y64PhJvLWmEU9PUUAEjq: 散歩（　　）コンビニに寄ってくるけど、何か買ってくる物はある？
 //YSrg4WrhsVyANDmFORbp: 担当者が不在の（　　）、事情が分からずご迷惑をおかけして申し訳ございません。
 //YaWBIrKoIbORwPEywdFF: このようなすばらしい賞をいただき、俳優として光栄の（　　）です。
 //YsLTVgyZKLKZ0C8GENa9: 逆転はもう無理だろうと（　　）、９回裏で満塁ホームランが出て同点に追いついた。

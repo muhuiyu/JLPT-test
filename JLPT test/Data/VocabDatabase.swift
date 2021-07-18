@@ -109,7 +109,7 @@ let vocabDatabase: [String: VocabEntry] = [
     "vocab-bonyari": VocabEntry(id: "vocab-bonyari", title: "ぼんやり", meaning: "１ 物の形や色などがはっきりせず、ぼやけて見えるさま。「島影がぼんやり（と）見える」\n２ 事柄の内容などがはっきりしないさま。「記憶がぼんやり（と）している」\n３ 元気がなく、気持ちが集中しないさま。「終日ぼんやり（と）過ごす」\n４ 気がきかず、間が抜けているさま。「ぼんやり（と）して手伝おうともしない」"),
     "vocab-nagameru": VocabEntry(id: "vocab-nagameru", title: "眺める（ながめる）", meaning: "１ 視野に入ってくるもの全体を見る。のんびりと遠くを見る。広く見渡す。「星を―・める」「田園風景を―・める」\n２ じっと見つめる。感情をこめて、つくづくと見る。「しげしげと人の顔を―・める」\n３ かたわらで成り行きを見る。静観する。「状況を―・める」\n４ 物思いにふけりながら、見るともなくぼんやり見る。「夕月夜のをかしきほどに出だし立てさせ給ひて、やがて―・めおはします」〈源・桐壺〉"),
     "vocab-kigaru": VocabEntry(id: "vocab-kigaru", title: "気軽（きがる）", meaning: "こだわったり面倒がったりしないで行動に出るさま。また、堅苦しくなくて、気がおけないさま。「気軽に引き受ける」「気軽な格好で出掛ける」"),
-//    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
+    "vocab-karini": VocabEntry(id: "vocab-karini", title: "仮に（かりに）", meaning: "１ 一時の間に合わせに物事をするさま。暫定的に。「仮に糊 (のり) で補強しておく」\n２ 仮定を表す。もし。「仮に僕が君だったらそうするだろう」"),
 //    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
 //    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
 //    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
