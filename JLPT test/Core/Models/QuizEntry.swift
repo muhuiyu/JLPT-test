@@ -15,7 +15,7 @@ struct QuizEntry {
     let question: String
     let options: [OptionEntry]
     
-    init?(document: DocumentSnapshot, isOptionsShuffled: Bool = false) {
+    init?(document: DocumentSnapshot, isOptionsShuffled: Bool = true) {
         self.id = document.documentID
         guard
             let data = document.data(),

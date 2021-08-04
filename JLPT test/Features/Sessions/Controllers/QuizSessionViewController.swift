@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol QuizSessionViewControllerDelegate: class {
+protocol QuizSessionViewControllerDelegate: AnyObject {
     func quizSessionViewControllerDidRequestDismiss(_ controller: QuizSessionViewController)
     func quizSessionViewController(_ controller: QuizSessionViewController, didFinishSession index: Int)
 }
