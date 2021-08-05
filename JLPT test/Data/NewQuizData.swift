@@ -1,0 +1,28 @@
+//
+//  NewQuizData.swift
+//  JLPT test
+//
+//  Created by Mu Yu on 5/8/21.
+//
+
+import UIKit
+
+// MARK: - New quiz update
+let newQuizUpdate: [QuizEntry] = [
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+]

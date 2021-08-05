@@ -99,6 +99,7 @@
 		E46B8A7F265530A900DC26BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4363D242653263F0003A26B /* GoogleService-Info.plist */; };
 		E46B8AB52655404200DC26BF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E46B8AB32655404200DC26BF /* DataModel.xcdatamodeld */; };
 		E473A9022654187A00100DEB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473A9012654187A00100DEB /* WelcomeViewController.swift */; };
+		E4E8C72426BB7C6B00082D4D /* NewQuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */; };
 		E4FF042826592315001A5D9F /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042726592315001A5D9F /* SpinnerView.swift */; };
 		E4FF042D26595D58001A5D9F /* BookmarkEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */; };
 		E4FF0432265A760A001A5D9F /* QuizGrammarDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */; };
@@ -226,6 +227,7 @@
 		E464A8DE2658E902006529CC /* Firestore+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firestore+Combine.swift"; sourceTree = "<group>"; };
 		E46B8AB42655404200DC26BF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E473A9012654187A00100DEB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuizData.swift; sourceTree = "<group>"; };
 		E4FF042726592315001A5D9F /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkEntry.swift; sourceTree = "<group>"; };
 		E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGrammarDatabase.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 				E4363CEC265290150003A26B /* VocabDatabase.swift */,
 				E4363CC1265148C30003A26B /* QuizKanjiDatabase.swift */,
 				E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */,
+				E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -997,6 +1000,7 @@
 				E4363CAF2650DA310003A26B /* GrammarDatabase.swift in Sources */,
 				E4329D3C2650A881005FD459 /* UIView+roundCorners.swift in Sources */,
 				E4329D6A2650A881005FD459 /* UIFont+Theme.swift in Sources */,
+				E4E8C72426BB7C6B00082D4D /* NewQuizData.swift in Sources */,
 				E4329D542650A881005FD459 /* TextViewCell.swift in Sources */,
 				E4363CD5265207CD0003A26B /* ExplanationItemExamplesView.swift in Sources */,
 				E4329D582650A881005FD459 /* LabelDetailWithDisclosureCell.swift in Sources */,
