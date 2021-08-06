@@ -24,11 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let database = DatabaseDataSource()
         let updatedGrammarIds: [String] = [
-            "jlptn0-grammar-do-domo",  "jlptn3-grammar-teirassyaru", "jlptn3-grammar-toshitara", "jlptn2-grammar-nishitewa", "jlptn1-grammar-nishite", "jlptn2-grammar-nikakawarazu", "jlptn2-grammar-nimokakawarazu", "jlptn2-grammar-towazu",
-            "jlptn1-grammar-toittaraariwashinai", "jlptn3-grammar-godesu"
+            "jlptn1-grammar-bakoso", "jlptn3-grammar-koso", "jlptn2-grammar-motonishite", "jlptn1-grammar-womotte",
+            "jlptn1-grammar-socchinokede", "jlptn4-grammar-bakari"
         ]
         let updatedVocabIds: [String] = [
-            
+            "vocab-mizukara"
         ]
         for id in updatedGrammarIds {
             guard let grammar = grammarDatabase[id] else { continue }

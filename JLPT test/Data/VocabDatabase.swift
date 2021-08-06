@@ -124,7 +124,7 @@ let vocabDatabase: [String: VocabEntry] = [
     "vocab-garami": VocabEntry(id: "vocab-garami", title: "絡み（がらみ）", meaning: "１ 年齢や値段を表す数詞に付いて、だいたいその見当、その前後であるという意を表す。「五十―の男」「千円―の品」\n２ 名詞に付いて、そのものをくるめて、それと一緒に、の意を表す。「袋―売る」「刀を取りて、鞘―うたんとす」〈甲陽軍鑑・二〇〉\n３ 名詞に付いて、それと密接に関連していることを表す。「派閥―の人事」"),
     "vocab-yoshimi": VocabEntry(id: "vocab-yoshimi", title: "好み / 誼み（よしみ）", meaning: "１ 親しいつきあい。また、その親しみ。交誼 (こうぎ) 。「―を結ぶ」\n２ 何らかの縁によるつながり。縁故。「昔の―で金を貸す」"),
     "vocab-nantoka": VocabEntry(id: "vocab-nantoka", title: "何とか（なんとか）", meaning: "［副］(スル)\n１ あれこれ工夫や努力をするさま。どうにか。「そこを何とか頼む」「何とかしよう」\n２ 完全・十分とはいえないが、条件・要求などに一応かなうさま。かろうじて。どうにか。「何とか暮らしていける」「何とか間に合う」\n\n［連語］\n１ 名称・内容などのはっきりしないものをさす。「銀座の何とかという店」「何とか言ってみろよ」\n２ あるものの名称などをはっきり言わないで、それをさす。「何とかの一つおぼえ」\n３ （「…とか何とか」の形で）それを含めて、あれこれ。「病気だとか何とか言って休めばよい」"),
-//    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
+    "vocab-mizukara": VocabEntry(id: "vocab-mizukara", title: "自ら（みずから）", meaning: "一人称の人代名詞。 多く、身分の高い女性が自分をさしていう。 わたくし。"),
 //    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
 //    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),
 //    "vocab-<#String#>": VocabEntry(id: "vocab-<#T##String#>", title: "<#T##String#>", meaning: "<#T##String#>"),

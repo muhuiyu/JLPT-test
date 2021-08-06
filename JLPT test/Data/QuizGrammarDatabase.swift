@@ -14,6 +14,87 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "といったこと", linkedEntryId: "jlptn2-grammar-toitta", isAnswer: false),
                 OptionEntry(value: "といったわけ", linkedEntryId: "jlptn3-grammar-wakeda", isAnswer: false)
               ]),
+    QuizEntry(id: "6f54dpS9kgQtXvFq5YsV", type: .grammar, level: .n1,
+              question: "夫の仕事が成功（　　）、私は彼を支え続けるつもりです。",
+              options: [
+                OptionEntry(value: "しようにも", linkedEntryId: "jlptn1-grammar-younimo-nai", isAnswer: false),
+                OptionEntry(value: "しようとしまいと", linkedEntryId: "jlptn1-grammar-youga-maiga", isAnswer: true),
+                OptionEntry(value: "するとしたところで", linkedEntryId: "jlptn1-grammar-nishitatte", isAnswer: false),
+                OptionEntry(value: "するといえども", linkedEntryId: "jlptn1-grammar-toiedomo", isAnswer: false)
+              ]),
+    QuizEntry(id: "GdPnf53M84xDHDtuXxP1", type: .vocab, level: .n1,
+              question: "地元住民の反対をよそに、【自治体】はゴミ処理場の建設を開始した。",
+              options: [
+                OptionEntry(value: "じじたい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じじつたい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じせいたい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じちたい", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "nqXQ0o2rzjL1yyE1sLj9", type: .grammar, level: .n1,
+              question: "地元住民の反対を（　　）、自治体はゴミ処理場の建設を開始した。",
+              options: [
+                OptionEntry(value: "限りに", linkedEntryId: "jlptn1-grammar-wokagirini", isAnswer: false),
+                OptionEntry(value: "もとに", linkedEntryId: "jlptn2-grammar-motonishite", isAnswer: false),
+                OptionEntry(value: "さかいに", linkedEntryId: "jlptn1-grammar-sakaini", isAnswer: false),
+                OptionEntry(value: "よそに", linkedEntryId: "jlptn1-grammar-woyosoni", isAnswer: true)
+              ]),
+    QuizEntry(id: "Z0IzlmRrIov6pGDvr60y", type: .grammar, level: .n1,
+              question: "もうすぐ試験だというのに、息子は勉強もそっちのけで（　　）。",
+              options: [
+                OptionEntry(value: "遊んでばかりいる", linkedEntryId: "jlptn1-grammar-socchinokede", isAnswer: true),
+                OptionEntry(value: "遊ぶしかしない", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "遊んでだけいる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "遊ぶばかりだ", linkedEntryId: "", isAnswer: false)
+              ]),
+
+    QuizEntry(id: "CzXTFJa5nAUwgcKgFViu", type: .grammar, level: .n1,
+              question: "二酸化炭素の削減は、世界各国の協力（　　）実現できない。",
+              options: [
+                OptionEntry(value: "ならでは", linkedEntryId: "jlptn1-grammar-naradewa", isAnswer: false),
+                OptionEntry(value: "といえども", linkedEntryId: "jlptn1-grammar-toiedomo", isAnswer: false),
+                OptionEntry(value: "なくしては", linkedEntryId: "jlptn1-grammar-nakushitewa", isAnswer: true),
+                OptionEntry(value: "ゆえに", linkedEntryId: "jlptn1-grammar-yueni", isAnswer: false)
+              ]),
+    QuizEntry(id: "MoYsM7zvt1Z4Uk3ukAJ4", type: .vocab, level: .n1,
+              question: "二酸化炭素の【削減】は、世界各国の協力なくしては実現できない。",
+              options: [
+                OptionEntry(value: "さくけい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さくけん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さくげん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "さいげん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "iVITbiac7qDfa8xPbw7M", type: .vocab, level: .n1,
+              question: "そのことなら、私ども皆よく存じておりますので、ご心配には【及び】ません。",
+              options: [
+                OptionEntry(value: "よび", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "および", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "おやび", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おび", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "UBiBSMPkukuVofudr3fw", type: .grammar, level: .n1,
+              question: "ここまで問題が大きくなった以上は、社長自らが事情を説明し、謝罪せず（　 ）。",
+              options: [
+                OptionEntry(value: "にはおかないだろう", linkedEntryId: "jlptn1-grammar-zuniwaokanai", isAnswer: false),
+                OptionEntry(value: "には当たらないだろう", linkedEntryId: "jlptn1-grammar-niwaataranai", isAnswer: false),
+                OptionEntry(value: "にはすまないだろう", linkedEntryId: "jlptn1-grammar-zuniwasumanai", isAnswer: true),
+                OptionEntry(value: "にすんだだろう", linkedEntryId: "jlptn1-grammar-tesumukotodewanai", isAnswer: false)
+              ]),
+    QuizEntry(id: "fLhSHgpIZZI4H2c5WGG0", type: .vocab, level: .n1,
+              question: "ここまで問題が大きくなった以上は、社長【自ら】が事情を説明し、謝罪せずにはすまないだろう。",
+              options: [
+                OptionEntry(value: "じら", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "わしら", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "みずから", linkedEntryId: "vocab-mizukara", isAnswer: true),
+                OptionEntry(value: "おずがら", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "mrso2ie5a01XesmkXbuv", type: .vocab, level: .n1,
+              question: "うわあ、すごい。あるは、あるは、【数え】切れないよ。",
+              options: [
+                OptionEntry(value: "すうえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かぞえ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "かすえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かづえ", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "sGIgSsLu21r7DKHUXRWu", type: .grammar, level: .n1,
               question: "（　　）暮らしが一向に良くならないというの気の毒な人たちが増えている。",
               options: [
