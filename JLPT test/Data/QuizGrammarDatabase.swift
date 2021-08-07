@@ -6,6 +6,22 @@
 //
 
 let n1GrammarQuizDatabase: [QuizEntry] = [
+    QuizEntry(id: "fNxeRMjkQ2OhCy030svt", type: .vocab, level: .n1,
+              question: "たまには我が家の方にも（　　）。",
+              options: [
+                OptionEntry(value: "お越しください", linkedEntryId: "vocab-okoshikudasai", isAnswer: true),
+                OptionEntry(value: "お見えください", linkedEntryId: "jlptn0-grammar-mieru", isAnswer: false),
+                OptionEntry(value: "お訪ねしてください", linkedEntryId: "vocab-otazunekudasai", isAnswer: false),
+                OptionEntry(value: "お渡になってください", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "TQfk0ddC4QgA7P501734", type: .grammar, level: .n1,
+              question: "世界でトップの銀行が倒産するなんて、誰も想像（　　）しなかった。",
+              options: [
+                OptionEntry(value: "こそ", linkedEntryId: "jlptn3-grammar-koso", isAnswer: false),
+                OptionEntry(value: "ほど", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しか", linkedEntryId: "jlptn3-grammar-shikanai-hokanai", isAnswer: false),
+                OptionEntry(value: "だに", linkedEntryId: "jlptn1-grammar-dani", isAnswer: true)
+              ]),
     QuizEntry(id: "WcvNCrpWuIxaRcRqzFXE", type: .grammar, level: .n1,
               question: "試験の受験者は、450人から460人（　　）です。",
               options: [
