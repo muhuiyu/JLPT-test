@@ -10,6 +10,62 @@ import UIKit
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
     QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "学生時代は柔道に、現在はゴルフに（　　）います。",
+              options: [
+                OptionEntry(value: "追い込んで", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "放り込んで", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "打ち込んで", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "割り込んで", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "医者に、手術以外に助かる（　 ）はないと言われた。",
+              options: [
+                OptionEntry(value: "道", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "方", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "用", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "行い", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "気に入っていただけて、（　　）です。",
+              options: [
+                OptionEntry(value: "何より", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "何なり", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "何だか", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "何とぞ", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "その店は、客を取り戻すために（　　）値下げをした。",
+              options: [
+                OptionEntry(value: "陰気な", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "大まかな", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "大胆な", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "臆病な", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "<#String#>",
+              options: [
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "<#String#>",
+              options: [
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "<#String#>",
+              options: [
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
               question: "我が家の犬は、褒めると必ずおやつを（　　）。",
               options: [
                 OptionEntry(value: "ねばる", linkedEntryId: "<#String#>", isAnswer: false),

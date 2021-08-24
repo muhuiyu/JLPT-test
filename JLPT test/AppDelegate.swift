@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         ]
         let updatedVocabIds: [String] = [
-            
+           
         ]
         for id in updatedGrammarIds {
             guard let grammar = grammarDatabase[id] else { continue }

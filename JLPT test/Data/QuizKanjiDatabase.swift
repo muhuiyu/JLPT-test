@@ -190,13 +190,13 @@ let n1VocabKanjiQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "使いはたす", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "使いすてる", linkedEntryId: "", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .vocab,
+    QuizEntry(id: "l2llljrkfGpAl5UMSjvf", type: .vocab,
               level: .n1,
               question: "最近の青少年はしっかりしているようだが、精神的に（　　）面がある。",
               options: [
-                OptionEntry(value: "しぶい", linkedEntryId: "vocab-sibui", isAnswer: false),
+                OptionEntry(value: "しぶい", linkedEntryId: "vocab-shibui", isAnswer: false),
                 OptionEntry(value: "だるい", linkedEntryId: "vocab-darui", isAnswer: false),
-                OptionEntry(value: "ゆるい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ゆるい", linkedEntryId: "vocab-yurui", isAnswer: false),
                 OptionEntry(value: "もろい", linkedEntryId: "vocab-moroi", isAnswer: true)
               ]),
     QuizEntry(id: "", type: .vocab,
