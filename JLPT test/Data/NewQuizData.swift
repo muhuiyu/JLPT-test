@@ -9,134 +9,6 @@ import UIKit
 
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "学生時代は柔道に、現在はゴルフに（　　）います。",
-              options: [
-                OptionEntry(value: "追い込んで", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "放り込んで", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "打ち込んで", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "割り込んで", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "医者に、手術以外に助かる（　 ）はないと言われた。",
-              options: [
-                OptionEntry(value: "道", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "方", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "用", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "行い", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "気に入っていただけて、（　　）です。",
-              options: [
-                OptionEntry(value: "何より", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "何なり", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "何だか", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "何とぞ", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "その店は、客を取り戻すために（　　）値下げをした。",
-              options: [
-                OptionEntry(value: "陰気な", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "大まかな", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "大胆な", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "臆病な", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "<#String#>",
-              options: [
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "<#String#>",
-              options: [
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "<#String#>",
-              options: [
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "我が家の犬は、褒めると必ずおやつを（　　）。",
-              options: [
-                OptionEntry(value: "ねばる", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ねだる", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "ねたむ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ねる", linkedEntryId: "vocab-neru", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "魚釣りに行って六時間も（　　）が、一匹も釣れなかった。",
-              options: [
-                OptionEntry(value: "ねだった", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ねたんだ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ねった", linkedEntryId: "vocab-neru", isAnswer: false),
-                OptionEntry(value: "ねばった", linkedEntryId: "<#String#>", isAnswer: true)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "それについては、第三者を（　　）話し合った方がいいでしょう。",
-              options: [
-                OptionEntry(value: "交える", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "隔てる", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "連ねる", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "添える", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "（　　）交際中の二人が、ついに婚約を発表しました。",
-              options: [
-                OptionEntry(value: "不意に", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "前もって", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "あらかじめ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "かねてより", linkedEntryId: "<#String#>", isAnswer: true)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "この商品は、ネットで（　　）ことができます。",
-              options: [
-                OptionEntry(value: "取り寄せる", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "取り混ぜる", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "取り組む", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "取り戻す", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "ダイエットに成功したのはいいが、ズボンが（　　）になった。",
-              options: [
-                OptionEntry(value: "ピチピチ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "つくづく", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ながなが", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ダブダブ", linkedEntryId: "<#String#>", isAnswer: true)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "葉っぱについた（　　）が、ダイヤモンドのように輝いている。",
-              options: [
-                OptionEntry(value: "とげ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "しずく", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "くき", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "つぼみ", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "このところ残業続きで疲れていたので、昨日の休日は（　　）寝て過ごした。",
-              options: [
-                OptionEntry(value: "しょっちょう", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ひたすら", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "ことごとく", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "まして", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "馬の赤ちゃんが生まれたが、次の日に死んでしまった。（　　）命だった。",
-              options: [
-                OptionEntry(value: "あやうい", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "はかない", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "たやすい", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "すばやい", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
     QuizEntry(id: "", type: .grammar, level: .n1,
               question: "そのような行為は、試合では（　　）ならない。",
               options: [
@@ -178,14 +50,6 @@ let newQuizUpdate: [QuizEntry] = [
                 OptionEntry(value: "よう心がけましょう", linkedEntryId: "<#String#>", isAnswer: true)
               ]),
     QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "日本は国土の七割に及ぶ森林に多種の落葉樹が生えており、温度差のある気候などの好条件も（　　）、他の国々よりいっそう紅葉の美しさが際立つのだろう。",
-              options: [
-                OptionEntry(value: "いかんなく", linkedEntryId: "jlptn1-grammar-ikan", isAnswer: false),
-                OptionEntry(value: "幸いして", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "さることながら", linkedEntryId: "jlptn1-grammar-mosarukotonagara", isAnswer: false),
-                OptionEntry(value: "ありながら", linkedEntryId: "jlptn5-grammar-nagara", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
               question: "この携帯電話は、字が大きくて操作も簡単なので、（　　）方にも使いやすいはずです。",
               options: [
                 OptionEntry(value: "年を取られた", linkedEntryId: "<#String#>", isAnswer: false),
@@ -201,21 +65,21 @@ let newQuizUpdate: [QuizEntry] = [
                 OptionEntry(value: "であってよい", linkedEntryId: "<#String#>", isAnswer: false),
                 OptionEntry(value: "でありたい", linkedEntryId: "<#String#>", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "出したものはきちんとしまいなさい。（　 ）はダメですよ。",
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "医者に、手術以外に助かる（　 ）はないと言われた。",
               options: [
-                OptionEntry(value: "出しがてら", linkedEntryId: "jlptn1-grammar-gateara", isAnswer: false),
-                OptionEntry(value: "出しっぱなし", linkedEntryId: "jlptn2-grammar-ppanashi", isAnswer: true),
-                OptionEntry(value: "出すのみ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "出すまま", linkedEntryId: "jlptn4-grammar-mama", isAnswer: false)
+                OptionEntry(value: "道", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "方", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "用", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "行い", linkedEntryId: "<#String#>", isAnswer: false)
               ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "この計画が成功するかどうかは、事前の準備に（　　）。",
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "気に入っていただけて、（　　）です。",
               options: [
-                OptionEntry(value: "もとづく", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "かかっている", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "当たらない", linkedEntryId: "jlptn1-grammar-niwaataranai", isAnswer: false),
-                OptionEntry(value: "決まっている", linkedEntryId: "<#String#>", isAnswer: false)
+                OptionEntry(value: "何より", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "何なり", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "何だか", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "何とぞ", linkedEntryId: "<#String#>", isAnswer: false)
               ]),
     QuizEntry(id: "", type: .grammar, level: .n1,
               question: "私はこの活動を通して、今後、地域の経済発展に貢献して（　　）考えです。",
@@ -232,21 +96,5 @@ let newQuizUpdate: [QuizEntry] = [
                 OptionEntry(value: "注意することで", linkedEntryId: "<#String#>", isAnswer: false),
                 OptionEntry(value: "注意せずにいると", linkedEntryId: "<#String#>", isAnswer: false),
                 OptionEntry(value: "注意を怠れ（おこたれ）ば", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "<#String#>",
-              options: [
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "<#String#>",
-              options: [
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
               ]),
 ]
