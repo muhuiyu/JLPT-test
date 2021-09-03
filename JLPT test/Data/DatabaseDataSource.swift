@@ -65,7 +65,8 @@ extension DatabaseDataSource {
                     "level": level.rawValue,
                     "type": type.rawValue,
                     "numberOfAttempts": 1,
-                    "numberOfSuccess": numberOfSuccess
+                    "numberOfSuccess": numberOfSuccess,
+                    "isMastered": false
                 ]
                 ref.addDocument(data: data) { error in
                     if let error = error { return callback(error) }
@@ -96,18 +97,58 @@ extension DatabaseDataSource {
             }
         }
     }
-    private func fetchUserStats(atLevel level: QuizLevel, withType type: QuizType, callback: @escaping (_ quizIDs: [String], _ error: Error?) -> Void) {
-        guard let user = Auth.auth().currentUser else { return callback([], FirebaseError.userMissing) }
+    func updateUserStats(atID quizID: String, atLevel level: QuizLevel, withType type: QuizType, didUserAnswerCorrectly isUserCorrect: Bool, setAsMastered isMastered: Bool, callback: @escaping (_ error: Error?) -> Void) {
+        guard let user = Auth.auth().currentUser else { return callback(FirebaseError.userMissing) }
+        let ref = Firestore.firestore().collection(CollectionName.userQuizStats)
+
+        ref.whereField("userID", isEqualTo: user.uid).whereField("quizID", isEqualTo: quizID).getDocuments { (snapshot, error) in
+            if let error = error {
+                return callback(error)
+            }
+            guard let snapshot = snapshot else { return callback(FirebaseError.snapshotMissing) }
+            if snapshot.documentChanges.isEmpty {
+                let data: [String: Any] = [
+                    "userID": user.uid,
+                    "quizID": quizID,
+                    "level": level.rawValue,
+                    "type": type.rawValue,
+                    "numberOfAttempts": 1,
+                    "numberOfSuccess": 1,
+                    "isMastered": true
+                ]
+                ref.addDocument(data: data) { error in
+                    if let error = error { return callback(error) }
+                    return callback(nil)
+                }
+            }
+            else if snapshot.documentChanges.count == 1 {
+                let change = snapshot.documentChanges[0]
+                if change.type == .added {
+                    let result: [String: Any] = [
+                        "isMastered": isMastered
+                    ]
+                    
+                    let logRef = change.document.reference
+                    logRef.setData(result, merge: true) { error in
+                        if let error = error { return callback(error) }
+                        return callback(nil)
+                    }
+                }
+            }
+        }
+    }
+    private func fetchUserStats(atLevel level: QuizLevel, withType type: QuizType, callback: @escaping (_ quizIDs: [String], _ skipIDs: [String], _ error: Error?) -> Void) {
+        guard let user = Auth.auth().currentUser else { return callback([], [], FirebaseError.userMissing) }
         var ref = Firestore.firestore().collection(CollectionName.userQuizStats).whereField("userID", isEqualTo: user.uid).whereField("type", isEqualTo: type.rawValue)
 
         if level != .all { ref = ref.whereField("level", isEqualTo: level.rawValue) }
         
         ref.getDocuments { (snapshot, error) in
             if let error = error {
-                return callback([], error)
+                return callback([], [], error)
             }
-            guard let snapshot = snapshot else { return callback([], FirebaseError.snapshotMissing) }
-            if snapshot.documentChanges.count == 0 { return callback([], nil) }
+            guard let snapshot = snapshot else { return callback([], [], FirebaseError.snapshotMissing) }
+            if snapshot.documentChanges.count == 0 { return callback([], [], nil) }
 
             var quizStatsRawData = [UserStatsEntry]()
             for change in snapshot.documentChanges {
@@ -116,13 +157,15 @@ extension DatabaseDataSource {
                     guard
                         let quizID = data["quizID"] as? String,
                         let numberOfAttempts = data["numberOfAttempts"] as? Int,
-                        let numberOfSuccess = data["numberOfSuccess"] as? Int
-                    else { return callback([], nil) }
+                        let numberOfSuccess = data["numberOfSuccess"] as? Int,
+                        let isMastered = data["isMastered"] as? Bool
+                    else { return callback([], [], nil) }
                     quizStatsRawData.append(UserStatsEntry(quizID: quizID,
                                                            level: level,
                                                            type: type,
                                                            numberOfAttempts: numberOfAttempts,
-                                                           numberOfSuccess: numberOfSuccess))
+                                                           numberOfSuccess: numberOfSuccess,
+                                                           isMastered: isMastered))
                 }
             }
             
@@ -130,11 +173,13 @@ extension DatabaseDataSource {
             else { quizStatsRawData.shuffle() }
             
             var ids = [String]()
+            var skips = [String]()
             for stat in quizStatsRawData {
-                print(stat.quizID, ": ", stat.printSuccessRate())
-                ids.append(stat.quizID)
+                print(stat.quizID, ": ", stat.printSuccessRate(), " ", stat.isMastered)
+                if stat.isMastered { skips.append(stat.quizID) }
+                else { ids.append(stat.quizID) }
             }
-            return callback(ids, nil)
+            return callback(ids, skips, nil)
         }
     }
 }
@@ -184,12 +229,11 @@ extension DatabaseDataSource {
             var quizIDs = [String]()
             for change in snapshot.documentChanges {
                 if change.type == .added {
-                    
                     guard
                         let data = change.document.data() as? [String: Any],
                         let question = data["question"] as? String
                     else { return callback([], FirebaseError.dataKeyMissing) }
-                    print(change.document.documentID + ": " + question)
+//                    print(change.document.documentID + ": " + question)
                     
                     quizIDs.append(change.document.documentID)
                 }
@@ -197,7 +241,7 @@ extension DatabaseDataSource {
             return callback(quizIDs, nil)
         }
     }
-    private func selectQuizIdToSet(answeredList answeredQuizIDs: [String], allList allQuizIDs: [String], returnQuestions number: Int) -> [String] {
+    private func selectQuizIdToSet(answeredList answeredQuizIDs: [String], skippedList skippedQuizIDs: [String], allList allQuizIDs: [String], returnQuestions number: Int) -> [String] {
         var results = [String]()
         var answeredQuizIDsData: [String] = answeredQuizIDs
         
@@ -210,9 +254,11 @@ extension DatabaseDataSource {
         else {
             for id in answeredQuizIDsData { results.append(id) }
         }
+        print(skippedQuizIDs)
         for id in allQuizIDs.shuffled() {
             if results.count == number { break }
             if answeredQuizIDs.contains(id) { continue }
+            if skippedQuizIDs.contains(id) { continue }
             results.append(id)
         }
         if results.count == number { return results }
@@ -264,12 +310,12 @@ extension DatabaseDataSource {
     func generateQuizSet(atLevel level: QuizLevel, withType type: QuizType, containQuestions number: Int, callback: @escaping (_ data: [QuizEntry], _ error: Error?) -> Void) {
         // get user stats
         
-        self.fetchUserStats(atLevel: level, withType: type) { answeredQuizIDs, error in
+        self.fetchUserStats(atLevel: level, withType: type) { answeredQuizIDs, skipIDs, error in
             if let error = error { return callback([], error) }
             
             self.fetchQuizIDs(atLevel: level, withType: type) { (allQuizIDs, error) in
                 if let error = error { return callback([], error) }
-                let resultIds = self.selectQuizIdToSet(answeredList: answeredQuizIDs, allList: allQuizIDs, returnQuestions: number)
+                let resultIds = self.selectQuizIdToSet(answeredList: answeredQuizIDs, skippedList: skipIDs, allList: allQuizIDs, returnQuestions: number)
                 
                 self.fetchQuizzes(atIDList: resultIds) { (results, error) in
                     if let error = error { return callback([], error) }

@@ -74,7 +74,7 @@ extension QuizSessionViewController {
 // MARK: - Navigation
 extension QuizSessionViewController {
     private func configureQuestionInPage() ->  ViewController {
-        let viewController = QuestonViewController(entry: entry[currentIndex])
+        let viewController = QuestionViewController(entry: entry[currentIndex])
         viewController.delegate = self
         return viewController
     }
@@ -169,8 +169,8 @@ extension QuizSessionViewController {
     }
 }
 // MARK: - Delegate from Pages
-extension QuizSessionViewController: QuestonViewControllerDelegate {
-    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry) {
+extension QuizSessionViewController: QuestionViewControllerDelegate {
+    func questionViewControllerDidRequestGoNextQuestion(_ controller: QuestionViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry) {
         if isUserCorrect {
             numberOfCorrectAnswers += 1
         }
@@ -182,7 +182,24 @@ extension QuizSessionViewController: QuestonViewControllerDelegate {
             }
         }
     }
-    func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType) {
+    func questionViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestionViewController, with option: OptionEntry, as type: QuizType) {
         self.revealOptionEntryDetailViewController(with: option, as: type)
+    }
+    func questionViewController(_ controller: QuestionViewController, didRequestBookmarkQuestion quiz: QuizEntry) {
+        return
+    }
+    func questionViewController(_ controller: QuestionViewController, didUserAnswerCorrectly isUserCorrect: Bool, didRequestMasterQuestion quiz: QuizEntry) {
+        let alert = UIAlertController(title: "Mark this question as mastered?", message: "The question won't appear in your question list anymore.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Mark as mastered", style: .default, handler: { _ in
+            self.goNextQuestion()
+            self.database.updateUserStats(atID: quiz.id, atLevel: quiz.level, withType: quiz.type, didUserAnswerCorrectly: isUserCorrect, setAsMastered: true) { error in
+                if let error = error {
+                    print(error)
+                    return
+                }
+            }
+        }))
+        present(alert, animated: true)
     }
 }

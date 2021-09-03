@@ -65,6 +65,12 @@ extension WelcomeViewController {
 }
 extension WelcomeViewController: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        let child = SpinnerViewController()
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+
         if let error = error {
             print(error.localizedDescription)
             return
@@ -78,6 +84,9 @@ extension WelcomeViewController: GIDSignInDelegate {
             }
             else {
                 print("Login Successful.")
+                child.willMove(toParent: nil)
+                child.view.removeFromSuperview()
+                child.removeFromParent()
                 self.delegate?.welcomeViewControllerDidLoginSuccessfully(self)
             }
         }

@@ -8,15 +8,19 @@
 import UIKit
 import AVFoundation
 
-protocol QuestonViewControllerDelegate: AnyObject {
-    func questonViewControllerDidRequestGoNextQuestion(_ controller: QuestonViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry)
-    func questonViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestonViewController, with option: OptionEntry, as type: QuizType)
+protocol QuestionViewControllerDelegate: AnyObject {
+    func questionViewControllerDidRequestGoNextQuestion(_ controller: QuestionViewController, didUserAnswerCorrectly isUserCorrect: Bool, atQuiz quiz: QuizEntry)
+    func questionViewControllerDidRequestRevealOptionEntryDetails(_ controller: QuestionViewController, with option: OptionEntry, as type: QuizType)
+    func questionViewController(_ controller: QuestionViewController, didRequestBookmarkQuestion quiz: QuizEntry)
+    func questionViewController(_ controller: QuestionViewController, didUserAnswerCorrectly isUserCorrect: Bool, didRequestMasterQuestion quiz: QuizEntry)
 }
 
-class QuestonViewController: ViewController {
+class QuestionViewController: ViewController {
     
     private let questionLabel = UILabel()
     private let tableView = UITableView()
+    private let saveButton = TextButton(frame: .zero, buttonType: .text)
+    private let masteredButton = TextButton(frame: .zero, buttonType: .text)
     private let nextButton = TextButton(frame: .zero, buttonType: .primary)
     
     private var answerSoundEffect: AVAudioPlayer?
@@ -25,10 +29,14 @@ class QuestonViewController: ViewController {
         didSet {
             switch mode {
             case .question:
+                saveButton.isHidden = true
                 nextButton.isHidden = true
+                masteredButton.isHidden = true
                 self.setViewMoreButtonInCells(asHidden: true)
             case .review:
+                saveButton.isHidden = false
                 nextButton.isHidden = false
+                masteredButton.isHidden = false
                 self.setViewMoreButtonInCells(asHidden: false)
             }
         }
@@ -39,7 +47,7 @@ class QuestonViewController: ViewController {
     }
     var isUserAnsweredCorrectly: Bool = false
     
-    weak var delegate: QuestonViewControllerDelegate?
+    weak var delegate: QuestionViewControllerDelegate?
     
     var entry: QuizEntry
     init(entry: QuizEntry) {
@@ -58,16 +66,22 @@ class QuestonViewController: ViewController {
     }
 }
 // MARK: - Actions
-extension QuestonViewController {
+extension QuestionViewController {
     private func didRequestGoNextQuestion() {
-        delegate?.questonViewControllerDidRequestGoNextQuestion(self, didUserAnswerCorrectly: isUserAnsweredCorrectly, atQuiz: entry)
+        delegate?.questionViewControllerDidRequestGoNextQuestion(self, didUserAnswerCorrectly: isUserAnsweredCorrectly, atQuiz: entry)
     }
     private func didRequestRevealOptionEntryDetails(at optionIndex: Int) {
-        delegate?.questonViewControllerDidRequestRevealOptionEntryDetails(self, with: entry.options[optionIndex], as: entry.type)
+        delegate?.questionViewControllerDidRequestRevealOptionEntryDetails(self, with: entry.options[optionIndex], as: entry.type)
+    }
+    private func didRequestBookmarkQuestion() {
+        delegate?.questionViewController(self, didRequestBookmarkQuestion: entry)
+    }
+    private func didRequestMasterQuestion() {
+        delegate?.questionViewController(self, didUserAnswerCorrectly: isUserAnsweredCorrectly, didRequestMasterQuestion: entry)
     }
 }
 // MARK: - View Config
-extension QuestonViewController {
+extension QuestionViewController {
     private func configureViews() {
         questionLabel.font = UIFont.body
         questionLabel.textColor = UIColor.label
@@ -77,13 +91,29 @@ extension QuestonViewController {
         view.addSubview(questionLabel)
         
         tableView.separatorStyle = .none
+        tableView.allowsSelection = true
         view.addSubview(tableView)
+        
         nextButton.tapHandler = {[weak self] in
             self?.didRequestGoNextQuestion()
         }
         nextButton.isHidden = true
         nextButton.text = "Next"
         view.addSubview(nextButton)
+        
+        masteredButton.tapHandler = {[weak self] in
+            self?.didRequestMasterQuestion()
+        }
+        masteredButton.isHidden = true
+        masteredButton.text = "I mastered this question already"
+        view.addSubview(masteredButton)
+        
+//        saveButton.tapHandler = {[weak self] in
+//            self?.didRequestBookmarkQuestion()
+//        }
+//        saveButton.isHidden = true
+//        saveButton.text = "Bookmark this question"
+//        view.addSubview(saveButton)
     }
     private func setViewMoreButtonInCells(asHidden: Bool) {
         for i in 0...entry.options.count {
@@ -105,12 +135,16 @@ extension QuestonViewController {
             make.leading.trailing.bottom.equalToSuperview()
         }
         nextButton.snp.remakeConstraints { make in
+            make.leading.trailing.equalTo(masteredButton)
+            make.bottom.equalTo(masteredButton.snp.top).offset(-Constants.spacing.small)
+        }
+        masteredButton.snp.remakeConstraints { make in
             make.leading.trailing.bottom.equalTo(view.layoutMarginsGuide)
         }
     }
 }
 // MARK: - Data Source
-extension QuestonViewController: UITableViewDataSource, UITableViewDelegate {
+extension QuestionViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return entry.options.count
     }

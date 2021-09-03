@@ -73,7 +73,7 @@
 		E4329D702650A881005FD459 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D372650A881005FD459 /* CheckBox.swift */; };
 		E4329D792650A892005FD459 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D762650A892005FD459 /* HomeViewController.swift */; };
 		E4329D7A2650A892005FD459 /* QuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D782650A892005FD459 /* QuizCell.swift */; };
-		E4329D852650A89A005FD459 /* QuestonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D802650A89A005FD459 /* QuestonViewController.swift */; };
+		E4329D852650A89A005FD459 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D802650A89A005FD459 /* QuestionViewController.swift */; };
 		E4329D862650A89A005FD459 /* QuizSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D812650A89A005FD459 /* QuizSessionViewController.swift */; };
 		E4329D872650A89A005FD459 /* OptionEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D822650A89A005FD459 /* OptionEntryDetailViewController.swift */; };
 		E4329D882650A89A005FD459 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4329D842650A89A005FD459 /* OptionCell.swift */; };
@@ -99,6 +99,7 @@
 		E46B8A7F265530A900DC26BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4363D242653263F0003A26B /* GoogleService-Info.plist */; };
 		E46B8AB52655404200DC26BF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E46B8AB32655404200DC26BF /* DataModel.xcdatamodeld */; };
 		E473A9022654187A00100DEB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473A9012654187A00100DEB /* WelcomeViewController.swift */; };
+		E4DF2BE026E07CD200FCC33A /* OptionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF2BDF26E07CD200FCC33A /* OptionEntry.swift */; };
 		E4E8C72426BB7C6B00082D4D /* NewQuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */; };
 		E4FF042826592315001A5D9F /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042726592315001A5D9F /* SpinnerView.swift */; };
 		E4FF042D26595D58001A5D9F /* BookmarkEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */; };
@@ -203,7 +204,7 @@
 		E4329D372650A881005FD459 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		E4329D762650A892005FD459 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E4329D782650A892005FD459 /* QuizCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCell.swift; sourceTree = "<group>"; };
-		E4329D802650A89A005FD459 /* QuestonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestonViewController.swift; sourceTree = "<group>"; };
+		E4329D802650A89A005FD459 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		E4329D812650A89A005FD459 /* QuizSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizSessionViewController.swift; sourceTree = "<group>"; };
 		E4329D822650A89A005FD459 /* OptionEntryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionEntryDetailViewController.swift; sourceTree = "<group>"; };
 		E4329D842650A89A005FD459 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		E464A8DE2658E902006529CC /* Firestore+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firestore+Combine.swift"; sourceTree = "<group>"; };
 		E46B8AB42655404200DC26BF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E473A9012654187A00100DEB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E4DF2BDF26E07CD200FCC33A /* OptionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionEntry.swift; sourceTree = "<group>"; };
 		E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuizData.swift; sourceTree = "<group>"; };
 		E4FF042726592315001A5D9F /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkEntry.swift; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 			children = (
 				E4329D0B2650A881005FD459 /* ProgressEntry.swift */,
 				E4329D0C2650A881005FD459 /* QuizEntry.swift */,
+				E4DF2BDF26E07CD200FCC33A /* OptionEntry.swift */,
 				E4363CB3265146070003A26B /* Grammar+Vocab+KanjiEntry.swift */,
 				E464A89A2658A7C8006529CC /* UserStatsEntry.swift */,
 				E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */,
@@ -556,7 +559,7 @@
 			isa = PBXGroup;
 			children = (
 				E4329D812650A89A005FD459 /* QuizSessionViewController.swift */,
-				E4329D802650A89A005FD459 /* QuestonViewController.swift */,
+				E4329D802650A89A005FD459 /* QuestionViewController.swift */,
 				E4329D822650A89A005FD459 /* OptionEntryDetailViewController.swift */,
 			);
 			path = Controllers;
@@ -933,6 +936,7 @@
 			files = (
 				E4FF042826592315001A5D9F /* SpinnerView.swift in Sources */,
 				E4363CE82652900B0003A26B /* KanjiDatabase.swift in Sources */,
+				E4DF2BE026E07CD200FCC33A /* OptionEntry.swift in Sources */,
 				E4329D452650A881005FD459 /* TitleMultipleChoicesButtonViewController.swift in Sources */,
 				E4329D4E2650A881005FD459 /* Status.swift in Sources */,
 				E4329D692650A881005FD459 /* HeaderWithLargeTitleView.swift in Sources */,
@@ -968,7 +972,7 @@
 				E464A8E02658E902006529CC /* Firestore+Combine.swift in Sources */,
 				E4329D532650A881005FD459 /* LabelToggleCell.swift in Sources */,
 				E4363D032652CB7B0003A26B /* RelatedGrammarItem.swift in Sources */,
-				E4329D852650A89A005FD459 /* QuestonViewController.swift in Sources */,
+				E4329D852650A89A005FD459 /* QuestionViewController.swift in Sources */,
 				E4FF042D26595D58001A5D9F /* BookmarkEntry.swift in Sources */,
 				E4329D5E2650A881005FD459 /* TextButton.swift in Sources */,
 				E4329D652650A881005FD459 /* BullettItemTitleSubtitleView.swift in Sources */,

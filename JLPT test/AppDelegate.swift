@@ -24,12 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let database = DatabaseDataSource()
         let updatedGrammarIds: [String] = [
-            "jlptn2-grammar-saiwai", "jlptn1-grammar-nikakattewa", "jlptn2-grammar-motoduite", "jlptn1-grammar-nisokushite"
+
         ]
         let updatedVocabIds: [String] = [
-            "vocab-tsumamu", "vocab-mushiru", "vocab-tsuneru", "vocab-mekuru", "vocab-aete", "vocab-yatara", "vocab-shiite", "vocab-mohaya", "vocab-nebaru", "vocab-nedaru", "vocab-netamu", "vocab-majieru", "vocab-hedateru", "vocab-tsuraneru", "vocab-soeru", "vocab-hui", "vocab-maemotte", "vocab-arakajime", "vocab-kaneteyori", "vocab-toriyoseru", "vocab-torimazeru", "vocab-torikumu", "vocab-torimodosu", "vocab-pichipichi", "vocab-tsukuduku", "vocab-naganaga", "vocab-dabudabu", "vocab-toge", "vocab-shizuku", "vocab-kuki", "vocab-tsubomi", "vocab-shocchu", "vocab-hitasura", "vocab-kotogotoku", "vocab-mashite", "vocab-ayaui", "vocab-hakanai", "vocab-tayasui", "vocab-subayai"
+//            "vocab-kogetsuku", "vocab-kogeru", "vocab-aseru-1", "vocab-idomu", "vocab-kogasu", "vocab-tsukikakaru", "vocab-habamu", "vocab-nigiwau", "vocab-nigiru", "vocab-negiru", "vocab-shiteki", "vocab-huchi", "vocab-en", "vocab-migamaeru"
         ]
         for id in updatedGrammarIds {
+            print(id)
             guard let grammar = grammarDatabase[id] else { continue }
             database.updateGrammarItems(at: id, with: grammar) { error in
                 if let error = error {
@@ -38,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         for id in updatedVocabIds {
+            print(id)
             guard let vocab = vocabDatabase[id] else { continue }
             database.updateVocabItems(at: id, with: vocab) { error in
                 if let error = error {
@@ -81,6 +83,8 @@ extension AppDelegate {
         let historyViewController = HistoryViewController()
         let bookmarkViewController = BookmarkViewController(database: database)
         
+        homeViewController.delegate = self
+        
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [
             homeViewController.embedInNavgationController(),
@@ -96,6 +100,16 @@ extension AppDelegate: WelcomeViewControllerDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         setViewControllers(window: window)
+        window.makeKeyAndVisible()
+    }
+}
+extension AppDelegate: HomeViewControllerDelegate {
+    func homeViewControllerDidLogoutSuccessfully(_ controller: HomeViewController) {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        let welcomeViewController = WelcomeViewController()
+        welcomeViewController.delegate = self
+        window.rootViewController = welcomeViewController
         window.makeKeyAndVisible()
     }
 }

@@ -7,17 +7,16 @@
 
 import UIKit
 
-struct UserStatsEntry: Comparable {
+struct UserStatsEntry {
     let quizID: String
     let level: QuizLevel
     let type: QuizType
     let numberOfAttempts: Int
     let numberOfSuccess: Int
-    
-    func printSuccessRate() -> Double {
-        return Double(numberOfSuccess) / Double(numberOfAttempts)
-    }
-    
+    let isMastered: Bool
+}
+
+extension UserStatsEntry: Comparable {
     static func < (lhs: UserStatsEntry, rhs: UserStatsEntry) -> Bool {
         var lhsSuccessRate = Double()
         if lhs.numberOfAttempts == 0 {
@@ -51,5 +50,11 @@ struct UserStatsEntry: Comparable {
             rhsSuccessRate = Double(rhs.numberOfSuccess) / Double(rhs.numberOfAttempts)
         }
         return lhsSuccessRate == rhsSuccessRate
+    }
+}
+
+extension UserStatsEntry {
+    func printSuccessRate() -> Double {
+        return Double(numberOfSuccess) / Double(numberOfAttempts)
     }
 }

@@ -15,6 +15,16 @@ struct QuizEntry {
     let question: String
     let options: [OptionEntry]
     
+//    init(id: String, type: QuizType, level: QuizLevel, question: String, options: [OptionEntry]) {
+//        self.id = id
+//        self.type = type
+//        self.level = level
+//        self.question = question
+//        self.options = options
+//    }
+}
+
+extension QuizEntry {
     init?(document: DocumentSnapshot, isOptionsShuffled: Bool = true) {
         self.id = document.documentID
         guard
@@ -42,14 +52,9 @@ struct QuizEntry {
         if isOptionsShuffled { options.shuffle() }
         self.options = options
     }
-    init(id: String, type: QuizType, level: QuizLevel, question: String, options: [OptionEntry]) {
-        self.id = id
-        self.type = type
-        self.level = level
-        self.question = question
-        self.options = options
-    }
-    
+}
+
+extension QuizEntry {
     func getAnswerIndex() -> Int {
         for (i, option) in self.options.enumerated() {
             if option.isAnswer {
@@ -58,12 +63,6 @@ struct QuizEntry {
         }
         return -1
     }
-}
-
-struct OptionEntry {
-    let value: String
-    let linkedEntryId: String
-    let isAnswer: Bool
 }
 
 enum QuizLevel: String {
