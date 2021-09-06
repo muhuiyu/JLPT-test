@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let database = DatabaseDataSource()
         let updatedGrammarIds: [String] = [
-
+            
         ]
         let updatedVocabIds: [String] = [
-//            "vocab-kogetsuku", "vocab-kogeru", "vocab-aseru-1", "vocab-idomu", "vocab-kogasu", "vocab-tsukikakaru", "vocab-habamu", "vocab-nigiwau", "vocab-nigiru", "vocab-negiru", "vocab-shiteki", "vocab-huchi", "vocab-en", "vocab-migamaeru"
+            
         ]
         for id in updatedGrammarIds {
             print(id)
