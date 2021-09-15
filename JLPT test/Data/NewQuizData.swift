@@ -9,38 +9,22 @@ import UIKit
 
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "田中さんは、日系ブラジル人の母として（　　）。",
-              options: [
-                OptionEntry(value: "したがわれている", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "やしなわれている", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "おわれている", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "したわれている", linkedEntryId: "<#String#>", isAnswer: true)
-              ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "A「あ、これ内緒にしてって言われてたんだった。（　　）ことにして。」B「わかった。」",
-              options: [
-                OptionEntry(value: "聞く", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "聞かない", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "聞いた", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "聞かなかった", linkedEntryId: "<#String#>", isAnswer: true)
-              ]),
-    QuizEntry(id: "", type: .vocab, level: .n1,
-              question: "田中さんは、一人っ子で両親に（　　）されて育ったからワガママだ。",
-              options: [
-                OptionEntry(value: "はなはだ", linkedEntryId: "<#String#>", isAnswer: false),
-                OptionEntry(value: "ちやほや", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "かわるがわる", linkedEntryId: "vocab-kawarugawaru", isAnswer: false),
-                OptionEntry(value: "まちまち", linkedEntryId: "<#String#>", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .grammar, level: .n1,
-              question: "バスに乗ってから小銭を探して人を（　　）、乗る前から用意しておきましょう。",
-              options: [
-                OptionEntry(value: "待たせることなしに", linkedEntryId: "jlptn1-grammar-nashini", isAnswer: false),
-                OptionEntry(value: "待たせることのないように", linkedEntryId: "<#String#>", isAnswer: true),
-                OptionEntry(value: "待たせんがために", linkedEntryId: "jlptn1-grammar-ngatameni", isAnswer: false),
-                OptionEntry(value: "待たせるべからず", linkedEntryId: "jlptn1-grammar-bekarazu", isAnswer: false)
-              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "過去の失敗を（　　）ばかりいないで、もっと前向きに考えよう。",
+//              options: [
+//                OptionEntry(value: "打ち切って", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "追い出して", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "振り返って", linkedEntryId: "<#String#>", isAnswer: true),
+//                OptionEntry(value: "投げ出して", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "毎日トレーニングに励む彼の【鍛えられた】筋肉は、彫刻のように美しい。",
+//              options: [
+//                OptionEntry(value: "ととのえられた", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "きたえられた", linkedEntryId: "<#String#>", isAnswer: true),
+//                OptionEntry(value: "たたえられた", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "こさえられた", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
 //    QuizEntry(id: "", type: .vocab, level: .n1,
 //              question: "<#String#>",
 //              options: [
@@ -88,6 +72,62 @@ let newQuizUpdate: [QuizEntry] = [
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .grammar, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "（　　）の爆弾事件の犯人が捕まった。",
+//              options: [
+//                OptionEntry(value: "一連", linkedEntryId: "<#String#>", isAnswer: true),
+//                OptionEntry(value: "一様", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "一帶", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "一面", linkedEntryId: "<#String#>", isAnswer: false)
 //              ]),
 //    QuizEntry(id: "", type: .grammar, level: .n1,
 //              question: "顧客への対応が成績を左右する仕事に携わる彼らの（　　）、さぞ話が上手だろうと誰もが思う違いない。",
@@ -120,14 +160,6 @@ let newQuizUpdate: [QuizEntry] = [
 //                OptionEntry(value: "ことが問題になります", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "までのことです", linkedEntryId: "jlptn1-grammar-madeda", isAnswer: false),
 //                OptionEntry(value: "よう心がけましょう", linkedEntryId: "<#String#>", isAnswer: true)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "この携帯電話は、字が大きくて操作も簡単なので、（　　）方にも使いやすいはずです。",
-//              options: [
-//                OptionEntry(value: "年を取られた", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "年をお取りになった", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "お年を召した", linkedEntryId: "<#String#>", isAnswer: true),
-//                OptionEntry(value: "お年を取った", linkedEntryId: "<#String#>", isAnswer: false)
 //              ]),
 //    QuizEntry(id: "", type: .grammar, level: .n1,
 //              question: "この成功はスタッフ全員の協力によってもたらされたものだ（　　）",

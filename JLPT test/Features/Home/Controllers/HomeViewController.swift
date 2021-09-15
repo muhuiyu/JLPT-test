@@ -9,10 +9,6 @@ import UIKit
 import Firebase
 import Kingfisher
 
-protocol HomeViewControllerDelegate: AnyObject {
-    func homeViewControllerDidLogoutSuccessfully(_ controller: HomeViewController)
-}
-
 class HomeViewController: ViewController {
     
     private let tableView = UITableView()
@@ -30,9 +26,7 @@ class HomeViewController: ViewController {
         var value: String
     }
     
-    weak var delegate: HomeViewControllerDelegate?
-    
-    let database: DatabaseDataSource
+    private let database: DatabaseDataSource
     init(database: DatabaseDataSource) {
         self.database = database
         super.init()
@@ -80,38 +74,12 @@ extension HomeViewController {
     private func didTapAvatar() {
         print("tap avatar")
     }
-    @objc
-    private func didTapLogout() {
-        let alert = UIAlertController(title: "Log out?", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Log out", style: .destructive, handler: { _ in
-            let firebaseAuth = Auth.auth()
-            do {
-                try firebaseAuth.signOut()
-            }
-            catch let signOutError as NSError {
-                print("Error signing out: %@", signOutError)
-            }
-            self.delegate?.homeViewControllerDidLogoutSuccessfully(self)
-        }))
-        present(alert, animated: true, completion: nil)
-    }
 }
 // MARK: - View Config
 extension HomeViewController {
     private func configureViews() {
-//        if let photoURL = self.database.getUserProfileImage() {
-//            let imageView = UIImageView()
-//            imageView.kf.setImage(with: photoURL)
-//            navigationItem.rightBarButtonItem = UIBarButtonItem(image: imageView.image, style: .done, target: self, action: #selector(didTapAvatar))
-//        }
-//        else {
-//            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.circle.fill"), style: .done, target: self, action: #selector(didTapAvatar))
-//        }
-//
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "JLPT Practice"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .done, target: self, action: #selector(didTapLogout))
         
         tableView.tableFooterView = containerView
         tableView.separatorStyle = .none

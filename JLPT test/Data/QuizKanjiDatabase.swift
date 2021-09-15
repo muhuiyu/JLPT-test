@@ -318,15 +318,6 @@ let n1VocabKanjiQuizDatabase: [QuizEntry] = [
               ]),
     QuizEntry(id: "", type: .vocab,
               level: .n1,
-              question: "首相の軽率な発言で、良好であった両国の関係が（　　）。",
-              options: [
-                OptionEntry(value: "きずきはじめた", linkedEntryId: "", isAnswer: false),
-                OptionEntry(value: "きたえはじめた", linkedEntryId: "", isAnswer: false),
-                OptionEntry(value: "きしみはじめた", linkedEntryId: "", isAnswer: true),
-                OptionEntry(value: "きざみはじめた", linkedEntryId: "", isAnswer: false)
-              ]),
-    QuizEntry(id: "", type: .vocab,
-              level: .n1,
               question: "わたしの秘書はとても（　　）がいいので助かっている。",
               options: [
                 OptionEntry(value: "てぎわ", linkedEntryId: "", isAnswer: true),

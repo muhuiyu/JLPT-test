@@ -13,7 +13,7 @@ target 'JLPT test' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'Firebase/Database'
-  pod 'Kingfisher'
+  pod 'KingFisher'
 
   target 'JLPT testTests' do
     inherit! :search_paths

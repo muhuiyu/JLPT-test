@@ -6,6 +6,150 @@
 //
 
 let n1GrammarQuizDatabase: [QuizEntry] = [
+    QuizEntry(id: "b726VIyafHin97Ug4Sbg", type: .vocab, level: .n1,
+              question: "さんざん苦労をかけてきた【償い】に、これからは親孝行すると誓った。",
+              options: [
+                OptionEntry(value: "つぐない", linkedEntryId: "vocab-tsugunai", isAnswer: true),
+                OptionEntry(value: "おぎない", linkedEntryId: "vocab-oginai", isAnswer: false),
+                OptionEntry(value: "まかない", linkedEntryId: "vocab-makanai", isAnswer: false),
+                OptionEntry(value: "ただよい", linkedEntryId: "vocab-tadayoi", isAnswer: false)
+              ]),
+    QuizEntry(id: "dkow2EnBK1l3bmhIVk6d", type: .vocab, level: .n1,
+              question: "さんざん苦労をかけてきた償いに、これからは【親孝行】すると誓った。",
+              options: [
+                OptionEntry(value: "おやこうこう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "おやこごう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おやここう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おやこうこ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Xm58acuiFZct3p14qKf4", type: .vocab, level: .n1,
+              question: "さんざん苦労をかけてきた償いに、これからは親孝行すると【誓った】。",
+              options: [
+                OptionEntry(value: "ちかった", linkedEntryId: "vocab-chikau", isAnswer: true),
+                OptionEntry(value: "とりあつかった", linkedEntryId: "vocab-toriatsukau", isAnswer: false),
+                OptionEntry(value: "ちがった", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いつかった", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "sdo0cZLHn4TQCyFJvxph", type: .vocab, level: .n1,
+              question: "泥棒は、何も（　　）を残していない。",
+              options: [
+                OptionEntry(value: "手はず", linkedEntryId: "vocab-tehazu", isAnswer: false),
+                OptionEntry(value: "手がかり", linkedEntryId: "vocab-tegakari", isAnswer: true),
+                OptionEntry(value: "手当て", linkedEntryId: "vocab-teate", isAnswer: false),
+                OptionEntry(value: "手ごろ", linkedEntryId: "vocab-tegoro", isAnswer: false)
+              ]),
+    QuizEntry(id: "BjoTcEn4H7IlLYQmfYLL", type: .grammar, level: .n1,
+              question: "昨日の暖かさ（　　）、今日の寒いことといったらない。",
+              options: [
+                OptionEntry(value: "にとりかえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "にいれかえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "におきかえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "にひきかえ", linkedEntryId: "jlptn1-grammar-nihikikae", isAnswer: true)
+              ]),
+    QuizEntry(id: "QTIPWK50nA4h9plStwuE", type: .vocab, level: .n1,
+              question: "彼女は損害【賠償】を請求する訴訟を起こした。",
+              options: [
+                OptionEntry(value: "ぼうしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "べいしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ばいしょう", linkedEntryId: "vocab-baishou", isAnswer: true),
+                OptionEntry(value: "ほうしょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "UEQ1Y1pn0VS20eGEm6Zl", type: .vocab, level: .n1,
+              question: "彼女は損害賠償を請求する【訴訟】を起こした。",
+              options: [
+                OptionEntry(value: "すしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そしゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そしょう", linkedEntryId: "vocab-soshou", isAnswer: true),
+                OptionEntry(value: "すうしょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "jioXH6CevqxdgelX8MMp", type: .vocab, level: .n1,
+              question: "地震の影響で道路が切断され、復旧の（　　）。",
+              options: [
+                OptionEntry(value: "目処が立たない", linkedEntryId: "vocab-medogatatsu", isAnswer: true),
+                OptionEntry(value: "辻褄が合わない", linkedEntryId: "vocab-tsujitsumagaau", isAnswer: false),
+                OptionEntry(value: "筋が通らない", linkedEntryId: "vocab-sujigatooru", isAnswer: false),
+                OptionEntry(value: "願いが叶わない", linkedEntryId: "vocab-kanau-1", isAnswer: false)
+              ]),
+    QuizEntry(id: "RY1iQ7GJo612UjfMBBj9", type: .vocab, level: .n1,
+              question: "地震の影響で道路が【切断】され、復旧の目処が立たない。",
+              options: [
+                OptionEntry(value: "せつだん", linkedEntryId: "vocab-setsudan", isAnswer: true),
+                OptionEntry(value: "せっだん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きたん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きだん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "RstEbpvHy7xR2KZoFoOy", type: .vocab, level: .n1,
+              question: "地震の影響で道路が切断され、【復旧】の目処が立たない。",
+              options: [
+                OptionEntry(value: "ふっきゅう", linkedEntryId: "vocab-hukkyu", isAnswer: true),
+                OptionEntry(value: "ふうきょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふくきゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふくぎょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "yRZKVtJRLM4685J2ow4v", type: .vocab, level: .n1,
+              question: "地震の影響で道路が切断され、復旧の【目処】が立たない。",
+              options: [
+                OptionEntry(value: "めど", linkedEntryId: "vocab-medo", isAnswer: true),
+                OptionEntry(value: "めじょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "もくじょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "もくど", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "z8VpEjXb64Uz1Y4SagDs", type: .grammar, level: .n1,
+              question: "あの先生は教え方（　　）、面倒見もいい。",
+              options: [
+                OptionEntry(value: "はまでもなく", linkedEntryId: "jlptn1-grammar-mademonai", isAnswer: false),
+                OptionEntry(value: "もさることながら", linkedEntryId: "jlptn1-grammar-mosarukotonagara", isAnswer: true),
+                OptionEntry(value: "はのみならず", linkedEntryId: "jlptn2-grammar-nominarazu", isAnswer: false),
+                OptionEntry(value: "ではあるまいじ", linkedEntryId: "jlptn1-grammar-dewaarumaishi", isAnswer: false)
+              ]),
+    QuizEntry(id: "3PSGuSvHKWpHyw6qWbvh", type: .vocab, level: .n1,
+              question: "ビールの宣伝には、【泡】や喉の渇きを表現する視覚的要素が欠かせない。",
+              options: [
+                OptionEntry(value: "あわ", linkedEntryId: "vocab-awa", isAnswer: true),
+                OptionEntry(value: "あら", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "あま", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "あだ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "NS5ouhgKRP3xQJZDmpf4", type: .vocab, level: .n1,
+              question: "ビールの宣伝には、泡や喉の【渇き】を表現する視覚的要素が欠かせない。",
+              options: [
+                OptionEntry(value: "かわき", linkedEntryId: "vocab-kawaki", isAnswer: true),
+                OptionEntry(value: "こわき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しこき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "やわき", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "e3Y4aJMMSSsvn8VSFFWx", type: .vocab, level: .n1,
+              question: "ビールの宣伝には、泡や喉の渇きを表現する【視覚】的要素が欠かせない。",
+              options: [
+                OptionEntry(value: "しかく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しつかく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しがく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しっかく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "mvUpa7BpanhCl85nSK5C", type: .vocab, level: .n1,
+              question: "ビールの宣伝には、泡や喉の渇きを表現する視覚的要素が【欠かせない】。",
+              options: [
+                OptionEntry(value: "かかせない", linkedEntryId: "vocab-kakasu", isAnswer: true),
+                OptionEntry(value: "おかせない", linkedEntryId: "vocab-okasu", isAnswer: false),
+                OptionEntry(value: "いかせない", linkedEntryId: "vocab-ikasu", isAnswer: false),
+                OptionEntry(value: "ほのめかせない", linkedEntryId: "vocab-honomekasu", isAnswer: false)
+              ]),
+    QuizEntry(id: "9wONZKTRlNb2NsMNyEuk", type: .vocab, level: .n1,
+              question: "彼がそのチームに移籍する可能性は、（　　）低い。",
+              options: [
+                OptionEntry(value: "きわめて", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "じゃっかん", linkedEntryId: "vocab-jyakkan", isAnswer: false),
+                OptionEntry(value: "いっさい", linkedEntryId: "vocab-issai", isAnswer: false),
+                OptionEntry(value: "おおげさな", linkedEntryId: "vocab-oogesa", isAnswer: false)
+              ]),
+    QuizEntry(id: "yxp8dC3F4ts7kGmKNELt", type: .grammar, level: .n1,
+              question: "周囲の批判（　　）、彼は自分のやり方を押し通した。",
+              options: [
+                OptionEntry(value: "をもとに", linkedEntryId: "jlptn2-grammar-motonishite", isAnswer: false),
+                OptionEntry(value: "をとわず", linkedEntryId: "jlptn2-grammar-towazu", isAnswer: false),
+                OptionEntry(value: "をめぐり", linkedEntryId: "jlptn2-grammar-megutte", isAnswer: false),
+                OptionEntry(value: "をよそに", linkedEntryId: "jlptn1-grammar-woyosoni", isAnswer: true)
+              ]),
     QuizEntry(id: "v957ekMpwnUw02Jp15Tn", type: .grammar, level: .n1,
               question: "（　　）悪そうな少年たちが、コンビニの前でタバコを吸っている。",
               options: [
@@ -488,6 +632,246 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "とみたら", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "につけても", linkedEntryId: "", isAnswer: false)
               ]),
+    QuizEntry(id: "71uM2bhD6vZjS6sWjVHf", type: .vocab, level: .n1,
+              question: "彼女は将来（　　）新人女優です。",
+              options: [
+                OptionEntry(value: "チャーミングな", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しとやかな", linkedEntryId: "vocab-shitoyaka", isAnswer: false),
+                OptionEntry(value: "かっぱつな", linkedEntryId: "vocab-kappatsu", isAnswer: false),
+                OptionEntry(value: "ゆうぼうな", linkedEntryId: "vocab-yuubou", isAnswer: true)
+              ]),
+    QuizEntry(id: "6o7QhGMpOAgl8tjtDv2A", type: .vocab, level: .n1,
+              question: "彼は（　　）肉体をしている。",
+              options: [
+                OptionEntry(value: "りりしい", linkedEntryId: "vocab-ririshii", isAnswer: false),
+                OptionEntry(value: "たくましい", linkedEntryId: "vocab-takumashii", isAnswer: true),
+                OptionEntry(value: "いさぎよい", linkedEntryId: "vocab-isagiyoi", isAnswer: false),
+                OptionEntry(value: "おおらかな", linkedEntryId: "vocab-ooraka", isAnswer: false)
+              ]),
+    QuizEntry(id: "nmRvXxW3s6L9YERdmkVJ", type: .vocab, level: .n4,
+              question: "一連の爆弾事件の犯人が【捕まった】。",
+              options: [
+                OptionEntry(value: "つかまった", linkedEntryId: "vocab-tsukamaru", isAnswer: true),
+                OptionEntry(value: "そまった", linkedEntryId: "vocab-somaru", isAnswer: false),
+                OptionEntry(value: "はさまった", linkedEntryId: "vocab-hasamaru", isAnswer: false),
+                OptionEntry(value: "からまった", linkedEntryId: "vocab-karamaru", isAnswer: false)
+              ]),
+    QuizEntry(id: "lBdkjUnD9aTxckrZSOAR", type: .vocab, level: .n1,
+              question: "彼は逞しい【肉体】をしている。",
+              options: [
+                OptionEntry(value: "にゅうたい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "にくたい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ろうだい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "にくてい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "KBtBmJcXnsWsc06tpdcl", type: .vocab, level: .n1,
+              question: "あの【福祉】政策は矛盾に満ちている。",
+              options: [
+                OptionEntry(value: "ふくしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふくし", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ふくしゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふくじ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "rgC9zxjLahTy1WLmezdO", type: .vocab, level: .n1,
+              question: "あの福祉政策は【矛盾】に満ちている。",
+              options: [
+                OptionEntry(value: "もちゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "むじゅん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "もじゅん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "もくじゅん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "i0PIvpd4EVzB0tktkzQO", type: .vocab, level: .n1,
+              question: "【戦地】で撮られた映像は、残酷すぎて見るに堪えないものだったという。",
+              options: [
+                OptionEntry(value: "せんじ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せんち", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ぜんじ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぜんち", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "UsPh5CgGPSb88Jy9ITF1", type: .vocab, level: .n1,
+              question: "戦地で撮られた【映像】は、残酷すぎて見るに堪えないものだったという。",
+              options: [
+                OptionEntry(value: "えいそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "えいぞう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "えいしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "えいじょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "41SgINpov8WkOSaNd7pP", type: .vocab, level: .n1,
+              question: "戦地で撮られた映像は、【残酷】すぎて見るに堪えないものだったという。",
+              options: [
+                OptionEntry(value: "ざんく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ざんこく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ざんき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ざっこ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "ev5l0Ip3v0kPcH5IZ6FD", type: .grammar, level: .n1,
+              question: "戦地で撮られた映像は、残酷すぎて（　　）堪えないものだったという。",
+              options: [
+                OptionEntry(value: "見ては", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "見るに", linkedEntryId: "jlptn1-grammar-taenai", isAnswer: true),
+                OptionEntry(value: "見ずに", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "見んが", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "yDJUuhny1FnASOunVWkY", type: .vocab, level: .n1,
+              question: "この【法廷】の傍聴券を求める人々が裁判所の前に列を作った。",
+              options: [
+                OptionEntry(value: "ほうてん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ほうてい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ほうてき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ほって", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "ZcmhIUmaSPfolYOOPoRr", type: .vocab, level: .n1,
+              question: "この法廷の【傍聴】券を求める人々が裁判所の前に列を作った。",
+              options: [
+                OptionEntry(value: "ばんちょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぼうちょう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ほうちょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぼいちょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "5SpnjZbnhboG4oJQNnV3", type: .vocab, level: .n1,
+              question: "この法廷の傍聴券を（　　）人々が裁判所の前に列を作った。",
+              options: [
+                OptionEntry(value: "からめる", linkedEntryId: "vocab-karameru", isAnswer: false),
+                OptionEntry(value: "もとめる", linkedEntryId: "vocab-motomeru", isAnswer: true),
+                OptionEntry(value: "いさめる", linkedEntryId: "vocab-isameru", isAnswer: false),
+                OptionEntry(value: "おさめる", linkedEntryId: "vocab-osameru", isAnswer: false)
+              ]),
+    QuizEntry(id: "cyvG4KTX637vG9sgOsvG", type: .vocab, level: .n1,
+              question: "この法廷の傍聴券を求める人々が【裁判所】の前に列を作った。",
+              options: [
+                OptionEntry(value: "さいぱんしょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さいばんしょ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "そうばんしょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんばんしょ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "As1ISeST5JXEUp7rD5CT", type: .vocab, level: .n1,
+              question: "この手作りのクッキーは、（　　）味がして美味しい。",
+              options: [
+                OptionEntry(value: "しっそな", linkedEntryId: "vocab-shisso", isAnswer: false),
+                OptionEntry(value: "そぼくな", linkedEntryId: "vocab-soboku", isAnswer: true),
+                OptionEntry(value: "かんそな", linkedEntryId: "vocab-kanso", isAnswer: false),
+                OptionEntry(value: "すなおな", linkedEntryId: "vocab-sunao", isAnswer: false)
+              ]),
+    QuizEntry(id: "OV0ioriThs6oj9K3OfHV", type: .grammar, level: .n1,
+              question: "ただ今（　　）、受付は終了させていただきます。",
+              options: [
+                OptionEntry(value: "をおきまして", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "をとりまして", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "をもちまして", linkedEntryId: "jlptn1-grammar-womotte", isAnswer: true),
+                OptionEntry(value: "をかりまして", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "SGYgi02Y7HzGP3SifTPf", type: .vocab, level: .n1,
+              question: "洪水で堤防が崩れた場合、どこへ【避難】しますか。",
+              options: [
+                OptionEntry(value: "ひなん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "そうなん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ひょうなん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "へいなん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "jAL6r3q4kHAOi2sUoDEX", type: .vocab, level: .n1,
+              question: "【洪水】で堤防が崩れた場合、どこへ避難しますか。",
+              options: [
+                OptionEntry(value: "こうずい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "こうすい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こすい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こんずい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Hsm5Eq8fBpaalxGxHlpI", type: .vocab, level: .n1,
+              question: "洪水で【堤防】が崩れた場合、どこへ避難しますか。",
+              options: [
+                OptionEntry(value: "ていぼう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "てっぽう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ていほう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "てつほう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "v7JFibtjaokAuTluFJTX", type: .vocab, level: .n1,
+              question: "若さを（　　）ために、毎日一キロ泳いでいる。",
+              options: [
+                OptionEntry(value: "そなえる", linkedEntryId: "vocab-sonaeru", isAnswer: false),
+                OptionEntry(value: "たずさわる", linkedEntryId: "vocab-tazusawaru", isAnswer: false),
+                OptionEntry(value: "せっする", linkedEntryId: "vocab-sessuru", isAnswer: false),
+                OptionEntry(value: "たもつ", linkedEntryId: "vocab-tamotsu", isAnswer: true)
+              ]),
+    QuizEntry(id: "yKv1HZrhYuCNvMhHbdcB", type: .grammar, level: .n1,
+              question: "忘れる（　　）、全てを記憶することはできないに違いない。",
+              options: [
+                OptionEntry(value: "が早いか", linkedEntryId: "jlptn1-grammar-gahayaika", isAnswer: false),
+                OptionEntry(value: "ことなしに", linkedEntryId: "jlptn1-grammar-nashini", isAnswer: true),
+                OptionEntry(value: "からする", linkedEntryId: "jlptn1-grammar-karaaru-karasuru-karano", isAnswer: false),
+                OptionEntry(value: "までもなく", linkedEntryId: "jlptn1-grammar-mademonai", isAnswer: false)
+              ]),
+    QuizEntry(id: "spLafPa55QjYIxttwwBh", type: .vocab, level: .n1,
+              question: "【商店街】の抽選会で当たった鉢植えを、天井からぶら下げてみた。",
+              options: [
+                OptionEntry(value: "しょうてんかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょってんかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうてんがい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しょうでんがい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "yybzbTLkVhbqCYhnA8XX", type: .vocab, level: .n1,
+              question: "商店街の【抽選会】で当たった鉢植えを、天井からぶら下げてみた。",
+              options: [
+                OptionEntry(value: "しゅっせんかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうせんかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅうせんかい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ちょうせんかい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Vyr2k0vcuG4BctPs998o", type: .vocab, level: .n1,
+              question: "商店街の抽選会で当たった【鉢植え】を、天井からぶら下げてみた。",
+              options: [
+                OptionEntry(value: "ぼうゆえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "はつうえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "はちうえ", linkedEntryId: "vocab-hachiue", isAnswer: true),
+                OptionEntry(value: "はりよえ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "wBLAI61CM6uTQGwBN8bF", type: .vocab, level: .n1,
+              question: "商店街の抽選会で当たった鉢植えを、【天井】からぶら下げてみた。",
+              options: [
+                OptionEntry(value: "てんちょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "てんい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "てんじょう", linkedEntryId: "vocab-tenjou", isAnswer: true),
+                OptionEntry(value: "てんず", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "KYRy1zIFQcbV26GytSgt", type: .vocab, level: .n1,
+              question: "我が国の政治は、「【情けない】」の一言に尽きる。",
+              options: [
+                OptionEntry(value: "なわけない", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そっけない", linkedEntryId: "vocab-sokkenai", isAnswer: false),
+                OptionEntry(value: "なさけない", linkedEntryId: "vocab-nasakenai", isAnswer: true),
+                OptionEntry(value: "あっけない", linkedEntryId: "vocab-akkenai", isAnswer: false)
+              ]),
+    QuizEntry(id: "ibYvXml8PY4QbcBiLN48", type: .vocab, level: .n1,
+              question: "我が国の政治は、「情けない」の一言に（　　）。",
+              options: [
+                OptionEntry(value: "つかえる", linkedEntryId: "vocab-tsukaeru", isAnswer: false),
+                OptionEntry(value: "かえりみる", linkedEntryId: "vocab-kaerimiru", isAnswer: false),
+                OptionEntry(value: "つきる", linkedEntryId: "vocab-tsukiru", isAnswer: true),
+                OptionEntry(value: "なげく", linkedEntryId: "vocab-nageku", isAnswer: false)
+              ]),
+    QuizEntry(id: "HLBhYOHgAm18Qj128zRu", type: .grammar, level: .n1,
+              question: "その同級生のことは、名前（　　）顔も思い出せません。",
+              options: [
+                OptionEntry(value: "はおろか", linkedEntryId: "jlptn1-grammar-waoroka", isAnswer: true),
+                OptionEntry(value: "をかわきりに", linkedEntryId: "jlptn1-grammar-kawakirini", isAnswer: false),
+                OptionEntry(value: "にくわえ", linkedEntryId: "jlptn2-grammar-nikuwaete", isAnswer: false),
+                OptionEntry(value: "ばかりに", linkedEntryId: "jlptn2-grammar-bakarini", isAnswer: false)
+              ]),
+    QuizEntry(id: "o2x8WoW2s4fnYBCRpCf2", type: .vocab, level: .n1,
+              question: "【散々】苦労をかけてきた償いに、これからは親孝行すると誓った。",
+              options: [
+                OptionEntry(value: "さんざん", linkedEntryId: "vocab-sanzan", isAnswer: true),
+                OptionEntry(value: "しょうじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ざんざん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そうぞう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Lsp6C2c11TIAbgSUSQ15", type: .grammar, level: .n1,
+              question: "この携帯電話は、字が大きくて操作も簡単なので、（　　）方にも使いやすいはずです。",
+              options: [
+                OptionEntry(value: "年を取られた", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "年をお取りになった", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "お年を召した", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "お年を取った", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "KQBvmFxWqXT7aZIpMjHd", type: .grammar, level: .n1,
               question: "彼女は、店の前を（　　）して、中に入るのを躊躇っていた。",
               options: [
@@ -495,6 +879,391 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "行こうが行くまいが", linkedEntryId: "jlptn1-grammar-youga-maiga", isAnswer: false),
                 OptionEntry(value: "行こうと戻ろうと", linkedEntryId: "jlptn1-grammar-youga-maiga", isAnswer: false),
                 OptionEntry(value: "行くか行かないか", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "aXpWBWIul0Xm20Cim7n0", type: .vocab, level: .n1,
+              question: "評判がいい映画だったが、私にはちょっと（　　）。",
+              options: [
+                OptionEntry(value: "申し分なかった", linkedEntryId: "vocab-moushibun", isAnswer: false),
+                OptionEntry(value: "物足りなかった", linkedEntryId: "vocab-monotarinai", isAnswer: true),
+                OptionEntry(value: "何気なかった", linkedEntryId: "vocab-nanigenai", isAnswer: false),
+                OptionEntry(value: "情けなかった", linkedEntryId: "vocab-nasakenai", isAnswer: false)
+              ]),
+    QuizEntry(id: "RCKh6zg7YS2728cxE0NU", type: .vocab, level: .n1,
+              question: "【芝生】に入るべからず、と書いてありますよ。",
+              options: [
+                OptionEntry(value: "しばふ", linkedEntryId: "vocab-shibahu", isAnswer: true),
+                OptionEntry(value: "しばせい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちせい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じばい", linkedEntryId: "vocab-shibai", isAnswer: false)
+              ]),
+    QuizEntry(id: "g92yuUJ7IZk0UXQBdHAi", type: .vocab, level: .n1,
+              question: "水を使わないで処理する（　　）トイレが開発されているそうだ。",
+              options: [
+                OptionEntry(value: "間接的な", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "定期的な", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "平均的な", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "画期的な", linkedEntryId: "vocab-kakkiteki", isAnswer: true)
+              ]),
+    QuizEntry(id: "2y9PhxFteSQIW5HGs5xw", type: .grammar, level: .n1,
+              question: "年は取りたくない。話の途中で何を話していたか忘れる（　　）。",
+              options: [
+                OptionEntry(value: "ことか", linkedEntryId: "jlptn2-grammar-kotodarou", isAnswer: false),
+                OptionEntry(value: "しまつだ", linkedEntryId: "jlptn1-grammar-shimatsuda", isAnswer: true),
+                OptionEntry(value: "がちだ", linkedEntryId: "jlptn3-grammar-gachi", isAnswer: false),
+                OptionEntry(value: "しかない", linkedEntryId: "jlptn3-grammar-shikanai-hokanai", isAnswer: false)
+              ]),
+    QuizEntry(id: "XRGPWInc8JpzqWjGznHK", type: .vocab, level: .n1,
+              question: "【鳥類】の巣穴は軟らかい土壌につくられることが多い。",
+              options: [
+                OptionEntry(value: "とるい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じょうるい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅうるい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちょうるい", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "tfNwAPizgKRstlIIk0Aw", type: .vocab, level: .n1,
+              question: "鳥類の【巣穴】は軟らかい土壌につくられることが多い。",
+              options: [
+                OptionEntry(value: "そせつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "すおな", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "つあな", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "すあな", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "99WTQmQM2yVB1xtf1x0V", type: .vocab, level: .n1,
+              question: "鳥類の巣穴は【軟らかい】土壌につくられることが多い。",
+              options: [
+                OptionEntry(value: "きよらかい", linkedEntryId: "vocab-kiyoraka", isAnswer: false),
+                OptionEntry(value: "なごやかい", linkedEntryId: "vocab-nagoyaka", isAnswer: false),
+                OptionEntry(value: "なめらかい", linkedEntryId: "vocab-nameraka", isAnswer: false),
+                OptionEntry(value: "やわらかい", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "HZ2KVkxfA9e9JbZ0fPDd", type: .vocab, level: .n1,
+              question: "鳥類の巣穴は軟らかい【土壌】につくられることが多い。",
+              options: [
+                OptionEntry(value: "とじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "どちょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "とちょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "どじょう", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "LXEZAFvLOKSLFW7LX72F", type: .vocab, level: .n1,
+              question: "その殺人事件の犯人は、死刑を（　　）だろう。",
+              options: [
+                OptionEntry(value: "あたえない", linkedEntryId: "vocab-ataeru", isAnswer: false),
+                OptionEntry(value: "まぬがれない", linkedEntryId: "vocab-manukareru", isAnswer: true),
+                OptionEntry(value: "そこなわない", linkedEntryId: "vocab-sokonau", isAnswer: false),
+                OptionEntry(value: "うながさない", linkedEntryId: "vocab-unagasu", isAnswer: false)
+              ]),
+    QuizEntry(id: "OuKY23KgpijKuUoixYgh", type: .grammar, level: .n1,
+              question: "社長のあまりにも常識のない発言に、誰もが苦笑を禁じ（　　）。",
+              options: [
+                OptionEntry(value: "かねなかった", linkedEntryId: "jlptn2-grammar-kanenai", isAnswer: false),
+                OptionEntry(value: "ないでもなかった", linkedEntryId: "jlptn2-grammar-naidemonai", isAnswer: false),
+                OptionEntry(value: "得なかった", linkedEntryId: "jlptn1-grammar-wokinjienai", isAnswer: true),
+                OptionEntry(value: "っぱなしだった", linkedEntryId: "jlptn2-grammar-ppanashi", isAnswer: false)
+              ]),
+    QuizEntry(id: "DADgnUfui2zufTWhfKg0", type: .vocab, level: .n1,
+              question: "【偽造】パスポートで入国しようとした男が逮捕された。",
+              options: [
+                OptionEntry(value: "ぎそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぎせい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぎぞう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ぎぜい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "nrwpCx3oY5AAvlJGfjFi", type: .vocab, level: .n1,
+              question: "デザートは、季節のフルーツを（　　）使ったケーキです。",
+              options: [
+                OptionEntry(value: "ひそかに", linkedEntryId: "vocab-hisoka", isAnswer: false),
+                OptionEntry(value: "まれに", linkedEntryId: "vocab-mare", isAnswer: false),
+                OptionEntry(value: "ふんだんに", linkedEntryId: "vocab-hundan", isAnswer: true),
+                OptionEntry(value: "はるかに", linkedEntryId: "vocab-haruka", isAnswer: false)
+              ]),
+    QuizEntry(id: "vwd6D3vniJNH422SaSWv", type: .grammar, level: .n1,
+              question: "芝生に（　　）べからず、と書いてありますよ。",
+              options: [
+                OptionEntry(value: "入る", linkedEntryId: "jlptn1-grammar-bekarazu", isAnswer: true),
+                OptionEntry(value: "入らない", linkedEntryId: "jlptn1-grammar-bekarazu", isAnswer: false),
+                OptionEntry(value: "入り", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "入って", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "1faCSjFyqXMXTXRoq1b3", type: .vocab, level: .n1,
+              question: "化学肥料や【農薬】を控え、土壌の生産効率を維持する農法を有機栽培と言う。",
+              options: [
+                OptionEntry(value: "のうよく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "のうくすり", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "のうやく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "のうよう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "O0w7632ubdcOr1owL4ex", type: .vocab, level: .n1,
+              question: "化学肥料や農薬を【控え】、土壌の生産効率を維持する農法を有機栽培と言う。",
+              options: [
+                OptionEntry(value: "ひこえ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ゆくえ", linkedEntryId: "vocab-yukue", isAnswer: false),
+                OptionEntry(value: "ひかえ", linkedEntryId: "vocab-hikaeru", isAnswer: true),
+                OptionEntry(value: "ささえ", linkedEntryId: "vocab-sasae", isAnswer: false)
+              ]),
+    QuizEntry(id: "Dmt42eDrOUX8D71z3IHg", type: .vocab, level: .n1,
+              question: "化学肥料や農薬を控え、【土壌】の生産効率を維持する農法を有機栽培と言う。",
+              options: [
+                OptionEntry(value: "とじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "どにょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "どじょう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "とぎょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "z9rdaIqLDDccTvFmB8rp", type: .vocab, level: .n1,
+              question: "化学肥料や農薬を控え、土壌の生産効率を【維持】する農法を有機栽培と言う。",
+              options: [
+                OptionEntry(value: "いち", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いし", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いじ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "えじ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "CcNxYkzRBNcsn6fh2ApU", type: .vocab, level: .n1,
+              question: "化学肥料や農薬を控え、土壌の生産効率を維持する農法を有機【栽培】と言う。",
+              options: [
+                OptionEntry(value: "さいはい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さいぱい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さいばい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "さいぼい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "QzkZAcVSFJ0HK16sCa58", type: .vocab, level: .n1,
+              question: "このラジオは、万一の時電池がなくても心配無用。【手動】で発電可能です。",
+              options: [
+                OptionEntry(value: "しゅどう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "てどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "てつどう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "CQauLV4IYKyGcPf2fmDm", type: .vocab, level: .n1,
+              question: "このラジオは、万一の時電池がなくても心配無用。手動で【発電】可能です。",
+              options: [
+                OptionEntry(value: "はつでん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "はっでん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "はいでん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ひょうでん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "7MTQtblT7weoM1iuoGsp", type: .vocab, level: .n1,
+              question: "このラジオは、万一の時電池がなくても心配（　　）。手動で発電可能です。",
+              options: [
+                OptionEntry(value: "無用", linkedEntryId: "vocab-muyou", isAnswer: true),
+                OptionEntry(value: "無能", linkedEntryId: "vocab-munou", isAnswer: false),
+                OptionEntry(value: "無断", linkedEntryId: "vocab-mudan", isAnswer: false),
+                OptionEntry(value: "無知", linkedEntryId: "vocab-muchi", isAnswer: false)
+              ]),
+    QuizEntry(id: "KJEOfO2Iq1SsMEmeGB15", type: .grammar, level: .n1,
+              question: "お金はもちろん欲しいけれど、（　　）なかったで、なんとかなる。",
+              options: [
+                OptionEntry(value: "ないから", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ないても", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "なかったら", linkedEntryId: "jlptn1-grammar-tara-tade", isAnswer: true),
+                OptionEntry(value: "ないので", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "CAUYCJv7nbO5OLVWO72p", type: .vocab, level: .n1,
+              question: "【大関】は今場所優秀な成績をあげ、横綱に昇進した。",
+              options: [
+                OptionEntry(value: "おおぜき", linkedEntryId: "vocab-oozeki", isAnswer: true),
+                OptionEntry(value: "だいかん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "たいかん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "だいけい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "oKjQ18fkii4uWlUsZHmJ", type: .vocab, level: .n1,
+              question: "大関は今場所優秀な成績をあげ、【横綱】に昇進した。",
+              options: [
+                OptionEntry(value: "よこづな", linkedEntryId: "vocab-yokoduna", isAnswer: true),
+                OptionEntry(value: "よこあみ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おうこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おうもう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "118WAMIJqR9EgkbxEpGx", type: .vocab, level: .n1,
+              question: "大関は今場所優秀な成績をあげ、横綱に【昇進】した。",
+              options: [
+                OptionEntry(value: "しょうしん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しんしん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "すいしん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうしん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "fEe84kXeoHtIfn62NgRn", type: .vocab, level: .n1,
+              question: "妻は非常に（　　）から、嘘はつけない。",
+              options: [
+                OptionEntry(value: "落ち着きがある", linkedEntryId: "vocab-ochitsuki", isAnswer: false),
+                OptionEntry(value: "勘がいい", linkedEntryId: "vocab-kan", isAnswer: true),
+                OptionEntry(value: "思いやりがある", linkedEntryId: "vocab-omoiyari", isAnswer: false),
+                OptionEntry(value: "愛想がいい", linkedEntryId: "vocab-aiso", isAnswer: false)
+              ]),
+    QuizEntry(id: "hvZ007puB9eLzxhiQqKJ", type: .grammar, level: .n1,
+              question: "大企業も中小企業もこの不景気に（　　）がための方策を考えている。",
+              options: [
+                OptionEntry(value: "生き残らない", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "生き残らず", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "生き残った", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "生き残らん", linkedEntryId: "jlptn1-grammar-ngatameni", isAnswer: true)
+              ]),
+    QuizEntry(id: "JGp7vyR09gWt4nSpmQ1G", type: .vocab, level: .n1,
+              question: "電車の【車掌】が酔った乗客に殴られて怪我をすると言う事件があった。",
+              options: [
+                OptionEntry(value: "しゃじゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゃしょう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しゃしゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゃじょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "s7XXa3ZOYdHLJDGAR8l5", type: .vocab, level: .n1,
+              question: "電車の車掌が酔った乗客に【殴られて】怪我をすると言う事件があった。",
+              options: [
+                OptionEntry(value: "ほめられて", linkedEntryId: "vocab-homeru", isAnswer: false),
+                OptionEntry(value: "なぐられて", linkedEntryId: "vocab-naguru", isAnswer: true),
+                OptionEntry(value: "どなられて", linkedEntryId: "vocab-donaru", isAnswer: false),
+                OptionEntry(value: "せまられて", linkedEntryId: "vocab-semaru", isAnswer: false)
+              ]),
+    QuizEntry(id: "wof9vihWzv467jvNgnZw", type: .vocab, level: .n1,
+              question: "田中さんは、日系ブラジル人の母として（　　）。",
+              options: [
+                OptionEntry(value: "したがわれている", linkedEntryId: "vocab-shitagau", isAnswer: false),
+                OptionEntry(value: "やしなわれている", linkedEntryId: "vocab-yashinau", isAnswer: false),
+                OptionEntry(value: "おわれている", linkedEntryId: "vocab-ou", isAnswer: false),
+                OptionEntry(value: "したわれている", linkedEntryId: "vocab-shitau", isAnswer: true)
+              ]),
+    QuizEntry(id: "I9KTShBDp4lpqHvbxC2s", type: .vocab, level: .n1,
+              question: "田中さんは、一人っ子で両親に（　　）されて育ったからワガママだ。",
+              options: [
+                OptionEntry(value: "はなはだ", linkedEntryId: "vocab-hanahada", isAnswer: false),
+                OptionEntry(value: "ちやほや", linkedEntryId: "vocab-chiyahoya", isAnswer: true),
+                OptionEntry(value: "かわるがわる", linkedEntryId: "vocab-kawarugawaru", isAnswer: false),
+                OptionEntry(value: "まちまち", linkedEntryId: "vocab-machimachi", isAnswer: false)
+              ]),
+    QuizEntry(id: "6NbTzkalH8Fhg640xyB4", type: .vocab, level: .n1,
+              question: "太郎は小さい頃、侍に【憧れて】テレビの時代劇に夢中でした。",
+              options: [
+                OptionEntry(value: "したわれて", linkedEntryId: "vocab-shitau", isAnswer: false),
+                OptionEntry(value: "あこがれて", linkedEntryId: "vocab-akogareru", isAnswer: true),
+                OptionEntry(value: "さそわれて", linkedEntryId: "vocab-sasou", isAnswer: false),
+                OptionEntry(value: "さらわれて", linkedEntryId: "vocab-sarau-1", isAnswer: false)
+              ]),
+    QuizEntry(id: "EpGrCkfF4LXhTa2rB9sF", type: .vocab, level: .n1,
+              question: "ようやく景気回復の（　　）が見えてきた。",
+              options: [
+                OptionEntry(value: "ひなた", linkedEntryId: "vocab-hinata", isAnswer: false),
+                OptionEntry(value: "すきま", linkedEntryId: "vocab-sukima", isAnswer: false),
+                OptionEntry(value: "ほとり", linkedEntryId: "vocab-hotori", isAnswer: false),
+                OptionEntry(value: "きざし", linkedEntryId: "vocab-kizashi", isAnswer: true)
+              ]),
+    QuizEntry(id: "MRXuCUJzO9HG7WK0wp8n", type: .grammar, level: .n1,
+              question: "いつか会おうと言っていたのに、旧友とは（　　）でした。",
+              options: [
+                OptionEntry(value: "会ったが最後", linkedEntryId: "jlptn1-grammar-tarasaigo", isAnswer: false),
+                OptionEntry(value: "会わんばかり", linkedEntryId: "jlptn1-grammar-nbakarini", isAnswer: false),
+                OptionEntry(value: "会わずじまい", linkedEntryId: "jlptn2-grammar-zujimai", isAnswer: true),
+                OptionEntry(value: "会うまでのこと", linkedEntryId: "jlptn1-grammar-madeda", isAnswer: false)
+              ]),
+    QuizEntry(id: "yhRTU7PUHO5OfnIDDAOA", type: .vocab, level: .n1,
+              question: "創立百周年の記念式典の後、【名誉】教授による講義も行われる。",
+              options: [
+                OptionEntry(value: "めいぼ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "めいご", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "めいゆ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "めいよ", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "HRjPkw8VYzu2Pkpo0vWQ", type: .grammar, level: .n1,
+              question: "A「あ、これ内緒にしてって言われてたんだった。（　　）ことにして。」B「わかった。」",
+              options: [
+                OptionEntry(value: "聞く", linkedEntryId: "jlptn4-grammar-kotonisuru", isAnswer: false),
+                OptionEntry(value: "聞かない", linkedEntryId: "jlptn4-grammar-kotonisuru", isAnswer: false),
+                OptionEntry(value: "聞いた", linkedEntryId: "jlptn4-grammar-kotonisuru", isAnswer: false),
+                OptionEntry(value: "聞かなかった", linkedEntryId: "jlptn4-grammar-kotonisuru", isAnswer: true)
+              ]),
+    QuizEntry(id: "p9v2Ym1qP5VmGIEzLsFA", type: .vocab, level: .n1,
+              question: "太郎は小さい頃、侍に憧れてテレビの【時代劇】に夢中でした。",
+              options: [
+                OptionEntry(value: "じだいしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じだいげき", linkedEntryId: "vocab-jidaigeki", isAnswer: true),
+                OptionEntry(value: "じだいきょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じだいしけ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "cdhiUFArRjyqmcRpWYtH", type: .grammar, level: .n1,
+              question: "梅の香りに（　　）公園を散歩した。",
+              options: [
+                OptionEntry(value: "誘われるやら", linkedEntryId: "jlptn1-grammar-noyara", isAnswer: false),
+                OptionEntry(value: "誘われるべく", linkedEntryId: "jlptn1-grammar-beku", isAnswer: false),
+                OptionEntry(value: "誘われるとも", linkedEntryId: "jlptn3-grammar-tomo", isAnswer: false),
+                OptionEntry(value: "誘われるまま", linkedEntryId: "jlptn4-grammar-mama", isAnswer: true)
+              ]),
+    QuizEntry(id: "RTFHNJQ7fYp65dMiDNOf", type: .vocab,
+              level: .n1,
+              question: "首相の軽率な発言で、良好であった両国の関係が（　　）。",
+              options: [
+                OptionEntry(value: "きずきはじめた", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きたえはじめた", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きしみはじめた", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "きざみはじめた", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "zRqQLMYg9VdLofQ2jFR6", type: .vocab, level: .n1,
+              question: "太郎は小さい頃、侍に憧れてテレビの時代劇に【夢中】でした。",
+              options: [
+                OptionEntry(value: "もちゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "むちゅう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ゆめなか", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "もじゅう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "0ixeWxzmRICAb1e3PXin", type: .grammar, level: .n1,
+              question: "バスに乗ってから小銭を探して人を（　　）、乗る前から用意しておきましょう。",
+              options: [
+                OptionEntry(value: "待たせることなしに", linkedEntryId: "jlptn1-grammar-nashini", isAnswer: false),
+                OptionEntry(value: "待たせることのないように", linkedEntryId: "jlptn1-grammar-kotononaiyouni", isAnswer: true),
+                OptionEntry(value: "待たせんがために", linkedEntryId: "jlptn1-grammar-ngatameni", isAnswer: false),
+                OptionEntry(value: "待たせるべからず", linkedEntryId: "jlptn1-grammar-bekarazu", isAnswer: false)
+              ]),
+    QuizEntry(id: "RDScAqIiOeCKMmAt46Si", type: .vocab, level: .n1,
+              question: "HDDとは、【磁気式】の記憶装置のことで。膨大な情報を収納する倉庫のようなものである。",
+              options: [
+                OptionEntry(value: "じつきしき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じきしき", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "じつけしき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しつけしき", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Ep1lggbd949V6efSqBfJ", type: .vocab, level: .n1,
+              question: "HDDとは、磁気式の記憶装置のことで。【膨大】な情報を収納する倉庫のようなものである。",
+              options: [
+                OptionEntry(value: "ほうだい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぼうだい", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ほうたい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぼうたい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "XVWvwuItOvlCepKH8kxK", type: .vocab, level: .n1,
+              question: "HDDとは、磁気式の記憶装置のことで。膨大な情報を収納する【倉庫】のようなものである。",
+              options: [
+                OptionEntry(value: "そうこつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そうこ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "そうご", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そつこ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "VCnowcW5WubNvmw7wzoK", type: .vocab, level: .n1,
+              question: "【評判】がいい映画だったが、私にはちょっと物足りなかった。",
+              options: [
+                OptionEntry(value: "へいはん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ひょうばん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ひょうぱん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "へいぱん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "9kLmgsteKtZ1WHOtdjID", type: .vocab, level: .n1,
+              question: "この薬を飲むと、すぐに痛みが（　　）よ。",
+              options: [
+                OptionEntry(value: "ひやかします", linkedEntryId: "vocab-hiyakasu", isAnswer: false),
+                OptionEntry(value: "はげまします", linkedEntryId: "vocab-hagemasu", isAnswer: false),
+                OptionEntry(value: "あんじます", linkedEntryId: "vocab-anjiru", isAnswer: false),
+                OptionEntry(value: "やわらぎます", linkedEntryId: "vocab-yawaragu", isAnswer: true)
+              ]),
+    QuizEntry(id: "3Yzcy7gEJ32eGhJj4208", type: .grammar, level: .n1,
+              question: "あの女子高生の鞄には化粧品（　　）お菓子（　　）いっぱい入っているが、教科書やノートは見当たらない。",
+              options: [
+                OptionEntry(value: "だの / だの", linkedEntryId: "jlptn1-grammar-dano", isAnswer: true),
+                OptionEntry(value: "こそ / こそ", linkedEntryId: "jlptn3-grammar-koso", isAnswer: false),
+                OptionEntry(value: "なり / なり", linkedEntryId: "jlptn1-grammar-nari-nari", isAnswer: false),
+                OptionEntry(value: "だに / だに", linkedEntryId: "jlptn1-grammar-dani", isAnswer: false)
+              ]),
+    QuizEntry(id: "E1KhDVxSFgZTsw9EevUK", type: .vocab, level: .n1,
+              question: "HDDとは、磁気式の記憶装置のことで。膨大な情報を【収納】する倉庫のようなものである。",
+              options: [
+                OptionEntry(value: "しゅうない", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうのう", linkedEntryId: "vocab-shunou", isAnswer: true),
+                OptionEntry(value: "しょうのう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうなつ", linkedEntryId: "", isAnswer: false)
               ]),
     QuizEntry(id: "0gHFF3ZUJsn5BEAgJ7Zu", type: .grammar, level: .n1,
               question: "今更後悔した（　　）、もう遅い。",
@@ -508,7 +1277,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
               question: "酢は洗剤の代わりや除菌に使えるほか、蚊を【避ける】効果もあるそうだ。",
               options: [
                 OptionEntry(value: "よける", linkedEntryId: "vocab-yokeru", isAnswer: true),
-                OptionEntry(value: "さける", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さける", linkedEntryId: "vocab-sakeru", isAnswer: false),
                 OptionEntry(value: "よさける", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "よめける", linkedEntryId: "", isAnswer: false)
               ]),
@@ -3783,7 +4552,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
               options: [
                 OptionEntry(value: "がらみ", linkedEntryId: "vocab-garami", isAnswer: true),
                 OptionEntry(value: "ふくみ", linkedEntryId: "vocab-hukumi", isAnswer: false),
-                OptionEntry(value: "ぐるみ", linkedEntryId: "jlptn1-grammar-gukumi", isAnswer: false),
+                OptionEntry(value: "ぐるみ", linkedEntryId: "jlptn1-grammar-gurumi", isAnswer: false),
                 OptionEntry(value: "よしみ", linkedEntryId: "vocab-yoshimi", isAnswer: false)
               ]),
     QuizEntry(id: "11jgzt5DiC3Po3HdU3SK", type: .vocab, level: .n1,
@@ -6386,6 +7155,134 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "ことか", linkedEntryId: "jlptn2-grammar-kotodarou", isAnswer: false),
                 OptionEntry(value: "ことなら", linkedEntryId: "", isAnswer: false)
               ]),
+    QuizEntry(id: "yyCPNnM18mE1o7qQpRcf", type: .vocab, level: .n1,
+              question: "有名人が【母校】で授業をするとあって、その教室は生徒や先生で溢れんばかりになった。",
+              options: [
+                OptionEntry(value: "もこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぼこう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "むこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ほうこう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "FlvQirq1s9OYFVcZ08a1", type: .grammar, level: .n1,
+              question: "有名人が母校で授業をするとあって、その教室は生徒や先生で（　　）なった。",
+              options: [
+                OptionEntry(value: "あふれるように", linkedEntryId: "jlptn4-grammar-youninaru", isAnswer: false),
+                OptionEntry(value: "あふれんばかりに", linkedEntryId: "jlptn1-grammar-tobakarini", isAnswer: true),
+                OptionEntry(value: "あふれっぱなしに", linkedEntryId: "jlptn2-grammar-ppanashi", isAnswer: false),
+                OptionEntry(value: "あふれてやまなく", linkedEntryId: "jlptn1-grammar-teyamanai", isAnswer: false)
+              ]),
+    QuizEntry(id: "Q2mbjlpbeBpHOjUB0SUv", type: .vocab, level: .n1,
+              question: "植物の茎の細胞を、【顕微鏡】で観察してみよう。",
+              options: [
+                OptionEntry(value: "けんひけい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんひょうけい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けんびきょう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "きょうびけん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "lrLH120xtNkiekWrejhp", type: .vocab, level: .n1,
+              question: "中高年になったら、塩分の【摂取】は控えたほうがいいでしょう。",
+              options: [
+                OptionEntry(value: "せつしょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せっしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せっしゅ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "せっきゅう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "C6MydGvL1KstvY3iaRFW", type: .vocab, level: .n1,
+              question: "植物の【茎】の細胞を、顕微鏡で観察してみよう。",
+              options: [
+                OptionEntry(value: "ね", linkedEntryId: "vocab-ne", isAnswer: false),
+                OptionEntry(value: "め", linkedEntryId: "vocab-me", isAnswer: false),
+                OptionEntry(value: "くき", linkedEntryId: "vocab-kuki", isAnswer: true),
+                OptionEntry(value: "がく", linkedEntryId: "vocab-gaku", isAnswer: false)
+              ]),
+    QuizEntry(id: "WtUznpI2r13OwO3d4sPP", type: .vocab, level: .n1,
+              question: "中高年になったら、塩分の摂取は（　　）ほうがいいでしょう。",
+              options: [
+                OptionEntry(value: "おとろえた", linkedEntryId: "vocab-otoroeru", isAnswer: false),
+                OptionEntry(value: "ほろんだ", linkedEntryId: "vocab-horobu", isAnswer: false),
+                OptionEntry(value: "ひかえた", linkedEntryId: "vocab-hikaeru", isAnswer: true),
+                OptionEntry(value: "ゆるめた", linkedEntryId: "vocab-yurumeru", isAnswer: false)
+              ]),
+    QuizEntry(id: "AsWavn6H8Ug5f8lnLACV", type: .grammar, level: .n1,
+              question: "あの黒（　　）の女性は、どなたですか。",
+              options: [
+                OptionEntry(value: "まみれ", linkedEntryId: "jlptn1-grammar-mamire", isAnswer: false),
+                OptionEntry(value: "ずくめ", linkedEntryId: "jlptn1-grammar-zukume", isAnswer: true),
+                OptionEntry(value: "だらけ", linkedEntryId: "jlptn3-grammar-darake", isAnswer: false),
+                OptionEntry(value: "ぐるみ", linkedEntryId: "jlptn1-grammar-gurumi", isAnswer: false)
+              ]),
+    QuizEntry(id: "7wrajURrQXNkrsUi8AUH", type: .vocab, level: .n1,
+              question: "今、流行っている風邪の特徴的な症状は【下痢】と吐き気です。",
+              options: [
+                OptionEntry(value: "はり", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けり", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "げり", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じれい", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "ogC3VAPlHk245Cw38aRs", type: .vocab, level: .n1,
+              question: "今、流行っている風邪の【特徴的】な症状は下痢と吐き気です。",
+              options: [
+                OptionEntry(value: "とくじょうてき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "とくしょうてき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "とっじょうてき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "とくちょうてき", linkedEntryId: "", isAnswer: true)
+              ]),
+    QuizEntry(id: "ClFMoxB5chOGIIMqdXny", type: .vocab, level: .n1,
+              question: "空港でスパイと間違われ、三日間も（　　）。",
+              options: [
+                OptionEntry(value: "束縛する", linkedEntryId: "vocab-sokubaku", isAnswer: false),
+                OptionEntry(value: "規制する", linkedEntryId: "vocab-kisei", isAnswer: false),
+                OptionEntry(value: "制限する", linkedEntryId: "vocab-seigen", isAnswer: false),
+                OptionEntry(value: "拘束する", linkedEntryId: "vocab-kousoku", isAnswer: true)
+              ]),
+    QuizEntry(id: "UDUUtpnRH35cNvoDiMPF", type: .grammar, level: .n1,
+              question: "あのレストランの料理は味もいいが、それ（　　）見た目が食欲をそそる。",
+              options: [
+                OptionEntry(value: "にはんして", linkedEntryId: "jlptn3-grammar-hanshite", isAnswer: false),
+                OptionEntry(value: "をぬきにして", linkedEntryId: "jlptn2-grammar-nukinishite", isAnswer: false),
+                OptionEntry(value: "をこめて", linkedEntryId: "jlptn3-grammar-wokomete", isAnswer: false),
+                OptionEntry(value: "にもまして", linkedEntryId: "jlptn1-grammar-nimomashite", isAnswer: true)
+              ]),
+    QuizEntry(id: "EHRSMdZmlIAOebPMNB5P", type: .vocab, level: .n1,
+              question: "日常の【煩わしさ】から離れ、海を臨む素敵な雰囲気のホテルで余裕のある時間を過ごした。",
+              options: [
+                OptionEntry(value: "まぎらわしさ", linkedEntryId: "vocab-magirawashii", isAnswer: false),
+                OptionEntry(value: "わずらわしさ", linkedEntryId: "vocab-wazurawashii", isAnswer: true),
+                OptionEntry(value: "うるわしさ", linkedEntryId: "vocab-uruwashii", isAnswer: false),
+                OptionEntry(value: "いとわしさ", linkedEntryId: "vocab-itowashii", isAnswer: false)
+              ]),
+    QuizEntry(id: "hlxmN0GqyY0RwgjJyjbu", type: .vocab, level: .n1,
+              question: "日常の煩わしさから離れ、海を【臨む】素敵な雰囲気のホテルで余裕のある時間を過ごした。",
+              options: [
+                OptionEntry(value: "しずむ", linkedEntryId: "vocab-shizumu", isAnswer: false),
+                OptionEntry(value: "のぞむ", linkedEntryId: "vocab-nozomu-1", isAnswer: true),
+                OptionEntry(value: "ちぢむ", linkedEntryId: "vocab-chidimu", isAnswer: false),
+                OptionEntry(value: "つまむ", linkedEntryId: "vocab-tsumamu", isAnswer: false)
+              ]),
+    QuizEntry(id: "K1cJhaWMVRwpcwkL9ZBz", type: .vocab, level: .n1,
+              question: "（　　）、面接で落ちた。うまく返答できなかったのだから、仕方がない。",
+              options: [
+                OptionEntry(value: "案の定", linkedEntryId: "vocab-annojou", isAnswer: true),
+                OptionEntry(value: "依然", linkedEntryId: "vocab-izen", isAnswer: false),
+                OptionEntry(value: "断然", linkedEntryId: "vocab-danzen", isAnswer: false),
+                OptionEntry(value: "突如", linkedEntryId: "vocab-totsujou", isAnswer: false)
+              ]),
+    QuizEntry(id: "Ejoe1298QSX10pjgDgKY", type: .grammar, level: .n1,
+              question: "不真面目な学生は、ノートを取らないばかりか教科書（　　）持っていまい。",
+              options: [
+                OptionEntry(value: "のみ", linkedEntryId: "jlptn1-grammar-tada-nomi", isAnswer: false),
+                OptionEntry(value: "すら", linkedEntryId: "jlptn1-grammar-sura", isAnswer: true),
+                OptionEntry(value: "たり", linkedEntryId: "jlptn1-grammar-taritomo-nai", isAnswer: false),
+                OptionEntry(value: "でも", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "nC3OHmMmrvFnQjEUF9Jj", type: .vocab, level: .n1,
+              question: "毎日トレーニングに励む彼の鍛えられた筋肉は、【彫刻】のように美しい。",
+              options: [
+                OptionEntry(value: "じょうこく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちょうこく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ちょっこく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じょっこく", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "5upmaaWYTCylKB4RaajS", type: .grammar, level: .n1,
               question: "M氏は作家（　　） 画家、 そして俳優としても活躍するマルチタレントだ。",
               options: [
@@ -6399,7 +7296,7 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
               options: [
                 OptionEntry(value: "まみれ", linkedEntryId: "jlptn1-grammar-mamire", isAnswer: false),
                 OptionEntry(value: "ずくめ", linkedEntryId: "jlptn1-grammar-zukume", isAnswer: true),
-                OptionEntry(value: "ぐるみ", linkedEntryId: "jlptn1-grammar-gukumi", isAnswer: false),
+                OptionEntry(value: "ぐるみ", linkedEntryId: "jlptn1-grammar-gurumi", isAnswer: false),
                 OptionEntry(value: "かぎり", linkedEntryId: "jlptn2-grammar-kagiri-1", isAnswer: false)
               ]),
     QuizEntry(id: "5vWw4dZP5QNShwD8a6PN", type: .grammar, level: .n1,

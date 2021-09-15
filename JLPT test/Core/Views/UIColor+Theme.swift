@@ -12,6 +12,7 @@ extension UIColor {
     struct background {
         static let view = UIColor(hex: "f9f9f9")
         static let header = UIColor(hex: "E7F1F1")
+        static let statsCell = UIColor(hex: "FAF5EF")
     }
     
     struct brand {
@@ -47,13 +48,6 @@ extension UIColor {
         static let backgroundPrimary = UIColor(hex: "ebeff5")
     }
     
-    // Voice Call
-    struct VoiceCall {
-        static let background = UIColor(hex: "#192B49")
-        static let declineButton = UIColor(hex: "EE1F4B")
-        static let button = UIColor(hex: "111C2D")
-    }
-    
     struct auth {
         static let google = UIColor(hex: "DB4437")
         static let apple = UIColor(hex: "2E3033")
@@ -65,4 +59,5 @@ extension UIColor {
         static let correct = UIColor.systemGreen.withAlphaComponent(0.8)
         static let wrong = UIColor.systemRed.withAlphaComponent(0.8)
     }
+    
 }

@@ -98,12 +98,17 @@
 		E46B8A7E265530A900DC26BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4329CBD2650A7D5005FD459 /* LaunchScreen.storyboard */; };
 		E46B8A7F265530A900DC26BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4363D242653263F0003A26B /* GoogleService-Info.plist */; };
 		E46B8AB52655404200DC26BF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E46B8AB32655404200DC26BF /* DataModel.xcdatamodeld */; };
+		E46CCAA626ECA7DD0025323B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CCAA526ECA7DD0025323B /* SettingsViewController.swift */; };
 		E473A9022654187A00100DEB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473A9012654187A00100DEB /* WelcomeViewController.swift */; };
 		E4DF2BE026E07CD200FCC33A /* OptionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF2BDF26E07CD200FCC33A /* OptionEntry.swift */; };
 		E4E8C72426BB7C6B00082D4D /* NewQuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */; };
 		E4FF042826592315001A5D9F /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042726592315001A5D9F /* SpinnerView.swift */; };
 		E4FF042D26595D58001A5D9F /* BookmarkEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */; };
 		E4FF0432265A760A001A5D9F /* QuizGrammarDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */; };
+		E4FFC3CA26ECA8FA00BE7365 /* SettingsUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFC3C926ECA8FA00BE7365 /* SettingsUserCell.swift */; };
+		E4FFC3CC26ECAF5E00BE7365 /* StatGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFC3CB26ECAF5E00BE7365 /* StatGridView.swift */; };
+		E4FFC3CF26ECB03000BE7365 /* SettingsStatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFC3CE26ECB03000BE7365 /* SettingsStatCell.swift */; };
+		E4FFC3D226ECB13C00BE7365 /* StatEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FFC3D126ECB13C00BE7365 /* StatEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,12 +232,17 @@
 		E464A8DD2658E902006529CC /* Combine+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Combine+Utils.swift"; sourceTree = "<group>"; };
 		E464A8DE2658E902006529CC /* Firestore+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firestore+Combine.swift"; sourceTree = "<group>"; };
 		E46B8AB42655404200DC26BF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		E46CCAA526ECA7DD0025323B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E473A9012654187A00100DEB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E4DF2BDF26E07CD200FCC33A /* OptionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionEntry.swift; sourceTree = "<group>"; };
 		E4E8C72326BB7C6B00082D4D /* NewQuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuizData.swift; sourceTree = "<group>"; };
 		E4FF042726592315001A5D9F /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		E4FF042C26595D58001A5D9F /* BookmarkEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkEntry.swift; sourceTree = "<group>"; };
 		E4FF0431265A760A001A5D9F /* QuizGrammarDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGrammarDatabase.swift; sourceTree = "<group>"; };
+		E4FFC3C926ECA8FA00BE7365 /* SettingsUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserCell.swift; sourceTree = "<group>"; };
+		E4FFC3CB26ECAF5E00BE7365 /* StatGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatGridView.swift; sourceTree = "<group>"; };
+		E4FFC3CE26ECB03000BE7365 /* SettingsStatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStatCell.swift; sourceTree = "<group>"; };
+		E4FFC3D126ECB13C00BE7365 /* StatEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +375,7 @@
 				E4363CD9265251D50003A26B /* History */,
 				E4329D742650A892005FD459 /* Home */,
 				E4329D7E2650A89A005FD459 /* Sessions */,
+				E46CCAA226ECA7980025323B /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -634,6 +645,33 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		E46CCAA226ECA7980025323B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E4FFC3D026ECB13100BE7365 /* Models */,
+				E46CCAA426ECA7AF0025323B /* Views */,
+				E4FFC3CD26ECB02100BE7365 /* Cells */,
+				E46CCAA326ECA7AA0025323B /* Controllers */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E46CCAA326ECA7AA0025323B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E46CCAA526ECA7DD0025323B /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E46CCAA426ECA7AF0025323B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4FFC3CB26ECAF5E00BE7365 /* StatGridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E473A8FE2654186100100DEB /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +694,23 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E4FFC3CD26ECB02100BE7365 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E4FFC3C926ECA8FA00BE7365 /* SettingsUserCell.swift */,
+				E4FFC3CE26ECB03000BE7365 /* SettingsStatCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E4FFC3D026ECB13100BE7365 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4FFC3D126ECB13C00BE7365 /* StatEntry.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -953,6 +1008,7 @@
 				E464A8DF2658E902006529CC /* Combine+Utils.swift in Sources */,
 				E4363CC2265148C30003A26B /* QuizKanjiDatabase.swift in Sources */,
 				E4329D5A2650A881005FD459 /* LabelSegmentControllCell.swift in Sources */,
+				E4FFC3CF26ECB03000BE7365 /* SettingsStatCell.swift in Sources */,
 				E4329D502650A881005FD459 /* TextInputCell.swift in Sources */,
 				E4363D47265327CD0003A26B /* DatabaseDataSource.swift in Sources */,
 				E4329D382650A881005FD459 /* String+convertEmojiToImage.swift in Sources */,
@@ -1006,13 +1062,17 @@
 				E4329D6A2650A881005FD459 /* UIFont+Theme.swift in Sources */,
 				E4E8C72426BB7C6B00082D4D /* NewQuizData.swift in Sources */,
 				E4329D542650A881005FD459 /* TextViewCell.swift in Sources */,
+				E4FFC3CC26ECAF5E00BE7365 /* StatGridView.swift in Sources */,
 				E4363CD5265207CD0003A26B /* ExplanationItemExamplesView.swift in Sources */,
 				E4329D582650A881005FD459 /* LabelDetailWithDisclosureCell.swift in Sources */,
+				E4FFC3D226ECB13C00BE7365 /* StatEntry.swift in Sources */,
 				E4329D882650A89A005FD459 /* OptionCell.swift in Sources */,
 				E4363D4F2653ABDD0003A26B /* BookmarkViewController.swift in Sources */,
 				E4329D6C2650A881005FD459 /* PagniationIndicator.swift in Sources */,
 				E4329D422650A881005FD459 /* LoadingTextImageViewController.swift in Sources */,
+				E4FFC3CA26ECA8FA00BE7365 /* SettingsUserCell.swift in Sources */,
 				E4363CDD265251EB0003A26B /* HistoryViewController.swift in Sources */,
+				E46CCAA626ECA7DD0025323B /* SettingsViewController.swift in Sources */,
 				E4329D602650A881005FD459 /* ProgressBarView.swift in Sources */,
 				E4329CB52650A7D1005FD459 /* SceneDelegate.swift in Sources */,
 				E4329D462650A881005FD459 /* TitleDatePickerButtonViewController.swift in Sources */,

@@ -20,12 +20,15 @@ class DatabaseDataSource: NSObject {
         static let userQuizStats = "userQuizStats"
         static let userBookmarks = "userBookmarks"
         static let users = "users"
+        static let userStats = "userStats"
     }
     enum UserInfoKey {
         static let email = "email"
         static let name = "name"
         static let profilePhotoURL = "profilePhotoURL"
         static let age = "age"
+        static let streakDays = "streakDays"
+        static let numberOfAnsweredQuestions = "numberOfAnsweredQuestions"
     }
     
     struct Constants {
@@ -47,6 +50,54 @@ extension DatabaseDataSource {
     func getUserProfileImage() -> URL? {
         guard let user = Auth.auth().currentUser else { return nil }
         return user.photoURL
+    }
+    func getUserSettingsStats(callback: @escaping (_ stats: StatEntry?, _ error: Error?) -> Void) {
+        guard let user = Auth.auth().currentUser else { return callback(nil, FirebaseError.userMissing) }
+        let ref = Firestore.firestore().collection(CollectionName.userStats)
+        
+        ref.whereField("userID", isEqualTo: user.uid).getDocuments { snapshot, error in
+            if let error = error {
+                return callback(nil, error)
+            }
+            guard let snapshot = snapshot else { return callback(nil, FirebaseError.snapshotMissing) }
+            if snapshot.documentChanges.count != 1 { return callback(nil, FirebaseError.snapshotMissing) }
+
+            let change = snapshot.documentChanges[0]
+            if change.type == .added {
+                let data = change.document.data()
+                guard
+                    let streakDays = data[UserInfoKey.streakDays] as? Int,
+                    let numberOfAnsweredQuestions = data[UserInfoKey.numberOfAnsweredQuestions] as? Int
+                else { return callback(nil, FirebaseError.dataKeyMissing) }
+                return callback(StatEntry(streakDays: streakDays, numberOfAnsweredQuestions: numberOfAnsweredQuestions, exp: 0), nil)
+            } else {
+                return callback(nil, FirebaseError.snapshotMissing)
+            }
+        }
+    }
+    func updateUserSettingsStats(callback: @escaping (_ error: Error?) -> Void) {
+//        guard let user = Auth.auth().currentUser else { return callback(nil, FirebaseError.userMissing) }
+//        let ref = Firestore.firestore().collection(CollectionName.userStats)
+//
+//        ref.whereField("userID", isEqualTo: user.uid).getDocuments { snapshot, error in
+//            if let error = error {
+//                return callback(nil, error)
+//            }
+//            guard let snapshot = snapshot else { return callback(nil, FirebaseError.snapshotMissing) }
+//            if snapshot.documentChanges.count != 1 { return callback(nil, FirebaseError.snapshotMissing) }
+//
+//            let change = snapshot.documentChanges[0]
+//            if change.type == .added {
+//                let data = change.document.data()
+//                guard
+//                    let streakDays = data[UserInfoKey.streakDays] as? Int,
+//                    let numberOfAnsweredQuestions = data[UserInfoKey.numberOfAnsweredQuestions] as? Int
+//                else { return callback(nil, FirebaseError.dataKeyMissing) }
+//                return callback(StatEntry(streakDays: streakDays, numberOfAnsweredQuestions: numberOfAnsweredQuestions, exp: 0), nil)
+//            } else {
+//                return callback(nil, FirebaseError.snapshotMissing)
+//            }
+//        }
     }
     func updateUserStats(atID quizID: String, atLevel level: QuizLevel, withType type: QuizType, didUserAnswerCorrectly isUserCorrect: Bool, callback: @escaping (_ error: Error?) -> Void) {
         guard let user = Auth.auth().currentUser else { return callback(FirebaseError.userMissing) }

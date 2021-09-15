@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let database = DatabaseDataSource()
         let updatedGrammarIds: [String] = [
-            
+            "jlptn1-grammar-gurumi", "jlptn1-grammar-mamire", "jlptn1-grammar-zukume", "jlptn3-grammar-darake", "jlptn4-grammar-younisuru", "jlptn4-grammar-youninaru", "jlptn3-grammar-hanshite", "jlptn3-grammar-wokomete"
         ]
         let updatedVocabIds: [String] = [
-            
+            "vocab-itowashii", "vocab-nozomu-1", "vocab-nozomu-2","vocab-uruwashii", "vocab-totsujou", "vocab-izen", "vocab-annojou", "vocab-ne", "vocab-gaku", "vocab-danzen", "vocab-otoroeru", "vocab-horobu", "vocab-yurumeru", "vocab-sokubaku", "vocab-kisei", "vocab-seigen", "vocab-kousoku"
         ]
         for id in updatedGrammarIds {
             print(id)
@@ -80,16 +80,18 @@ extension AppDelegate {
             }
         }
         let homeViewController = HomeViewController(database: database)
-        let historyViewController = HistoryViewController()
         let bookmarkViewController = BookmarkViewController(database: database)
+//        let historyViewController = HistoryViewController()
+        let settingsViewController = SettingsViewController(database: database)
         
-        homeViewController.delegate = self
+        settingsViewController.delegate = self
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [
             homeViewController.embedInNavgationController(),
             bookmarkViewController.embedInNavgationController(),
-            historyViewController.embedInNavgationController()
+//            historyViewController.embedInNavgationController(),
+            settingsViewController.embedInNavgationController()
         ]
         window.rootViewController = tabBarController
     }
@@ -103,8 +105,8 @@ extension AppDelegate: WelcomeViewControllerDelegate {
         window.makeKeyAndVisible()
     }
 }
-extension AppDelegate: HomeViewControllerDelegate {
-    func homeViewControllerDidLogoutSuccessfully(_ controller: HomeViewController) {
+extension AppDelegate: SettingsViewControllerDelegate {
+    func settingsViewControllerDidLogoutSuccessfully(_ controller: SettingsViewController) {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         let welcomeViewController = WelcomeViewController()
