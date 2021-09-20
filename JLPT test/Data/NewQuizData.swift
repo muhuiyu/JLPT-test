@@ -10,20 +10,12 @@ import UIKit
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
 //    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "過去の失敗を（　　）ばかりいないで、もっと前向きに考えよう。",
+//              question: "（　　）一度の失敗くらいで、クヨクヨするな。",
 //              options: [
-//                OptionEntry(value: "打ち切って", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "追い出して", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "振り返って", linkedEntryId: "<#String#>", isAnswer: true),
-//                OptionEntry(value: "投げ出して", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "毎日トレーニングに励む彼の【鍛えられた】筋肉は、彫刻のように美しい。",
-//              options: [
-//                OptionEntry(value: "ととのえられた", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "きたえられた", linkedEntryId: "<#String#>", isAnswer: true),
-//                OptionEntry(value: "たたえられた", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "こさえられた", linkedEntryId: "<#String#>", isAnswer: false)
+//                OptionEntry(value: "まして", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "むろん", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "なおさら", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "たかが", linkedEntryId: "<#String#>", isAnswer: true)
 //              ]),
 //    QuizEntry(id: "", type: .vocab, level: .n1,
 //              question: "<#String#>",
@@ -120,22 +112,6 @@ let newQuizUpdate: [QuizEntry] = [
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "（　　）の爆弾事件の犯人が捕まった。",
-//              options: [
-//                OptionEntry(value: "一連", linkedEntryId: "<#String#>", isAnswer: true),
-//                OptionEntry(value: "一様", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "一帶", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "一面", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "顧客への対応が成績を左右する仕事に携わる彼らの（　　）、さぞ話が上手だろうと誰もが思う違いない。",
-//              options: [
-//                OptionEntry(value: "わけであるから", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "ものなら", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "ことだから", linkedEntryId: "<#String#>", isAnswer: true),
-//                OptionEntry(value: "ほうとすれば", linkedEntryId: "jlptn3-grammar-toshitara", isAnswer: false)
 //              ]),
 //    QuizEntry(id: "", type: .grammar, level: .n1,
 //              question: "こちらがお客様のご注文の品です。（　　）とよろしいのですが。",
