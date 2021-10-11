@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let database = DatabaseDataSource()
         let updatedGrammarIds: [String] = [
-            "jlptn3-grammar-wakedearu", "jlptn3-grammar-wakeda", "jlptn2-grammar-nokotodakara"
+            "jlptn2-grammar-buru", "jlptn3-grammar-tagaru", "jlptn4-grammar-garu", "jlptn4-grammar-youda", "jlptn1-grammar-you", "jlptn2-grammar-kanoyouda", "jlptn2-grammar-keiki", "jlptn1-grammar-kawakirini", "jlptn3-grammar-kikkake"
         ]
         let updatedVocabIds: [String] = [
-            "vocab-yuku", "vocab-torokeru", "vocab-yogosu", "vocab-narau", "vocab-meguru", "vocab-kuyokuyo"
+            "vocab-mikoshi", "vocab-takumi", "vocab-sokosoko", "vocab-soko", "vocab-yawarageru", "vocab-aa", "vocab-shibushibu", "vocab-hodohodo", "vocab-samatageru", "vocab-tairageru", "vocab-ararageru", "vocab-tewotsukusu", "vocab-tewokumu", "vocab-tewokuwaeru", "vocab-tewomusubu", "vocab-hutou", "vocab-hubi", "vocab-hutsuu", "vocab-kigakari", "vocab-kimagure", "vocab-kimama", "vocab-kisaku", "vocab-misetsukeru", "vocab-misekakeru", "vocab-miawaseru", "vocab-misebirakasu", "vocab-seiki", "vocab-teitaku", "vocab-arai-1", "vocab-arai-2", "vocab-masaka"
         ]
         for id in updatedGrammarIds {
             print(id)
