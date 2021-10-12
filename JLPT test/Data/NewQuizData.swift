@@ -9,102 +9,38 @@ import UIKit
 
 // MARK: - New quiz update
 let newQuizUpdate: [QuizEntry] = [
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .vocab, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
-//    QuizEntry(id: "", type: .grammar, level: .n1,
-//              question: "<#String#>",
-//              options: [
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
-//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
-//              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "予算が（　　）になって、新企画が進まない。",
+              options: [
+                OptionEntry(value: "ハード", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "ネック", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "トラウマ", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "コネ", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .vocab, level: .n1,
+              question: "きりが（　　）ところで休みましょう。",
+              options: [
+                OptionEntry(value: "いい", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "つく", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "<#String#>",
+              options: [
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
+    QuizEntry(id: "", type: .grammar, level: .n1,
+              question: "<#String#>",
+              options: [
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: true),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+              ]),
 //    QuizEntry(id: "", type: .vocab, level: .n1,
 //              question: "<#String#>",
 //              options: [

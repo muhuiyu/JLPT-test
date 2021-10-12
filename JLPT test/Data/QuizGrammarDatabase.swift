@@ -2565,9 +2565,201 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
               question: "名前や顔、声などを出さないことを（　　）男性はテレビのインタビューに答えてくれた。",
               options: [
                 OptionEntry(value: "よそに", linkedEntryId: "jlptn1-grammar-woyosoni", isAnswer: false),
-                OptionEntry(value: "前提に", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "前提に", linkedEntryId: "jlptn1-grammar-wozenteitoshite", isAnswer: true),
                 OptionEntry(value: "ものともせず", linkedEntryId: "jlptn1-grammar-womonotomosezu", isAnswer: false),
                 OptionEntry(value: "余儀なくされて", linkedEntryId: "jlptn1-grammar-woyoginakusareru", isAnswer: false)
+              ]),
+    QuizEntry(id: "JDPC26AHjwhCjzuQJDey", type: .vocab, level: .n1,
+              question: "バイトで【塾】講師として奮闘している。今日は速さ、時間、距離の計算を教えた。",
+              options: [
+                OptionEntry(value: "じく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ずく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じゅく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "じょく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "jXYPd20pCct2b0tW9niy", type: .vocab, level: .n1,
+              question: "バイトで塾講師として【奮闘】している。今日は速さ、時間、距離の計算を教えた。",
+              options: [
+                OptionEntry(value: "ほんとう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぶんとう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふんとう", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "ぶんどう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "SgznDXgCAQMuFS1GWtKB", type: .vocab, level: .n1,
+              question: "【家畜】センターでヤギを見たが、やはり自然の渓谷を跳ねているの見たいものだ。",
+              options: [
+                OptionEntry(value: "かちく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "いえちゃく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かいちゃく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "えちく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "b3o19RDn7VdaUBXOhrfn", type: .vocab, level: .n1,
+              question: "家畜センターでヤギを見たが、やはり自然の【渓谷】を跳ねているの見たいものだ。",
+              options: [
+                OptionEntry(value: "けいこく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しこく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せいくう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうごう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "M2GtjIBNKWSAhG7XkZbK", type: .vocab, level: .n1,
+              question: "予算がネックになって、【新企画】が進まない。",
+              options: [
+                OptionEntry(value: "しんけいかく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんきかく", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "しんきがく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんちかく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "DoTr41u9SaUjTUcK0aCa", type: .grammar, level: .n1,
+              question: "よそのお宅のことは（　　）、うちでは朝食は毎日家族全員で食べます。",
+              options: [
+                OptionEntry(value: "前提として", linkedEntryId: "jlptn1-grammar-wozenteitoshite", isAnswer: false),
+                OptionEntry(value: "いざ知らず", linkedEntryId: "jlptn1-grammar-naraizashirazu", isAnswer: true),
+                OptionEntry(value: "おろか", linkedEntryId: "jlptn1-grammar-waoroka", isAnswer: false),
+                OptionEntry(value: "に留まらず", linkedEntryId: "jlptn1-grammar-nitodomarazu", isAnswer: false)
+              ]),
+    QuizEntry(id: "yB5Q4P8icnmqIFAAvV1d", type: .vocab, level: .n1,
+              question: "【遺言】の作成を専門家に依頼する。",
+              options: [
+                OptionEntry(value: "ゆいごん", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "いうごん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いいげん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ゆうげん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "NjDGY3sf8Z2oE6Bjw34a", type: .vocab, level: .n1,
+              question: "夜中に消防車のサイレンが【鳴り響いた】。",
+              options: [
+                OptionEntry(value: "なりふぶいた", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "なりひびいた", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "のりひびいた", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "なりきびいた", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "cbHABfvzpVVLeMiE1xYz", type: .vocab, level: .n1,
+              question: "その選挙では、断然有利だと言われていた人が【落選】してしまった。",
+              options: [
+                OptionEntry(value: "ろくせん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "らくせん", linkedEntryId: "vocab-rakusen", isAnswer: true),
+                OptionEntry(value: "らいせん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ろぜん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "WqiXc9zpIpuxNUAF7JWp", type: .vocab, level: .n1,
+              question: "その【選挙】では、断然有利だと言われていた人が落選してしまった。",
+              options: [
+                OptionEntry(value: "ぜんきょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せんきょ", linkedEntryId: "vocab-senkyo", isAnswer: true),
+                OptionEntry(value: "せんきょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぜんきょ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "1JTBfiGEmbUMam2nbtJZ", type: .vocab, level: .n1,
+              question: "その選挙では、（　　）有利だと言われていた人が落選してしまった。",
+              options: [
+                OptionEntry(value: "猛烈", linkedEntryId: "vocab-mouretsu", isAnswer: false),
+                OptionEntry(value: "断然", linkedEntryId: "vocab-danzen", isAnswer: true),
+                OptionEntry(value: "極端", linkedEntryId: "vocab-kyokutan", isAnswer: false),
+                OptionEntry(value: "突如", linkedEntryId: "vocab-totsujou", isAnswer: false)
+              ]),
+    QuizEntry(id: "VN6C90ZBmVTi6d22VHvK", type: .vocab, level: .n1,
+              question: "最近は、患者本人に癌であることを（　　）する医者が多いらしい。",
+              options: [
+                OptionEntry(value: "告知", linkedEntryId: "vocab-kokuchi", isAnswer: true),
+                OptionEntry(value: "告白", linkedEntryId: "vocab-kokuhaku", isAnswer: false),
+                OptionEntry(value: "こっかい", linkedEntryId: "vocab-kokkai", isAnswer: false),
+                OptionEntry(value: "こうめい", linkedEntryId: "vocab-koumei", isAnswer: false)
+              ]),
+    QuizEntry(id: "lPYaf2JRKlAsHUW6nl7w", type: .grammar, level: .n1,
+              question: "子供達は今、シールに夢中で家の【家具】という家具にシールを貼っている。",
+              options: [
+                OptionEntry(value: "かいく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かぐ", linkedEntryId: "", isAnswer: true),
+                OptionEntry(value: "いえぐ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "えぐ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "7TbJ8LnCYhpngFaOmok2", type: .grammar, level: .n1,
+              question: "子供達は今、シールに夢中で家の家具（　　）家具にシールを貼っている。",
+              options: [
+                OptionEntry(value: "とみると", linkedEntryId: "jlptn1-grammar-tomiruto", isAnswer: false),
+                OptionEntry(value: "という", linkedEntryId: "jlptn1-grammar-n-toiu-n", isAnswer: true),
+                OptionEntry(value: "とみえる", linkedEntryId: "jlptn3-grammar-tomieru", isAnswer: false),
+                OptionEntry(value: "ときている", linkedEntryId: "jlptn1-grammar-tokiteiru", isAnswer: false)
+              ]),
+    QuizEntry(id: "OsWSCp5kbiyrd8oNNjju", type: .grammar, level: .n1,
+              question: "愚痴（　　）、言わないことにした。",
+              options: [
+                OptionEntry(value: "を言えばキリがないので", linkedEntryId: "jlptn1-grammar-kiriganai", isAnswer: true),
+                OptionEntry(value: "に言うに留まらず", linkedEntryId: "jlptn1-grammar-nitodomarazu", isAnswer: false),
+                OptionEntry(value: "もすれば", linkedEntryId: "jlptn0-grammar-mosureba", isAnswer: false),
+                OptionEntry(value: "とは限りないで", linkedEntryId: "jlptn3-grammar-towakagiranai", isAnswer: false)
+              ]),
+    QuizEntry(id: "lFCGkNkbvabBGfWTMwnE", type: .vocab, level: .n1,
+              question: "弟は【無邪気】な顔で眠っている。",
+              options: [
+                OptionEntry(value: "むじゃき", linkedEntryId: "vocab-mujyaki", isAnswer: true),
+                OptionEntry(value: "むやき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "むえき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "むしゃき", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "x2YIgV99sK9LJ86bH5Ff", type: .vocab, level: .n1,
+              question: "送料は商品が五千円以上は無料、五千円以下は全国（　　）千円となります。",
+              options: [
+                OptionEntry(value: "いっせい", linkedEntryId: "vocab-issei", isAnswer: false),
+                OptionEntry(value: "いちれん", linkedEntryId: "vocab-ichiren", isAnswer: false),
+                OptionEntry(value: "いちりつ", linkedEntryId: "vocab-ichiritsu", isAnswer: true),
+                OptionEntry(value: "いったい", linkedEntryId: "vocab-ittai-2", isAnswer: false)
+              ]),
+    QuizEntry(id: "UOe22lCVCMhLOITn0e3D", type: .grammar, level: .n1,
+              question: "遅（　　）早（　　）あの会社は倒産しただろう。",
+              options: [
+                OptionEntry(value: "かれ / かれ", linkedEntryId: "jlptn1-grammar-kare-kare", isAnswer: true),
+                OptionEntry(value: "なり / なり", linkedEntryId: "jlptn1-grammar-nari-nari", isAnswer: false),
+                OptionEntry(value: "つつ / つつ", linkedEntryId: "jlptn2-grammar-tsutsu-2", isAnswer: false),
+                OptionEntry(value: "とも / とも", linkedEntryId: "jlptn1-grammar-tomo-tomo", isAnswer: false)
+              ]),
+    QuizEntry(id: "M4qCZOBGBx9OyAgchVar", type: .vocab, level: .n1,
+              question: "家畜センターでヤギを見たが、やはり自然の渓谷を【跳ねて】いるの見たいものだ。",
+              options: [
+                OptionEntry(value: "はねて", linkedEntryId: "vocab-haneru", isAnswer: true),
+                OptionEntry(value: "すねて", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かねて", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こねて", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "D6ps9KZsbQTMzz861NkG", type: .vocab, level: .n1,
+              question: "横綱は【惨めな】負け方をしてしまった。",
+              options: [
+                OptionEntry(value: "みじめな", linkedEntryId: "vocab-mijime", isAnswer: true),
+                OptionEntry(value: "いじめな", linkedEntryId: "vocab-ijime", isAnswer: false),
+                OptionEntry(value: "あらかじめな", linkedEntryId: "vocab-arakajime", isAnswer: false),
+                OptionEntry(value: "まじめな", linkedEntryId: "vocab-majime", isAnswer: false)
+              ]),
+    QuizEntry(id: "R6Iuv95s66kMPAbHtKzN", type: .vocab, level: .n1,
+              question: "【横綱】は惨めな負け方をしてしまった。",
+              options: [
+                OptionEntry(value: "よこづな", linkedEntryId: "vocab-yokoduna", isAnswer: true),
+                OptionEntry(value: "よこつな", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうこん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうごう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "HdjCYSltdR8hwV3p8uZY", type: .vocab, level: .n1,
+              question: "少し前から目が霞んで、文字が（　　）見える。",
+              options: [
+                OptionEntry(value: "にじんで", linkedEntryId: "vocab-nijimu", isAnswer: true),
+                OptionEntry(value: "しおれて", linkedEntryId: "vocab-shioreru", isAnswer: false),
+                OptionEntry(value: "しびれて", linkedEntryId: "vocab-shibireru", isAnswer: false),
+                OptionEntry(value: "かぶれて", linkedEntryId: "vocab-kabureru", isAnswer: false)
+              ]),
+    QuizEntry(id: "yIyax47VeRT0oDKHQR3g", type: .vocab, level: .n1,
+              question: "少し前から目が【霞んで】、文字が滲んで見える。",
+              options: [
+                OptionEntry(value: "かすんで", linkedEntryId: "vocab-kasumu", isAnswer: true),
+                OptionEntry(value: "かさんで", linkedEntryId: "vocab-kasamu", isAnswer: false),
+                OptionEntry(value: "あやぶんで", linkedEntryId: "vocab-ayabumu", isAnswer: false),
+                OptionEntry(value: "ちぢんで", linkedEntryId: "vocab-chidimu", isAnswer: false)
+              ]),
+    QuizEntry(id: "sRA5Yvm7S4Xis4aE3XAh", type: .vocab, level: .n1,
+              question: "少し前から目が霞んで、文字が【滲んで】見える。",
+              options: [
+                OptionEntry(value: "にじんで", linkedEntryId: "vocab-nijimu", isAnswer: true),
+                OptionEntry(value: "しずんで", linkedEntryId: "vocab-shizumu", isAnswer: false),
+                OptionEntry(value: "つまんで", linkedEntryId: "vocab-tsumamu", isAnswer: false),
+                OptionEntry(value: "ねたんで", linkedEntryId: "vocab-netamu", isAnswer: false)
               ]),
     QuizEntry(id: "PIyNDXL5Msqfva7442PF", type: .vocab, level: .n1,
               question: "変換ミスがあります。「荒い」と「【粗い】」と訂正して再度提出してください。",
