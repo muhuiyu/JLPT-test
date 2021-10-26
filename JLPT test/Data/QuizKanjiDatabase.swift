@@ -46,6 +46,102 @@ let n1VocabKanjiQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "くずさない", linkedEntryId: "", isAnswer: true),
                 OptionEntry(value: "こわさない", linkedEntryId: "", isAnswer: false)
               ]),
+    QuizEntry(id: "2G0ykaqE2eDZxTJsdXkR", type: .vocab, level: .n1,
+              question: "損失を取り返そうとして、かえって【傷口】を広げる。",
+              options: [
+                OptionEntry(value: "きずぐち", linkedEntryId: "vocab-kizuguchi", isAnswer: true),
+                OptionEntry(value: "しょうこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けずくち", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうち", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "c8QZtuB0I33hmUadcKaq", type: .vocab, level: .n1,
+              question: "彼女は化粧しないで、いわゆる【素顔】である。",
+              options: [
+                OptionEntry(value: "すがお", linkedEntryId: "vocab-sugao", isAnswer: true),
+                OptionEntry(value: "すかお", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そがお", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そかお", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "69sEOw3ggJEfQWE2wab6", type: .vocab, level: .n1,
+              question: "【身軽】に川を飛び越える。",
+              options: [
+                OptionEntry(value: "みがる", linkedEntryId: "vocab-migaru", isAnswer: true),
+                OptionEntry(value: "みかる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんかる", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "D5zh1k8wA5qHTLRzWJ9i", type: .vocab, level: .n1,
+              question: "彼はその【書留】を受けとったとき、やはり父の底意地のわるさを憎んだ。",
+              options: [
+                OptionEntry(value: "かきとめ", linkedEntryId: "vocab-kakitome", isAnswer: true),
+                OptionEntry(value: "かいりゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くりゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かくりつ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "7PCfM7XcVdFTEnkbjB9B", type: .vocab, level: .n1,
+              question: "その後の事は申し上げるだけ、無用の【口数】に過ぎますまい。",
+              options: [
+                OptionEntry(value: "くちかず", linkedEntryId: "vocab-kuchikazu", isAnswer: true),
+                OptionEntry(value: "こうすう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くすう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くちすう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "KhqlsPxK4yX86LGhBJI6", type: .vocab, level: .n1,
+              question: "【片言】も聞きもらさないよ。",
+              options: [
+                OptionEntry(value: "かたこと", linkedEntryId: "vocab-katakoto", isAnswer: true),
+                OptionEntry(value: "かいげん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かいこと", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かちげん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "goTvmTybLCcziluDQXJA", type: .vocab, level: .n1,
+              question: "長年の苦労が【実る】。",
+              options: [
+                OptionEntry(value: "みのる", linkedEntryId: "vocab-minoru", isAnswer: true),
+                OptionEntry(value: "みじる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じみる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "のみる", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "vzrNx4IKPomvYSkIrzTG", type: .vocab, level: .n1,
+              question: "夫としていた男に別を【告げる】手紙も無く、子供等に暇乞をする手紙も無かった。",
+              options: [
+                OptionEntry(value: "つげる", linkedEntryId: "vocab-tsugeru", isAnswer: true),
+                OptionEntry(value: "うげる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しめげる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そくげる", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "jzQraTbYgfWciBjVzD65", type: .vocab, level: .n1,
+              question: "新しい方法を【工夫】しましょう。",
+              options: [
+                OptionEntry(value: "くふう", linkedEntryId: "vocab-kuhuu", isAnswer: true),
+                OptionEntry(value: "こうふう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くうふう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くうふ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "qADl4j2BnZVAckqcHR75", type: .vocab, level: .n1,
+              question: "彼女はこの人気を閨房の秘密をさらけ出すことによって【獲得】した。",
+              options: [
+                OptionEntry(value: "かくとく", linkedEntryId: "vocab-kakutoku", isAnswer: true),
+                OptionEntry(value: "かいとく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "えとく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かくどく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "v0JFQ97WWqCIYSNbCxBS", type: .vocab, level: .n1,
+              question: "【景色】を眺めてはまた立ってゆく人があった。",
+              options: [
+                OptionEntry(value: "けしき", linkedEntryId: "vocab-keshiki", isAnswer: true),
+                OptionEntry(value: "けいしき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けんし", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けいしょく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "xDWQujGM4sNuH3n7OpbU", type: .vocab, level: .n1,
+              question: "彼の悲しみは【察する】に余りある。",
+              options: [
+                OptionEntry(value: "さっする", linkedEntryId: "vocab-sassuru", isAnswer: true),
+                OptionEntry(value: "さいする", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しする", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さくする", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "", type: .vocab,
               level: .n1,
               question: "発表の内容はすべて【録音】させていただきます。",

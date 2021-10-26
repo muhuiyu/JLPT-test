@@ -2201,6 +2201,562 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "おかしな", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "平凡な", linkedEntryId: "", isAnswer: true)
               ]),
+    QuizEntry(id: "NDygR4WKtxu2PjS80YAx", type: .vocab, level: .n1,
+              question: "この世に【実在】しない生物です。",
+              options: [
+                OptionEntry(value: "じつざい", linkedEntryId: "vocab-jitsuzai", isAnswer: true),
+                OptionEntry(value: "じっさい", linkedEntryId: "vocab-jissai", isAnswer: false),
+                OptionEntry(value: "じつさい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じつさ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "8LRPGASWQZBuOkIuO3Mq", type: .vocab, level: .n1,
+              question: "あの時は【実際】だめだと思った。",
+              options: [
+                OptionEntry(value: "じっさい", linkedEntryId: "vocab-jissai", isAnswer: true),
+                OptionEntry(value: "じつざい", linkedEntryId: "vocab-jitsuzai", isAnswer: false),
+                OptionEntry(value: "しっさつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じつさい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "7jKx545f5b7liENNiQ8P", type: .vocab, level: .n1,
+              question: "一九三八年三月に、ナチス・ドイツはオーストリアを【合併】し、三九年三月には、チェコとスロヴァキアとを合併した。",
+              options: [
+                OptionEntry(value: "がっぺい", linkedEntryId: "vocab-gappei", isAnswer: true),
+                OptionEntry(value: "こうへい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ごうへい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かっぺい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "zDMqmiraZk2jLtAgbsij", type: .vocab, level: .n1,
+              question: "母は彼の【強情さ】加減に驚嘆を交えた微笑を洩らした。",
+              options: [
+                OptionEntry(value: "ごうじょうさ", linkedEntryId: "vocab-goujyou", isAnswer: true),
+                OptionEntry(value: "ごうぞうさ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きょうじょうさ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きょうぞうさ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "MRDqqFbpxI1Gk1QTkbpk", type: .vocab, level: .n1,
+              question: "ライバルを【中傷】して蹴落とした。",
+              options: [
+                OptionEntry(value: "ちゅうしょう", linkedEntryId: "vocab-chusyou", isAnswer: true),
+                OptionEntry(value: "なかきず", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じゅうしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅんしょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "J6siA36Y5CyfuSZbG1em", type: .vocab, level: .n1,
+              question: "ライバルを中傷して【蹴落した】。",
+              options: [
+                OptionEntry(value: "けおとした", linkedEntryId: "vocab-keotosu", isAnswer: true),
+                OptionEntry(value: "すおとした", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅおちした", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "つおとした", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "b5QQ4gbjJPnV5ZIPGMrJ", type: .vocab, level: .n1,
+              question: "領主に窮状を【直訴】しました。",
+              options: [
+                OptionEntry(value: "じきそ", linkedEntryId: "vocab-jikiso", isAnswer: true),
+                OptionEntry(value: "ちょっそ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じっそ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちょくそ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "ReTmUnREpqszLXTWIjDn", type: .vocab, level: .n1,
+              question: "不思議なほど【色彩】の鮮な記憶である。",
+              options: [
+                OptionEntry(value: "しきさい", linkedEntryId: "vocab-shikisai", isAnswer: true),
+                OptionEntry(value: "しきざい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょくさい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょくざい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "FGtGrwPTLqUZ2GfuQzAA", type: .vocab, level: .n1,
+              question: "我我は母の胎内にいた時、人生に【処する】道を学んだであろうか？　",
+              options: [
+                OptionEntry(value: "しょする", linkedEntryId: "vocab-syosuru", isAnswer: true),
+                OptionEntry(value: "こする", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さいする", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しする", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "lCGIp5wd5EOHPozITLzp", type: .vocab, level: .n1,
+              question: "電柱に車体を【擦る】。",
+              options: [
+                OptionEntry(value: "こする", linkedEntryId: "vocab-kosuru", isAnswer: true),
+                OptionEntry(value: "さする", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さっする", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こっする", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "2qOwGpzasYQ8QE01Pq0w", type: .vocab, level: .n1,
+              question: "生活の【受動】性が強調された。",
+              options: [
+                OptionEntry(value: "じゅどう", linkedEntryId: "vocab-jyudou", isAnswer: true),
+                OptionEntry(value: "しゅどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "うけうご", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅとう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "8APisHvVdVtRqNdBCF3S", type: .vocab, level: .n1,
+              question: "【柔道】が体育の定期テストに出ます。",
+              options: [
+                OptionEntry(value: "じゅうどう", linkedEntryId: "vocab-judo", isAnswer: true),
+                OptionEntry(value: "じゅどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうどう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "pbFZbqBeqvP9ikNQgrUG", type: .vocab, level: .n1,
+              question: "【生涯】忘れられない出来事がありますか。",
+              options: [
+                OptionEntry(value: "しょうがい", linkedEntryId: "vocab-syougai", isAnswer: true),
+                OptionEntry(value: "しょうあい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうえつ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "T6MG0WskEGoKHjh4rkUT", type: .vocab, level: .n1,
+              question: "相次ぐ【偽装】結婚でまた男女を逮捕しました。",
+              options: [
+                OptionEntry(value: "ぎそう", linkedEntryId: "vocab-gisou", isAnswer: true),
+                OptionEntry(value: "ぎぞう", linkedEntryId: "vocab-gizou", isAnswer: false),
+                OptionEntry(value: "きそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きぞう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "jIqhnjSB2WwQZIcMs0kO", type: .vocab, level: .n1,
+              question: "怠けて星の観測簿を【偽造】して先生に差出したら忽ち見破られた。",
+              options: [
+                OptionEntry(value: "ぎそう", linkedEntryId: "vocab-gisou", isAnswer: false),
+                OptionEntry(value: "ぎぞう", linkedEntryId: "vocab-gizou", isAnswer: true),
+                OptionEntry(value: "きそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きぞう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "MT6ZuhYzTGo8lsyu1eBd", type: .vocab, level: .n1,
+              question: "あの頃の大川の夕【景色】は、たとい昔の風流には及ばなかったかもしれない。",
+              options: [
+                OptionEntry(value: "けしき", linkedEntryId: "vocab-keshiki", isAnswer: true),
+                OptionEntry(value: "けいしき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けじき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けいし", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "qcsRVSC1HooL0EvC2AHU", type: .vocab, level: .n1,
+              question: "議論が極端から【極端】へ走る。",
+              options: [
+                OptionEntry(value: "きょくたん", linkedEntryId: "vocab-kyokutan", isAnswer: true),
+                OptionEntry(value: "きょうたん", linkedEntryId: "vocab-kyoutan", isAnswer: false),
+                OptionEntry(value: "きゅうたん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぎょくたん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "E3Hg74kjl4iMQHGZK4W8", type: .vocab, level: .n1,
+              question: "最新の科学技術には【驚嘆】するばかりだ。",
+              options: [
+                OptionEntry(value: "きょくたん", linkedEntryId: "vocab-kyokutan", isAnswer: false),
+                OptionEntry(value: "きょうたん", linkedEntryId: "vocab-kyoutan", isAnswer: true),
+                OptionEntry(value: "ぎょうたん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きゅくたん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "6Cg1vk7mUGbRnXnG6lq5", type: .vocab, level: .n1,
+              question: "政治の【姿勢】を正す。",
+              options: [
+                OptionEntry(value: "しせい", linkedEntryId: "vocab-shisei", isAnswer: true),
+                OptionEntry(value: "しせつ", linkedEntryId: "vocab-shisetsu", isAnswer: false),
+                OptionEntry(value: "じせい", linkedEntryId: "vocab-jisei", isAnswer: false),
+                OptionEntry(value: "しっせい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "CFpo1f2SbCM2RfqgDmJl", type: .vocab, level: .n1,
+              question: "政府に阿附するような【施設】によって全く踏みにじられてしまった。",
+              options: [
+                OptionEntry(value: "しせい", linkedEntryId: "vocab-shisei", isAnswer: false),
+                OptionEntry(value: "しせつ", linkedEntryId: "vocab-shisetsu", isAnswer: true),
+                OptionEntry(value: "じせい", linkedEntryId: "vocab-jisei", isAnswer: false),
+                OptionEntry(value: "しっせい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "LqyFvKvh1J1oddo3GNQT", type: .vocab, level: .n1,
+              question: "英語の【時制】が12個あるのは知っています。",
+              options: [
+                OptionEntry(value: "しせい", linkedEntryId: "vocab-shisei", isAnswer: false),
+                OptionEntry(value: "しせつ", linkedEntryId: "vocab-shisetsu", isAnswer: false),
+                OptionEntry(value: "じせい", linkedEntryId: "vocab-jisei", isAnswer: true),
+                OptionEntry(value: "しっせい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "78wfst5H7ITovF15m3yj", type: .vocab, level: .n1,
+              question: "幾百万の【児童】を救ってもらいたいと思うのであります。",
+              options: [
+                OptionEntry(value: "じどう", linkedEntryId: "vocab-jidou", isAnswer: true),
+                OptionEntry(value: "しどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じのう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "にゅうどう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "8tZxcJ42PW7JxsXvDpPd", type: .vocab, level: .n1,
+              question: "親子、夫婦、朋友、【師弟】、兄弟となった縁のかりそめならぬことを思う。",
+              options: [
+                OptionEntry(value: "してい", linkedEntryId: "vocab-shitei", isAnswer: true),
+                OptionEntry(value: "しだい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しとう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しどう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "c2Y6juyrmvFmKKZUKME4", type: .vocab, level: .n1,
+              question: "今回はおすすめの【穴場】観光スポット30選をご紹介します。",
+              options: [
+                OptionEntry(value: "あなば", linkedEntryId: "vocab-anaba", isAnswer: true),
+                OptionEntry(value: "あなじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せつば", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きょうば", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "aNJZTFMi9UREH2ruXkgU", type: .vocab, level: .n1,
+              question: "通気性120%にUPした超【厚手】フィルターです。",
+              options: [
+                OptionEntry(value: "あつで", linkedEntryId: "vocab-atsude", isAnswer: true),
+                OptionEntry(value: "あつて", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おしゅ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Ah5FPSb96juAZuUooFT1", type: .vocab, level: .n1,
+              question: "皆はその妙齢な娘の前で手柄を見せようと争った。",
+              options: [
+                OptionEntry(value: "てがら", linkedEntryId: "vocab-tegara", isAnswer: true),
+                OptionEntry(value: "てから", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "てばら", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "てやら", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "0Ri0Xns2Ylt2yMxFeqX9", type: .vocab, level: .n1,
+              question: "【織物】ではあるが秋草が茂っている叢になっている。",
+              options: [
+                OptionEntry(value: "おりもの", linkedEntryId: "vocab-orimono", isAnswer: true),
+                OptionEntry(value: "おりぶつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せいぶ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しつぶ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "EWmsf6sv2ES0dBPpoIVY", type: .vocab, level: .n1,
+              question: "公園の【砂場】で砂鉄が取れない理由はなんですか。",
+              options: [
+                OptionEntry(value: "すなば", linkedEntryId: "vocab-sunaba", isAnswer: true),
+                OptionEntry(value: "すなじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さうば", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "すにば", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "3UwYVomUeIvuCho83hEQ", type: .vocab, level: .n1,
+              question: "波を受けて船が大きく（　　）。",
+              options: [
+                OptionEntry(value: "かたむいた", linkedEntryId: "vocab-katamuku", isAnswer: true),
+                OptionEntry(value: "くじいた", linkedEntryId: "vocab-kujiku", isAnswer: false),
+                OptionEntry(value: "まねいた", linkedEntryId: "vocab-maneku", isAnswer: false),
+                OptionEntry(value: "つらぬいた", linkedEntryId: "vocab-tsuranuku", isAnswer: false)
+              ]),
+    QuizEntry(id: "kG3iphGAFxRjWjNNfdNI", type: .vocab, level: .n1,
+              question: "パーティーを（　　）など、友人を家に招くことが好きです。",
+              options: [
+                OptionEntry(value: "ひらく", linkedEntryId: "vocab-hiraku", isAnswer: true),
+                OptionEntry(value: "あく", linkedEntryId: "vocab-aku", isAnswer: false),
+                OptionEntry(value: "はだける", linkedEntryId: "vocab-hadakeru", isAnswer: false),
+                OptionEntry(value: "いく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "el3Iw9RFNHU87sbTXf6X", type: .vocab, level: .n1,
+              question: "母はどう云う量見か、子でもない私を【養う】ために、捨児の嘘をついたのでした。",
+              options: [
+                OptionEntry(value: "やしなう", linkedEntryId: "vocab-yashinau", isAnswer: true),
+                OptionEntry(value: "うしなう", linkedEntryId: "vocab-ushinau", isAnswer: false),
+                OptionEntry(value: "そこなう", linkedEntryId: "vocab-sokonau", isAnswer: false),
+                OptionEntry(value: "つぐなう", linkedEntryId: "vocab-tsugunau", isAnswer: false)
+              ]),
+    QuizEntry(id: "fABKhxoJnmqo4FVnhNHn", type: .vocab, level: .n1,
+              question: "新薬開発のため両社が【握手】する。",
+              options: [
+                OptionEntry(value: "あくしゅ", linkedEntryId: "vocab-akusyu", isAnswer: true),
+                OptionEntry(value: "おくしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "やくしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "はくしゅ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "TqSKnbjUHaHzXvYkq23e", type: .vocab, level: .n1,
+              question: "人間の力で自然を【克服】せんとする努力が西洋における科学の発達を促した。",
+              options: [
+                OptionEntry(value: "こくふく", linkedEntryId: "vocab-kokuhuku", isAnswer: true),
+                OptionEntry(value: "こうふく", linkedEntryId: "vocab-kouhuku", isAnswer: false),
+                OptionEntry(value: "こくふう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くうふく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "BGYjVvE7WI9psijlBfdN", type: .vocab, level: .n1,
+              question: "私はこの警官に対して何となくいい感じを懐くと同時に自分の【軽率】な行為を恥じる心がかなり強く起った。",
+              options: [
+                OptionEntry(value: "けいそつ", linkedEntryId: "vocab-keisotsu", isAnswer: true),
+                OptionEntry(value: "けいりつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かいそつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かいりつ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "8UY1U3dO2msE91N8WKdf", type: .vocab, level: .n1,
+              question: "ワクチン接種前に【解熱】鎮痛剤を飲んでしまった。",
+              options: [
+                OptionEntry(value: "げねつ", linkedEntryId: "vocab-genetsu", isAnswer: true),
+                OptionEntry(value: "かいねつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうねつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けいねつ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "engC5j3XHIMPPyXbqVdz", type: .vocab, level: .n1,
+              question: "ワクチン【接種】前に解熱鎮痛剤を飲んでしまった。",
+              options: [
+                OptionEntry(value: "せっしゅ", linkedEntryId: "vocab-sessyu-1", isAnswer: true),
+                OptionEntry(value: "せつじゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せつしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せつしょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "1Ccgwu6aDMRUej4Rtf6q", type: .vocab, level: .n1,
+              question: "ワクチン接種前に解熱【鎮痛剤】を飲んでしまった。",
+              options: [
+                OptionEntry(value: "ちんつうざい", linkedEntryId: "vocab-chintsuuzai", isAnswer: true),
+                OptionEntry(value: "しんとうざい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せいずうさい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せいつうさい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "YkHJnoN8thuM9XjihMGi", type: .vocab, level: .n1,
+              question: "麦をまぜて食えば栄養【摂取】が十分になって自から健康増進せしむることです。",
+              options: [
+                OptionEntry(value: "せっしゅ", linkedEntryId: "vocab-sessyu-2", isAnswer: true),
+                OptionEntry(value: "せいしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せんしょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せつしょ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "5rhD4lhiqHuPlg9Ymjzz", type: .vocab, level: .n1,
+              question: "夫婦の関係などは最も【顕著】な相違がありはすまいか。",
+              options: [
+                OptionEntry(value: "けんちょ", linkedEntryId: "vocab-kencyo", isAnswer: true),
+                OptionEntry(value: "げんちゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "がんちょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けんしゃ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Adi6qwDqNHoGNfDhZyC0", type: .vocab, level: .n1,
+              question: "時代の背景を斟酌して【考慮】しなければならない。",
+              options: [
+                OptionEntry(value: "こうりょ", linkedEntryId: "vocab-kouryo", isAnswer: true),
+                OptionEntry(value: "こうしゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こりょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こりょ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "HtYlz6TvWjq87EMgHOya", type: .vocab, level: .n1,
+              question: "その制度の有する【欠陥】の日一日明白になっていることによって知ることができる。",
+              options: [
+                OptionEntry(value: "けっかん", linkedEntryId: "vocab-kekkan", isAnswer: true),
+                OptionEntry(value: "けついん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けっきゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けつじょ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "rukMvMkUR41jvX1Qfwcx", type: .vocab, level: .n1,
+              question: "故郷の【市場】の雑貨店で、これを扱うものがあります。",
+              options: [
+                OptionEntry(value: "いちば", linkedEntryId: "vocab-shijyou", isAnswer: true),
+                OptionEntry(value: "しじょう", linkedEntryId: "vocab-ichiba", isAnswer: false),
+                OptionEntry(value: "しば", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じじょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "sPp0kLloSZOAksXeHAok", type: .vocab, level: .n1,
+              question: "久保建英の推定【市場】価格がピーク時の3分の1です。",
+              options: [
+                OptionEntry(value: "いちば", linkedEntryId: "vocab-ichiba", isAnswer: true),
+                OptionEntry(value: "しじょう", linkedEntryId: "vocab-shijyou", isAnswer: false),
+                OptionEntry(value: "しば", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じじょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "dS7gxBwZI1UdxKkKVmcc", type: .vocab, level: .n1,
+              question: "言いようのない【孤独】に攻めつけられてしまった。",
+              options: [
+                OptionEntry(value: "こどく", linkedEntryId: "vocab-kodoku", isAnswer: true),
+                OptionEntry(value: "ことく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くどく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうどく", linkedEntryId: "vocab-koudoku", isAnswer: false)
+              ]),
+    QuizEntry(id: "IyS9hNRliTHCnl82QRv7", type: .vocab, level: .n1,
+              question: "この度、新聞【購読】料の値上げが発表となりました。",
+              options: [
+                OptionEntry(value: "こうどく", linkedEntryId: "vocab-koudoku", isAnswer: true),
+                OptionEntry(value: "こどく", linkedEntryId: "vocab-kodoku", isAnswer: false),
+                OptionEntry(value: "ことく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くどく", linkedEntryId: "", isAnswer: false),
+              ]),
+    QuizEntry(id: "7XCqY2VqHNe3BlmlBNW9", type: .vocab, level: .n1,
+              question: "２２日、【強盗】の疑いで、住所不定、無職の男を逮捕した。",
+              options: [
+                OptionEntry(value: "ごうとう", linkedEntryId: "vocab-goutou", isAnswer: true),
+                OptionEntry(value: "こうとう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうどう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ごとう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "kOThAdN9fBFYmhGFTUWw", type: .vocab, level: .n1,
+              question: "公募推薦【出願】して受けなかったってどうすればいい？",
+              options: [
+                OptionEntry(value: "しゅつがん", linkedEntryId: "vocab-syutsugan", isAnswer: true),
+                OptionEntry(value: "しゅっかん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅっがん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅっかん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "JXsL8H0kENLwD0X3WUVr", type: .vocab, level: .n1,
+              question: "【純情】な人間性の上に於てのみ築かれる社会でなければならない。",
+              options: [
+                OptionEntry(value: "じゅんじょう", linkedEntryId: "vocab-jyunjyou", isAnswer: true),
+                OptionEntry(value: "じゅじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じゅうじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じじょう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "6dvXRpvJDDPr09qC4JQ8", type: .vocab, level: .n1,
+              question: "まだこちらに【邪心】のある証拠である。",
+              options: [
+                OptionEntry(value: "じゃしん", linkedEntryId: "vocab-jyashin", isAnswer: true),
+                OptionEntry(value: "じゃじん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じょこころ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ぜいしん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "xHSyFHEivZrkt3VvD3Gn", type: .vocab, level: .n1,
+              question: "いわゆる正風を【振興】したのであった。",
+              options: [
+                OptionEntry(value: "しんこう", linkedEntryId: "vocab-shinkou", isAnswer: true),
+                OptionEntry(value: "しょごう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せんこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せいしん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "l2yyUeOVt7HUTYgNhn2y", type: .vocab, level: .n1,
+              question: "彼は【所謂】成功者のひとりだ。",
+              options: [
+                OptionEntry(value: "いわゆる", linkedEntryId: "vocab-iwayuru", isAnswer: true),
+                OptionEntry(value: "しわゆる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いわうる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いうわる", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "3bQ7Yfslngr3f5Y6nRGt", type: .vocab, level: .n1,
+              question: "木の芽の煙った【雑木林】があった。",
+              options: [
+                OptionEntry(value: "ぞうきばやし", linkedEntryId: "vocab-zoukibayashi", isAnswer: true),
+                OptionEntry(value: "さつきばし", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ざつきばやし", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "そうきはやし", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "QazRldhrR1MCSS3NmsPx", type: .vocab, level: .n1,
+              question: "君が同郷だったとは【初耳】だ。",
+              options: [
+                OptionEntry(value: "はつみみ", linkedEntryId: "vocab-hatsumimi", isAnswer: true),
+                OptionEntry(value: "はずみみ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうみ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "はちみみ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "2zAz3OWzQtoU9HFRwShS", type: .vocab, level: .n1,
+              question: "山を下るのだから、【人手】を借りずに走って来る。",
+              options: [
+                OptionEntry(value: "ひとで", linkedEntryId: "vocab-hitode", isAnswer: true),
+                OptionEntry(value: "ひとて", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じんしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ひとしゅ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "XrkXPyoeGn9p1glNoaoj", type: .vocab, level: .n1,
+              question: "福祉政策にはもっと政府の【親心】が欲しい。",
+              options: [
+                OptionEntry(value: "おやごころ", linkedEntryId: "vocab-oyagokoro", isAnswer: true),
+                OptionEntry(value: "おやこころ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おやしん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おやごろ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "YafjaxvcL6wW2pkScGKR", type: .vocab, level: .n1,
+              question: "【福祉】政策にはもっと政府の親心が欲しい。",
+              options: [
+                OptionEntry(value: "ふくし", linkedEntryId: "vocab-hukushi", isAnswer: true),
+                OptionEntry(value: "ふうじ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふうせい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ふくじ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Z1XkJCoQH3GbHAKf5eBJ", type: .vocab, level: .n1,
+              question: "心に【刻まれた】幼い頃の記憶。",
+              options: [
+                OptionEntry(value: "きざまれた", linkedEntryId: "vocab-kizamu", isAnswer: true),
+                OptionEntry(value: "あやぶまれた", linkedEntryId: "vocab-ayabumu", isAnswer: false),
+                OptionEntry(value: "うらやまれた", linkedEntryId: "vocab-urayamu", isAnswer: false),
+                OptionEntry(value: "ねたまれた", linkedEntryId: "vocab-netamu", isAnswer: false)
+              ]),
+    QuizEntry(id: "M0Ntf59WnobTMjTgUowQ", type: .vocab, level: .n1,
+              question: "【危うく】忘れるところだった。",
+              options: [
+                OptionEntry(value: "あやうく", linkedEntryId: "vocab-ayaui", isAnswer: true),
+                OptionEntry(value: "あぶうく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "おやうく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "はぶうく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "yJGdClXBLsHj6hzomOO4", type: .vocab, level: .n1,
+              question: "そして脂肪や、焦げパンや、腐った漬物の【悪臭】が、また新しく皆の鼻孔を刺戟した。",
+              options: [
+                OptionEntry(value: "あくしゅう", linkedEntryId: "vocab-akusyuu", isAnswer: true),
+                OptionEntry(value: "あくしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "あくじゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "あくじゅ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Z1UzRBbrgzicXAH5hmxc", type: .vocab, level: .n1,
+              question: "あれだけでも僕みたいな者にゃ【一種】の重荷だよ",
+              options: [
+                OptionEntry(value: "いっしゅ", linkedEntryId: "vocab-issyu", isAnswer: true),
+                OptionEntry(value: "いしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いっしゅう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いっしょ", linkedEntryId: "", isAnswer: false)
+              ]),
+
+    QuizEntry(id: "Fj4PVXK2ZUEgoJuXNq1G", type: .vocab, level: .n1,
+              question: "僕は人生の【価値】を思うと、百の若槻には唾を吐いても、一の小えんを尊びたいんだ。",
+              options: [
+                OptionEntry(value: "かち", linkedEntryId: "vocab-kachi", isAnswer: true),
+                OptionEntry(value: "かっち", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "がち", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かじ", linkedEntryId: "vocab-kaji", isAnswer: false)
+              ]),
+
+    QuizEntry(id: "BDIETksQYPwKzYXDKSlf", type: .vocab, level: .n1,
+              question: "隣家が【火事】を出した。",
+              options: [
+                OptionEntry(value: "かじ", linkedEntryId: "vocab-kaji", isAnswer: true),
+                OptionEntry(value: "かち", linkedEntryId: "vocab-kachi", isAnswer: false),
+                OptionEntry(value: "かっじ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かし", linkedEntryId: "", isAnswer: false)
+              ]),
+
+    QuizEntry(id: "LMLhK2wl7phTrSUWJ69G", type: .vocab, level: .n1,
+              question: "彼は再三の【警告】を無視する。",
+              options: [
+                OptionEntry(value: "けいこく", linkedEntryId: "vocab-keikoku", isAnswer: true),
+                OptionEntry(value: "けんこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けいこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうこう", linkedEntryId: "", isAnswer: false)
+              ]),
+
+    QuizEntry(id: "eeBazdAkgzw3oxXJiXUa", type: .vocab, level: .n1,
+              question: "彼は音楽家を【志向】します。",
+              options: [
+                OptionEntry(value: "しこう", linkedEntryId: "vocab-shikou", isAnswer: true),
+                OptionEntry(value: "じこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しこく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しごう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "3kxCsQ8QhDYUonHmz10H", type: .vocab, level: .n1,
+              question: "多くの場合、【頭金】の額が乏しいと借入審査も厳しくなるのが常。",
+              options: [
+                OptionEntry(value: "あたまきん", linkedEntryId: "vocab-atamakin", isAnswer: true),
+                OptionEntry(value: "とうきん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ずきん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "あたまかね", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Nu16o6aayhZWoVQwwfC6", type: .vocab, level: .n1,
+              question: "この坂を越しますと狭い【谷間】でありまして、そこに家が十軒とはないのです。",
+              options: [
+                OptionEntry(value: "たにま", linkedEntryId: "vocab-tanima", isAnswer: true),
+                OptionEntry(value: "こうま", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ごうかん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ごかん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "oIvc9S3Ci7z4zwUtyOSD", type: .vocab, level: .n1,
+              question: "彼はこの場合、懐手をして二人の折衝を傍観する【居心地】の悪い立場にあった。",
+              options: [
+                OptionEntry(value: "いごこち", linkedEntryId: "vocab-igokochi", isAnswer: true),
+                OptionEntry(value: "いこころち", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いごろち", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "いここち", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "28wUXy6Vj8Fm4Dut3hqY", type: .vocab, level: .n1,
+              question: "そのはがきを出したのは銀座で会う以前であったということは到着の時刻からも【消印】からも確実に証明された。",
+              options: [
+                OptionEntry(value: "けしいん", linkedEntryId: "vocab-keshiin", isAnswer: true),
+                OptionEntry(value: "けいいん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けしじるし", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうえい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "XbEsrJxvM0bDuGzRcoZp", type: .vocab, level: .n1,
+              question: "町が遠いのに、弟さんは、【小包】を出しにいったんだね。",
+              options: [
+                OptionEntry(value: "こづつみ", linkedEntryId: "vocab-kodutsumi", isAnswer: true),
+                OptionEntry(value: "こぼう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しょうこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こつつむ", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "KZOtdps85dRUIkJlEhNE", type: .vocab, level: .n1,
               question: "粗笨漢だとすれば、余りに【教養】のある粗笨漢だ。",
               options: [

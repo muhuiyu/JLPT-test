@@ -23,21 +23,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         let database = DatabaseDataSource()
-        let updatedGrammarIds: [String] = [
-          
-        ]
+//        let updatedGrammarIds: [String] = [
+//
+//        ]
         let updatedVocabIds: [String] = [
-            "vocab-kyouyou", "vocab-kyouyuu", "vocab-syuugaku", "vocab-kouzou", "vocab-tozan", "vocab-seikei", "vocab-kotai", "vocab-kodai", "vocab-kotei"
+            "vocab-jitsuzai", "vocab-jissai", "vocab-gappei", "vocab-goujyou", "vocab-chusyou", "vocab-keotosu", "vocab-jikiso", "vocab-shikisai", "vocab-syosuru", "vocab-kosuru", "vocab-jyudou", "vocab-judo", "vocab-syougai", "vocab-gisou", "vocab-gizou", "vocab-kyokutan", "vocab-kyoutan", "vocab-shisei", "vocab-shisetsu", "vocab-jisei", "vocab-jidou", "vocab-shitei", "vocab-anaba", "vocab-atsude", "vocab-tegara", "vocab-orimono", "vocab-sunaba", "vocab-katamuku", "vocab-hiraku", "vocab-hadakeru", "vocab-aku"
         ]
-        for id in updatedGrammarIds {
-            print(id)
-            guard let grammar = grammarDatabase[id] else { continue }
-            database.updateGrammarItems(at: id, with: grammar) { error in
-                if let error = error {
-                    print(error)
-                }
-            }
-        }
+//        for id in updatedGrammarIds {
+//            print(id)
+//            guard let grammar = grammarDatabase[id] else { continue }
+//            database.updateGrammarItems(at: id, with: grammar) { error in
+//                if let error = error {
+//                    print(error)
+//                }
+//            }
+//        }
         for id in updatedVocabIds {
             print(id)
             guard let vocab = vocabDatabase[id] else { continue }
@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        
         database.updateQuizData(with: newQuizUpdate) { error in
             if let error = error {
                 print(error)

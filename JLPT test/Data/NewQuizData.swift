@@ -36,6 +36,30 @@ let newQuizUpdate: [QuizEntry] = [
 //    QuizEntry(id: "", type: .vocab, level: .n1,
 //              question: "<#String#>",
 //              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: true),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: true),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: true),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
+//                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false)
+//              ]),
+//    QuizEntry(id: "", type: .vocab, level: .n1,
+//              question: "<#String#>",
+//              options: [
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
 //                OptionEntry(value: "<#String#>", linkedEntryId: "<#String#>", isAnswer: false),
