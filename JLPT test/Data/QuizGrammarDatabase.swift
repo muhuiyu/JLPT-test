@@ -2201,6 +2201,214 @@ let n1GrammarQuizDatabase: [QuizEntry] = [
                 OptionEntry(value: "おかしな", linkedEntryId: "", isAnswer: false),
                 OptionEntry(value: "平凡な", linkedEntryId: "", isAnswer: true)
               ]),
+    QuizEntry(id: "ahPL1T0YZKAcmddNKeZ2", type: .vocab, level: .n1,
+              question: "税金は所得額をもとにして計算するため、所得額から【控除】を行うと払うべき税金が少なくなります。",
+              options: [
+                OptionEntry(value: "こうじょ", linkedEntryId: "vocab-koujyo", isAnswer: true),
+                OptionEntry(value: "こうそ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くうそ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くうじょ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "hW0feSeyCbYKn9bBy3lM", type: .vocab, level: .n1,
+              question: "極めて精巧な【細工】らしいです。",
+              options: [
+                OptionEntry(value: "さいく", linkedEntryId: "vocab-saiku", isAnswer: true),
+                OptionEntry(value: "せいく", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "せいこう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さいこう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "7u6Oubm4D3aR7gc85QCM", type: .vocab, level: .n1,
+              question: "新しい生活に【順応】します。",
+              options: [
+                OptionEntry(value: "じゅんのう", linkedEntryId: "vocab-jyunnou", isAnswer: true),
+                OptionEntry(value: "じゅんおう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じゅうのう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じゅうおう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "cQDmo9zByRfEVjLdjV9x", type: .vocab, level: .n1,
+              question: "どんなに【極秘】にされた抜打ちの手入れでも、事前に洩れる。",
+              options: [
+                OptionEntry(value: "ごくひ", linkedEntryId: "vocab-gokuhi", isAnswer: true),
+                OptionEntry(value: "こくひ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きょくび", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きょくひ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "XYVKgzj2BqyTDsKtZxEs", type: .vocab, level: .n1,
+              question: "わたしたち人民の【譲歩】は、度をこしている。",
+              options: [
+                OptionEntry(value: "じょうほ", linkedEntryId: "vocab-jyouho", isAnswer: true),
+                OptionEntry(value: "じょうぶ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じょうふ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "じょうぼ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "0P9laPmZ4cUHs7hUoyGb", type: .vocab, level: .n1,
+              question: "蜘蛛を真昼の青空から【遮断】してしまった。",
+              options: [
+                OptionEntry(value: "しゃだん", linkedEntryId: "vocab-syadan", isAnswer: true),
+                OptionEntry(value: "しょだん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "さだん", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "とだん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "trq6tCckjByrE7Mcy75S", type: .vocab, level: .n1,
+              question: "ジャーナリズムはまた【需要】にこたえるものでもある。",
+              options: [
+                OptionEntry(value: "じゅよう", linkedEntryId: "vocab-jyuyou", isAnswer: true),
+                OptionEntry(value: "じゅうよう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅよう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅうよう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "Ijqhsj5OIlUhyLfpG10b", type: .vocab, level: .n1,
+              question: "栗本は、何か【重要】なことを忘れてきたようで、焦点のきまらない方に注意を奪われがちだった。",
+              options: [
+                OptionEntry(value: "じゅうよう", linkedEntryId: "vocab-jyuuyou", isAnswer: true),
+                OptionEntry(value: "じゅよう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅうよう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちゅよう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "lvZX9Kr9ibeqErdzw7to", type: .vocab, level: .n1,
+              question: "私は自分の不安な此の行動に、少年【救済】という美名を附して、わずかに自分で救われていた。",
+              options: [
+                OptionEntry(value: "きゅうさい", linkedEntryId: "vocab-kyuusai", isAnswer: true),
+                OptionEntry(value: "きゅうざい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうさい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しゅうせい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "mm0vHg032xF8PBlphc7d", type: .vocab, level: .n1,
+              question: "スキー装束をした男が二人、月光を浴びながらかわるがわる【滑走】しては跳躍した。",
+              options: [
+                OptionEntry(value: "かっそう", linkedEntryId: "vocab-kassou", isAnswer: true),
+                OptionEntry(value: "かうそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうせい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "くうぞう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "WdCftMti1xT1woTzUFhX", type: .vocab, level: .n1,
+              question: "スキー装束をした男が二人、月光を浴びながらかわるがわる滑走しては【跳躍】した。",
+              options: [
+                OptionEntry(value: "ちょうやく", linkedEntryId: "vocab-cyouyaku", isAnswer: true),
+                OptionEntry(value: "たくよう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちょくよう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "ちょうよく", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "ctYfZ3l6SurE8FzA9lzA", type: .vocab, level: .n1,
+              question: "君は、ありもしない圧迫を【仮想】して、やたらに七転八倒しているだけです。",
+              options: [
+                OptionEntry(value: "かそう", linkedEntryId: "vocab-kasou-1", isAnswer: true),
+                OptionEntry(value: "きそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かぞう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きぞう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "aAuNdUsN0GCRua6bk1Ld", type: .vocab, level: .n1,
+              question: "いろんな【仮装】をした群れも通る。",
+              options: [
+                OptionEntry(value: "かそう", linkedEntryId: "vocab-kasou-2", isAnswer: true),
+                OptionEntry(value: "きそう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かぞう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "きぞう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "2UtQ5J0XqFwsCiQF8kJw", type: .vocab, level: .n1,
+              question: "他人の生活に【干渉】するな。",
+              options: [
+                OptionEntry(value: "かんしょう", linkedEntryId: "vocab-kansyou", isAnswer: true),
+                OptionEntry(value: "かんしゃ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんじょう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんじゃ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "lwrEgGwBLzuqP0WyDL3l", type: .vocab, level: .n1,
+              question: "タンドの大【観衆】が沸いています。",
+              options: [
+                OptionEntry(value: "かんしゅう", linkedEntryId: "vocab-kansyuu", isAnswer: true),
+                OptionEntry(value: "かんしゅ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんしょ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんしゅん", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "ZNCf8MPsMK1STpToAIuB", type: .vocab, level: .n1,
+              question: "高価に引受けると【勧誘】した。",
+              options: [
+                OptionEntry(value: "かんゆう", linkedEntryId: "vocab-kanyuu", isAnswer: true),
+                OptionEntry(value: "かんよう", linkedEntryId: "vocab-kanyou", isAnswer: false),
+                OptionEntry(value: "けんゆう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けんよう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "HceeDChj9y3KiItdnGzP", type: .vocab, level: .n1,
+              question: "彼等に対しても、終始【寛容】の態度を改めなかった。",
+              options: [
+                OptionEntry(value: "かんゆう", linkedEntryId: "vocab-kanyuu", isAnswer: false),
+                OptionEntry(value: "かんよう", linkedEntryId: "vocab-kanyou", isAnswer: true),
+                OptionEntry(value: "けんゆう", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "けんよう", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "06TKYAzUQb4CX9hfdiji", type: .vocab, level: .n1,
+              question: "今さら【後悔】しても始まらない。",
+              options: [
+                OptionEntry(value: "こうかい", linkedEntryId: "vocab-koukai", isAnswer: true),
+                OptionEntry(value: "こうがい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうはい", linkedEntryId: "", isAnswer: false),
+                    OptionEntry(value: "こうへい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "2sMTRXK4kCBrDzk3oOy8", type: .vocab, level: .n1,
+              question: "人から【誤解】されるような行動しないほうがいいと思います。",
+              options: [
+                OptionEntry(value: "ごかい", linkedEntryId: "vocab-gokai", isAnswer: true),
+                OptionEntry(value: "ごうかい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こうがい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こかい", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "e6w8htCjLNk1VNJVDRFc", type: .vocab, level: .n1,
+              question: "自分が属しているかを【厳密】に考察せずにはいられなくなるはずだ。",
+              options: [
+                OptionEntry(value: "げんみつ", linkedEntryId: "vocab-genmitsu", isAnswer: true),
+                OptionEntry(value: "けんみつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "げんみ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんみ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "WQPthr4aUcEaQuVCX4bX", type: .vocab, level: .n1,
+              question: "都会生活に【幻滅】しました。",
+              options: [
+                OptionEntry(value: "げんめつ", linkedEntryId: "vocab-genmetsu", isAnswer: true),
+                OptionEntry(value: "けんめつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "かんめつ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "がんめつ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "CC6G7JVrIGbvcqof8YTb", type: .vocab, level: .n1,
+              question: "労働基準法が【審議】されつつあります。",
+              options: [
+                OptionEntry(value: "しんぎ", linkedEntryId: "vocab-shingi-1", isAnswer: true),
+                OptionEntry(value: "しんき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんび", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "0dJbQ9sFG0JfIzR1rbd2", type: .vocab, level: .n1,
+              question: "【真偽】の判断は聞く人の自由です。",
+              options: [
+                OptionEntry(value: "しんぎ", linkedEntryId: "vocab-shingi-2", isAnswer: true),
+                OptionEntry(value: "しんき", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんい", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんび", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "w9pb2StQ90XTnggS6J9Q", type: .vocab, level: .n1,
+              question: "【真否】は頗る疑わしいです。",
+              options: [
+                OptionEntry(value: "しんぴ", linkedEntryId: "vocab-shinpi-1", isAnswer: true),
+                OptionEntry(value: "しんび", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんひ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんみ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "rmTQgWgOw6yixvapm5M9", type: .vocab, level: .n1,
+              question: "医学を超越する自然の【神秘】を力説したのである。",
+              options: [
+                OptionEntry(value: "しんぴ", linkedEntryId: "vocab-shinpi-2", isAnswer: true),
+                OptionEntry(value: "しんび", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんひ", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "しんみ", linkedEntryId: "", isAnswer: false)
+              ]),
+    QuizEntry(id: "82c2DbX8jj34HBNBOZBT", type: .vocab, level: .n1,
+              question: "真否は【頗る】疑わしいです。",
+              options: [
+                OptionEntry(value: "すこぶる", linkedEntryId: "vocab-sukoburu", isAnswer: true),
+                OptionEntry(value: "かうぶる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こぶる", linkedEntryId: "", isAnswer: false),
+                OptionEntry(value: "こみぶる", linkedEntryId: "", isAnswer: false)
+              ]),
     QuizEntry(id: "NDygR4WKtxu2PjS80YAx", type: .vocab, level: .n1,
               question: "この世に【実在】しない生物です。",
               options: [
