@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //
 //        ]
         let updatedVocabIds: [String] = [
-            
+            "vocab-inpei", "vocab-ashimoto", "vocab-iegara", "vocab-kareru", "vocab-kokorogamae", "vocab-mansei", "vocab-kyuusei", "vocab-bukko", "vocab-waku", "vocab-saishin", "vocab-kisei-2", "vocab-shina", "vocab-kuda", "vocab-majiwaru", "vocab-tsutsu", "vocab-sadameru", "vocab-zouo", "vocab-meian", "vocab-itsudatsu", "vocab-kaiga", "vocab-akuyou", "vocab-akuyuu", "vocab-ryouyuu", "vocab-iin", "vocab-inin", "vocab-akuryoku", "vocab-iten", "vocab-iden", "vocab-idai", "vocab-itai", "vocab-ansei", "vocab-anchi", "vocab-anti", "vocab-iji-3", "vocab-ichi", "vocab-kaisei", "vocab-machikado", "vocab-warumono", "vocab-hitokage", "vocab-hanazono", "vocab-atsukau", "vocab-yogoreru"
         ]
 //        for id in updatedGrammarIds {
 //            print(id)
