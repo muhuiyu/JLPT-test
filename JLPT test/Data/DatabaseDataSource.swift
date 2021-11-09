@@ -280,10 +280,10 @@ extension DatabaseDataSource {
             var quizIDs = [String]()
             for change in snapshot.documentChanges {
                 if change.type == .added {
-                    guard
-                        let data = change.document.data() as? [String: Any],
-                        let question = data["question"] as? String
-                    else { return callback([], FirebaseError.dataKeyMissing) }
+//                    let data = change.document.data()
+//                    guard
+//                        let question = data["question"] as? String
+//                    else { return callback([], FirebaseError.dataKeyMissing) }
 //                    print(change.document.documentID + ": " + question)
                     
                     quizIDs.append(change.document.documentID)
