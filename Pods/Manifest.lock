@@ -316,9 +316,7 @@ PODS:
   - GTMSessionFetcher/Core (1.5.0)
   - GTMSessionFetcher/Full (1.5.0):
     - GTMSessionFetcher/Core (= 1.5.0)
-  - Kingfisher (5.15.5):
-    - Kingfisher/Core (= 5.15.5)
-  - Kingfisher/Core (5.15.5)
+  - Kingfisher (6.3.0)
   - leveldb-library (1.22)
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
@@ -377,12 +375,12 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
-  Kingfisher: e3ec347a5ab8817b7585ef46923a2d2b9a7d8fbe
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 8f94bf8c36b952d11e37df384c7f6207e9726732
+PODFILE CHECKSUM: 895b7ccd82e452aa91346939189bcab951a745b8
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2

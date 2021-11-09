@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,21 +24,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         let database = DatabaseDataSource()
-//        let updatedGrammarIds: [String] = [
-//
-//        ]
-        let updatedVocabIds: [String] = [
-            "vocab-inpei", "vocab-ashimoto", "vocab-iegara", "vocab-kareru", "vocab-kokorogamae", "vocab-mansei", "vocab-kyuusei", "vocab-bukko", "vocab-waku", "vocab-saishin", "vocab-kisei-2", "vocab-shina", "vocab-kuda", "vocab-majiwaru", "vocab-tsutsu", "vocab-sadameru", "vocab-zouo", "vocab-meian", "vocab-itsudatsu", "vocab-kaiga", "vocab-akuyou", "vocab-akuyuu", "vocab-ryouyuu", "vocab-iin", "vocab-inin", "vocab-akuryoku", "vocab-iten", "vocab-iden", "vocab-idai", "vocab-itai", "vocab-ansei", "vocab-anchi", "vocab-anti", "vocab-iji-3", "vocab-ichi", "vocab-kaisei", "vocab-machikado", "vocab-warumono", "vocab-hitokage", "vocab-hanazono", "vocab-atsukau", "vocab-yogoreru"
+        let updatedGrammarIds: [String] = [
+
         ]
-//        for id in updatedGrammarIds {
-//            print(id)
-//            guard let grammar = grammarDatabase[id] else { continue }
-//            database.updateGrammarItems(at: id, with: grammar) { error in
-//                if let error = error {
-//                    print(error)
-//                }
-//            }
-//        }
+        let updatedVocabIds: [String] = [
+            "vocab-houdou", "vocab-kuruu", "vocab-chirasu", "vocab-oou", "vocab-kagu", "vocab-dassuru", "vocab-hassuru", "vocab-izon-1", "vocab-izon-2", "vocab-anmoku", "vocab-igen", "vocab-inka", "vocab-hibana", "vocab-enkatsu", "vocab-shippitsu", "vocab-oushuu", "vocab-unyu", "vocab-eizou", "vocab-eijyuu", "vocab-engi", "vocab-onsen", "vocab-onsei", "vocab-kaitou", "vocab-gaitou-1", "vocab-gaitou-2", "vocab-gaitou-3", "vocab-kansyuu-2", "vocab-kanjyou", "vocab-kawashimo", "vocab-kawakami", "vocab-kusabana", "vocab-yanushi", "vocab-manatsu", "vocab-umibe", "vocab-hitoiki", "vocab-sagaru", "vocab-kudaru", "vocab-nozomashii", "vocab-machidooshii"
+        ]
+        for id in updatedGrammarIds {
+            print(id)
+            guard let grammar = grammarDatabase[id] else { continue }
+            database.updateGrammarItems(at: id, with: grammar) { error in
+                if let error = error {
+                    print(error)
+                }
+            }
+        }
         for id in updatedVocabIds {
             print(id)
             guard let vocab = vocabDatabase[id] else { continue }
@@ -47,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
-        
+
         database.updateQuizData(with: newQuizUpdate) { error in
             if let error = error {
                 print(error)
