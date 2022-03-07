@@ -8,7 +8,6 @@
 import UIKit
 import Firebase
 import GoogleSignIn
-import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,38 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        let database = DatabaseDataSource()
-        let updatedGrammarIds: [String] = [
-
-        ]
-        let updatedVocabIds: [String] = [
-            "vocab-houdou", "vocab-kuruu", "vocab-chirasu", "vocab-oou", "vocab-kagu", "vocab-dassuru", "vocab-hassuru", "vocab-izon-1", "vocab-izon-2", "vocab-anmoku", "vocab-igen", "vocab-inka", "vocab-hibana", "vocab-enkatsu", "vocab-shippitsu", "vocab-oushuu", "vocab-unyu", "vocab-eizou", "vocab-eijyuu", "vocab-engi", "vocab-onsen", "vocab-onsei", "vocab-kaitou", "vocab-gaitou-1", "vocab-gaitou-2", "vocab-gaitou-3", "vocab-kansyuu-2", "vocab-kanjyou", "vocab-kawashimo", "vocab-kawakami", "vocab-kusabana", "vocab-yanushi", "vocab-manatsu", "vocab-umibe", "vocab-hitoiki", "vocab-sagaru", "vocab-kudaru", "vocab-nozomashii", "vocab-machidooshii"
-        ]
-        for id in updatedGrammarIds {
-            print(id)
-            guard let grammar = grammarDatabase[id] else { continue }
-            database.updateGrammarItems(at: id, with: grammar) { error in
-                if let error = error {
-                    print(error)
-                }
-            }
-        }
-        for id in updatedVocabIds {
-            print(id)
-            guard let vocab = vocabDatabase[id] else { continue }
-            database.updateVocabItems(at: id, with: vocab) { error in
-                if let error = error {
-                    print(error)
-                }
-            }
-        }
-
-        database.updateQuizData(with: newQuizUpdate) { error in
-            if let error = error {
-                print(error)
-            }
-        }
-
         if let _ = Auth.auth().currentUser {
             setViewControllers(window: window)
         }
