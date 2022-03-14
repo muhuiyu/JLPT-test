@@ -2,7 +2,7 @@
 //  WelcomeViewController.swift
 //  JLPT test
 //
-//  Created by Mu Yu on 18/5/21.
+//  Created by Mu Yu on 18/5/21Aut.
 //
 
 import UIKit
