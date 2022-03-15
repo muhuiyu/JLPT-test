@@ -5,4 +5,3 @@
 ![screenshot-2](/screenshot/app-preview-2.PNG?raw=true)
 ![screenshot-3](/screenshot/app-preview-3.PNG?raw=true)
 ![screenshot-4](/screenshot/app-preview-4.PNG?raw=true)
-![screenshot-5](/screenshot/app-preview-5.PNG?raw=true)
